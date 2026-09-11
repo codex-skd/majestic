@@ -196,20 +196,24 @@ Recorrer §9 (E2/E6/E8 + A2, M5, J1–J6) uno por uno con el propietario.
    la última 1.21.1 antes de cablearla en `expedition_core`. **vellumli**: mod SKD propio
    (`com.skd.vellumli`, CF 1638492); en dev `compileOnly files("libs/vellumli-*.jar")`, runtime
    `optional`.
-2. `REPO_SETUP.md` en orden: **`astral_core` ✅ (2026-09-11)** → `expedition_core` → `almanac_core` → `majestic`.
-   Cada uno: ramas `production`/`main` (majestic solo `production`), CI mirror, esqueleto MDK
-   (`build.gradle` moddev, `gradle.properties`, `settings.gradle`, `gradlew`, wrapper,
+2. `REPO_SETUP.md` — **los 4 hechos (2026-09-11)**. Esqueleto MDK (moddev 2.0.142) copiado de
+   `tick_smoothing`: `build.gradle`, `gradle.properties`, `settings.gradle`, `gradlew`+wrapper,
    `templates/META-INF/neoforge.mods.toml`, `pack.mcmeta`, `@Mod` vacío, `LICENSE`, `README.md`,
-   `CHANGELOG.md`, `.gitignore`, `.gitlab-ci.yml`, `.claude/CLAUDE.md`), `docs/` con
-   `WORKFLOW_<MOD>_1-21-1.md` + el `DESIGN_<MOD>_1-21-1.md` movido desde `design/`.
-   Verificación: `./gradlew build` (JAR) + `runGameTestServer` (arranque limpio).
-3. Estructura local definitiva `<mod_id>/neoforge/1.21.1/`.
+   `CHANGELOG.md`, `.gitignore`, `.claude/CLAUDE.md`, `docs/WORKFLOW_*` + `DESIGN_*` movido.
+3. Estructura local definitiva `<mod_id>/neoforge/1.21.1/`. La carpeta `majestic/docs/design/` se eliminó.
 
-**Estado `astral_core`** (2026-09-11): repo `astral-core` con `production` + `main` en GitLab
-(commit `001cc2e`), `mod_version=0.0.0`, `BUILD SUCCESSFUL`, JAR
-`astral_core-1.21.1-neoforge-21.1.249-0.0.0.jar`. Pendiente del operador: default branch →
-`production`, borrar `main` raíz, proteger `*/main`, configurar mirror a GitHub. CF: proyecto aún
-sin crear.
+**Estado de los 4 repos (2026-09-11) — todos `BUILD SUCCESSFUL`, `mod_version=0.0.0`:**
+
+| Repo | Ramas | Commit | Licencia | Deps cableadas en el esqueleto | JAR |
+|---|---|---|---|---|---|
+| `astral-core` | `production` + `main` | `001cc2e` | MIT | — (comentadas) | `astral_core-1.21.1-neoforge-21.1.249-0.0.0.jar` |
+| `expedition-core` | `production` + `main` | `3df8563` | MIT | **GeckoLib 4.7.6** (real, resuelve) | `expedition_core-…-0.0.0.jar` |
+| `almanac-core` | `production` + `main` | `075ef87` | MIT | — (repos maven blamejared/central declarados) | `almanac_core-…-0.0.0.jar` |
+| `majestic` | `production` (privado, sin `main`, sin CI) | `bd208c6` | **All Rights Reserved** | — (comentadas) | `majestic-…-0.0.0.jar` |
+
+**Pendiente del operador en GitLab UI** (por repo de librería): default branch → `production`,
+proteger `minecraft/*/neoforge-*/main`, configurar mirror a GitHub. Para `majestic`: solo confirmar
+que es privado. **CF: los 4 proyectos aún sin crear** (Fase 3, cuando cada mod tenga hito funcional).
 
 ### Fase 3 — Creación de proyectos CurseForge *(pronto, no esperar a v1)*
 - Crear los **4 proyectos CF** en cuanto cada mod tenga un primer build que arranque:

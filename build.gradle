@@ -66,7 +66,7 @@ neoForge {
         }
 
         data {
-            clientData()
+            data()
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
         }
 
@@ -88,12 +88,18 @@ configurations {
 }
 
 dependencies {
-    // Wired in later milestones (see docs/DESIGN_MAJESTIC_1-21-1.md). All external — NEVER jar-in-jar,
-    // NEVER shaded. `majestic` is All Rights Reserved; every dependency is resolved by the user /
-    // by CurseForge as a required or optional dependency.
-    //   - astral_core, expedition_core, almanac_core : compileOnly files("libs/<jar>")  → runtime required
-    //   - geckolib                                    : implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
-    //   - jei / vellumli                              : soft, transitive via almanac_core
+    // astral_core + almanac_core (MIT, real) — sibling SKD repos, local jars, never bundled.
+    // See docs/DESIGN_MAJESTIC_1-21-1.md. `majestic` is All Rights Reserved; every dependency is
+    // resolved by the user / by CurseForge as a required or optional dependency, never jar-in-jar.
+    compileOnly files("libs/astral_core-${minecraft_version}-neoforge-${neo_version}-0.0.0.jar")
+    localRuntime files("libs/astral_core-${minecraft_version}-neoforge-${neo_version}-0.0.0.jar")
+    compileOnly files("libs/almanac_core-${minecraft_version}-neoforge-${neo_version}-0.0.0.jar")
+    localRuntime files("libs/almanac_core-${minecraft_version}-neoforge-${neo_version}-0.0.0.jar")
+
+    // Wired in later milestones:
+    //   - expedition_core : compileOnly files("libs/<jar>")  → runtime required (structures/bosses milestone)
+    //   - geckolib         : implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+    //   - jei / vellumli   : soft, transitive via almanac_core
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

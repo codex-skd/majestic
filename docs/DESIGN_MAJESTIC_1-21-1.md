@@ -134,3 +134,17 @@ com.skd.majestic
 - Full multiplayer: dimensión y altares compartidos, progreso por jugador, jefes escalados por nº de jugadores en arena.
 - Libro-guía principal (crafteable + entregado, revelado progresivo) + 2–3 tomos de avance por misión.
 - Deps requeridas en CurseForge: `astral_core`, `expedition_core`, `almanac_core`, `geckolib`.
+
+---
+
+## 6. Historial
+
+| Fecha | Cambio |
+|---|---|
+| 2026-09-11 | `astral_core` + `almanac_core` cableados como deps reales (jars en `libs/`, `compileOnly`+`localRuntime`, `required` en `neoforge.mods.toml`). **Alpha jugable implementada** (delegado a OpenCode `mimo-v2.5`, con 3 bugs reales encontrados y corregidos por Claude tras smoke-test): escuela Luz Estelar (`magic/school/Schools`), 4 hechizos concretos (`StarlightBolt/Ward/Reveal/Surge`, registrados como `SpellType` de `astral_core`), foco `majestic:starlight_focus` (`content/item/FocusItem`), HUD de esencia (`client/hud/EssenceHudOverlay`), comando `/majestic status`, datagen de los 4 `SpellDefinition` JSON + modelo/lang del foco. |
+| 2026-09-11 | **Fix Claude**: `build.gradle` de los 4 repos del ecosistema usaba `clientData()` para el run `data`, inexistente en moddev 2.0.142 (`runData` fallaba) — corregido a `data()`. |
+| 2026-09-11 | **Fix Claude**: JSON de hechizos generados en `data/majestic/spells/` en vez de `data/majestic/almanac/spell/` (ruta que espera el `SpellLoader` de `almanac_core`) — nunca se habrían cargado. Movidos a la ruta correcta. |
+| 2026-09-11 | **Fix Claude**: `Majestic.java` llamaba `AstralRegistries.register(modEventBus)` además de `astral_core`, duplicando el listener de `NewRegistryEvent` sobre el mismo registro custom — eliminado (solo `astral_core` debe crearlo). |
+| 2026-09-11 | **Fix Claude**: `MajesticSpells` resolvía (`.get()`) los `DeferredHolder` de `SpellType` en el inicializador estático, antes de que el registro de `astral_core` estuviera enlazado (`IllegalStateException: Registry not present`) — los campos pasan a ser `DeferredHolder` sin resolver, `.get()` solo en el momento de uso (foco/comando). |
+| 2026-09-11 | **Fix Claude**: NPE potencial en `StarlightBoltSpell.cast()` si `Targeting.raycast()` devuelve `null` (sin objetivo en rango) — añadido null-check. |
+| 2026-09-11 | `./gradlew build` + `runGameTestServer` verificados por Claude de forma independiente tras cada fix; arranque limpio final con `astral_core`+`almanac_core`+`majestic` cargados juntos. |
