@@ -1,9 +1,9 @@
 # CurseForge — Variables del proyecto
 
-> Leído por `../../../codex-docs/scripts/curseforge-upload.ps1`. **Proyecto AÚN NO creado en CurseForge** — crear manualmente en la web (Submit Project → Mods → Minecraft) con el summary y la categoría acordados, copiar aquí el ID asignado antes de subir el primer JAR.
+> Leído por `../../../codex-docs/scripts/curseforge-upload.ps1`. Proyecto creado en CurseForge (ID `1692772`).
 
 ```
-project_id =
+project_id = 1692772
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
 game_versions = 9638, 9639, 11779, 10150
 release_type = beta
@@ -13,7 +13,7 @@ release_type = beta
 
 | Variable | Valor |
 |---|---|
-| `curseforge_project_id` | *(pendiente de crear)* |
+| `curseforge_project_id` | `1692772` |
 | `mod_id` | `majestic` |
 | `display_name` | `Majestic` |
 
@@ -70,11 +70,11 @@ del ecosistema en `majestic` para el tono visual).
 
 ## Flujo completo (primera vez)
 
-1. Crear el proyecto en la web CurseForge (Submit Project → Mods) con el summary acordado.
-2. Copiar el `project_id` asignado en este archivo.
-3. Pegar `docs/curseforge/project_description.md` en Edit Project → Description.
-4. Subir el logo generado en Edit Project → Logo.
-5. `./gradlew clean build`
-6. Crear `docs/curseforge/versions/0.0.0-beta.1.md` (HTML) — release notes de la versión ya taggeada.
+1. **[hecho]** Proyecto creado en la web CurseForge (`1692772`).
+2. **[hecho]** `project_id` copiado en este archivo y en `gradle.properties`.
+3. Pegar `docs/curseforge/project_description.md` en Edit Project → Description — **pendiente del usuario** (sin API).
+4. Subir el logo (`ChatGPT Image 12 sept 2026, 16_48_46.png`) en Edit Project → Logo — **pendiente del usuario** (sin API).
+5. `./gradlew clean build` — **[hecho]**, jar `majestic-1.21.1-neoforge-21.1.249-0.0.0-beta.1.jar`.
+6. `docs/curseforge/versions/0.0.0-beta.1.md` (HTML) — release notes de la versión ya taggeada.
 7. Subir JAR: `powershell -File ../../../codex-docs/scripts/curseforge-upload.ps1` (desde este repo).
 8. Verificar con GET (Core API key) y liberar manualmente desde la web si hace falta.
