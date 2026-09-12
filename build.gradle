@@ -91,10 +91,16 @@ dependencies {
     // astral_core + almanac_core (MIT, real) — sibling SKD repos, local jars, never bundled.
     // See docs/DESIGN_MAJESTIC_1-21-1.md. `majestic` is All Rights Reserved; every dependency is
     // resolved by the user / by CurseForge as a required or optional dependency, never jar-in-jar.
-    compileOnly files("libs/astral_core-${minecraft_version}-neoforge-${neo_version}-0.0.0.jar")
-    localRuntime files("libs/astral_core-${minecraft_version}-neoforge-${neo_version}-0.0.0.jar")
-    compileOnly files("libs/almanac_core-${minecraft_version}-neoforge-${neo_version}-0.0.0.jar")
-    localRuntime files("libs/almanac_core-${minecraft_version}-neoforge-${neo_version}-0.0.0.jar")
+    compileOnly files("libs/astral_core-${minecraft_version}-neoforge-${neo_version}-${astral_core_version}.jar")
+    localRuntime files("libs/astral_core-${minecraft_version}-neoforge-${neo_version}-${astral_core_version}.jar")
+    compileOnly files("libs/almanac_core-${minecraft_version}-neoforge-${neo_version}-${almanac_core_version}.jar")
+    localRuntime files("libs/almanac_core-${minecraft_version}-neoforge-${neo_version}-${almanac_core_version}.jar")
+
+    // regalia_slots_api (LGPL-3.0) — not used by majestic's own code directly, but astral_core's
+    // neoforge.mods.toml requires it, so our own dev runs need it present transitively (`files(...)`
+    // deps don't resolve astral_core's own transitive requirements). Real players never need this
+    // line — installing astral_core already pulls in regalia_slots_api on its own merit.
+    localRuntime files("libs/regalia_slots_api-${minecraft_version}-neoforge-${neo_version}-1.0.0.jar")
 
     // Wired in later milestones:
     //   - expedition_core : compileOnly files("libs/<jar>")  → runtime required (structures/bosses milestone)
