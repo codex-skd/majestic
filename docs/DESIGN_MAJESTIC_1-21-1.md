@@ -137,6 +137,55 @@ com.skd.majestic
 
 ---
 
+## 5b. Hito M2 — Altar T1, nodo de investigación inicial, guía (2026-09-22)
+
+Antes de las estructuras del Acto I–II (`PROGRESSION.md §5` paso 8), toca el paso 6: **altar T1,
+nodos Acto I, guía**. Alcance decidido para que sea autocontenido y no dependa de contenido futuro:
+
+- **Solo altar T1.** El T2 (Observatorio) necesita reactivos/mobs que solo existirán con la
+  estructura del Acto II — se deja para ese hito, no se inventa contenido a medias.
+- **Multiblock T1**: `majestic:astral_altar` (bloque + `AstralAltarBlockEntity extends
+  astral_core.ritual.AltarBlockEntity`) en el centro + 4 `majestic:astral_pillar` (bloque simple,
+  sin BlockEntity) en offsets (±2,0,0)/(0,0,±2), tageados `#majestic:altar_pillar`.
+- **Limitación real de `astral_core` (M2, TODO documentado)**: `RitualContext.inputs()` siempre
+  llega vacío — el escaneo de pedestales está diferido, no implementado. En vez de bloquear este
+  hito en un cambio cruzado a `astral_core`, el ritual de grabado **lee/consume reactivos del
+  inventario del jugador directamente** (`context.player()`), no de pedestales físicos. Los
+  pilares del multibloque son solo el requisito estructural (hay que construir el altar), no
+  contenedores de items. Revisar si merece la pena implementar el escaneo real de pedestales
+  cuando el Acto II necesite rituales con más de un tipo de reactivo simultáneo.
+- **Ritual `majestic:engrave_spell`** (`RitualType`/`Ritual` de `astral_core`): un único tipo de
+  ritual, parametrizado por qué **sigilo** (`majestic:starlight_{bolt,ward,reveal,surge}_sigil`)
+  lleva el jugador en la mano secundaria — determina qué hechizo se graba. Requiere
+  `majestic:blank_page` en el inventario + el nodo `majestic:first_light` desbloqueado + coste de
+  esencia (de `RitualDefinition` si hay datapack cargado, si no fallback `20.0`). Al completarse:
+  consume `blank_page` + el sigilo usado, y fija el componente `majestic:recorded_spell` (ver
+  abajo) en el foco que el jugador lleva en la mano principal.
+- **Foco reescrito**: el hechizo lanzado deja de estar hardcodeado a `starlight_bolt`. Nuevo
+  `DataComponentType<ResourceLocation>` `majestic:recorded_spell` (persistente + sincronizado),
+  con `starlight_bolt` como valor por defecto si el componente no está presente (compatibilidad
+  con focos ya existentes/dados por comando). `FocusItem.use()` lee este componente para decidir
+  qué `SpellType` lanzar.
+- **Nodo de investigación**: solo `majestic:first_light` en este hito (sin requisitos, se
+  desbloquea automáticamente la primera vez que el jugador usa el foco con éxito —
+  `ResearchApi.unlock`). Coincide literalmente con la fila de `CONTENT_MAGIC.md §5` ("obtener el
+  foco" → "escuela Luz Estelar T1, altar T1"). Los 2–3 nodos adicionales de "Acto I" (tabla
+  `PROGRESSION.md §4`) se añaden en el hito de estructuras, cuando haya algo real que los gatee
+  (hallazgo en Fallen Shrine) — no se inventan ahora.
+- **Guía** (`majestic:almanac`, `vellumli`): libro con categorías propias
+  `majestic:{spells,rituals,research}` (registradas vía `GuideStructure.register`, no las
+  compartidas de `almanac_core`) y 6 entradas generadas con `EntryGenerator` (4 hechizos + ritual
+  `engrave_spell` + nodo `first_light`). Cada entrada lleva su `advancement` =
+  `EntryGate.advancementIdFor(entryId)`; el advancement correspondiente (criterio `"trigger"`, ver
+  convención de `expedition_core.AdvancementHooks`) se concede vía `expedition_core.AdvancementHooks
+  .grantAll` cuando se dispara `NodeUnlockedEvent` para `first_light` — mismo evento que entrega el
+  libro al jugador (`VellumliBridge.giveBookStack`).
+- **Datos**: `SpellDefinition`/`RitualDefinition`/`ResearchNodeDefinition` JSON generados por
+  datagen real (Codec-based `DataProvider`), sustituyendo el JSON de hechizos escrito a mano en
+  beta.1 (cierra esa nota de la beta.1, ver E8). El book/categorías/entradas de `vellumli` se
+  escriben a mano — no hay `Codec`/provider para ese formato todavía, excepción aceptada igual que
+  el resto del ecosistema con formatos ajenos a un `Codec`.
+
 ## 6. Historial
 
 | Fecha | Cambio |
