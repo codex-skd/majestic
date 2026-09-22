@@ -37,6 +37,17 @@ description='''Majestic is a magic and adventure mod: arcane-celestial magic —
     ordering="AFTER"
     side="BOTH"
 
-# Wired in a later milestone (structures/bosses milestone onward):
-#   expedition_core, geckolib -> type="required"
-#   jei, vellumli             -> type="optional"
+[[dependencies.${mod_id}]]
+    modId="expedition_core"
+    type="required"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="geckolib"
+    type="required"
+    ordering="AFTER"
+    side="BOTH"
+
+# Wired when needed:
+#   jei, vellumli -> type="optional"

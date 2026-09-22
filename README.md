@@ -27,10 +27,13 @@ structures and bosses.
 
 - [Astral Core](https://gitlab.com/stalking-dragons/minecraft/astral-core) — magic systems.
 - [Almanac Core](https://gitlab.com/stalking-dragons/minecraft/almanac-core) — content-as-data, JEI, guide bridge.
-
-Planned (not wired yet): [Expedition Core](https://gitlab.com/stalking-dragons/minecraft/expedition-core) (dimension / structures / bosses) and GeckoLib (boss / entity animation).
+- [Expedition Core](https://gitlab.com/stalking-dragons/minecraft/expedition-core) — structures, boss-encounter framework.
+- [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib) — boss / entity animation.
 
 Optional (transitive via Almanac Core): JEI (recipe viewing), [Vellumli](https://gitlab.com/stalking-dragons/minecraft/vellumli) (in-game guide book).
+
+All four required dependencies are declared on CurseForge, so installing Majestic through the
+CurseForge app/launcher installs them automatically.
 
 All dependencies are installed as separate mods — Majestic bundles nothing.
 

@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.0-beta.2]
+
+### Added
+- **Expedition Core** wired as a real dependency (external jar, never bundled) — now that its
+  Milestone 1 (structures + `BossEncounter` framework) is published, Majestic can start building
+  Act I–II structures and bosses on top of it.
+- **GeckoLib** wired as a real dependency (`implementation`, external — never jar-in-jar), needed
+  for Expedition Core's `GeoBossEntity`/`GeoBossRenderer` base once real bosses are authored.
+- Both declared `required` in `neoforge.mods.toml`, alongside Astral Core and Almanac Core.
+- **CurseForge dependency relations**: the uploaded file now declares Astral Core, Almanac Core,
+  Expedition Core and GeckoLib as required dependencies, so installing Majestic through the
+  CurseForge app/launcher installs all four automatically.
+
+### Notes
+- No new gameplay content in this release — this is the dependency-wiring step ahead of the
+  Act I–II structures/bosses milestone. Alpha content is unchanged from beta.1 (Starlight school,
+  4 spells, hardcoded focus).
+- Verified: clean build + `runGameTestServer` boot with all four ecosystem mods, GeckoLib and
+  Regalia Slots API loaded together (mixins from both apply without conflict).
+
 ## [0.0.0-beta.1]
 
 First versioned build. **Minecraft 1.21.1 / NeoForge 21.1.249** (Java 21). All Rights Reserved.

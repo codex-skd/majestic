@@ -102,10 +102,15 @@ dependencies {
     // line — installing astral_core already pulls in regalia_slots_api on its own merit.
     localRuntime files("libs/regalia_slots_api-${minecraft_version}-neoforge-${neo_version}-1.0.0.jar")
 
+    // expedition_core (MIT, real) — sibling SKD repo, local jar, never bundled.
+    compileOnly files("libs/expedition_core-${minecraft_version}-neoforge-${neo_version}-${expedition_core_version}.jar")
+    localRuntime files("libs/expedition_core-${minecraft_version}-neoforge-${neo_version}-${expedition_core_version}.jar")
+
+    // GeckoLib — real dependency (Act I-II bosses use expedition_core's GeoBossEntity/GeoBossRenderer base).
+    implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+
     // Wired in later milestones:
-    //   - expedition_core : compileOnly files("libs/<jar>")  → runtime required (structures/bosses milestone)
-    //   - geckolib         : implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
-    //   - jei / vellumli   : soft, transitive via almanac_core
+    //   - jei / vellumli : soft, transitive via almanac_core
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
