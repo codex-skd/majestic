@@ -1,0 +1,13 @@
+{
+  "name": "First Light",
+  "category": "majestic:research",
+  "icon": "minecraft:nether_star",
+  "sort_num": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Your first step into the arcane arts. This knowledge is unlocked simply by using your Starlight Focus to cast a spell."
+    }
+  ],
+  "advancement": "majestic:guide/first_light"
+}

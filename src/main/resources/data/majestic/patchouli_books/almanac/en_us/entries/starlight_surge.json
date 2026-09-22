@@ -1,0 +1,13 @@
+{
+  "name": "Starlight Surge",
+  "category": "majestic:spells",
+  "icon": "majestic:starlight_focus",
+  "sort_num": 4,
+  "pages": [
+    {
+      "type": "text",
+      "text": "A powerful surge of starlight energy directed at the caster. Costs 10 essence but has a very long cooldown."
+    }
+  ],
+  "advancement": "majestic:guide/starlight_surge"
+}

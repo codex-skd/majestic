@@ -206,9 +206,9 @@ Leer solo `GRAPH_REPORT.md`, nunca `graph.json`/`graph.html`. Sin copias fechada
 Orden global y detalle en [`PROGRESSION.md §5`](PROGRESSION.md) y `§6` (alcance v1). Resumen para `majestic`
 (cada hito depende del hito correspondiente en las librerías):
 
-1. **Alpha jugable** — 1 escuela (Luz Estelar) + 3–4 hechizos + foco + HUD de esencia. `astral_core` M1 + `almanac_core` M1.
-2. **Rituales + investigación** — altar T1/T2, nodos Acto I–II, libro-guía. `astral_core` M2 + `almanac_core` M2.
-3. **Estructuras + Jefe I** — estructuras Acto I–II, arena, `expedition_core` M1.
+1. **[hecho] Alpha jugable** — 1 escuela (Luz Estelar) + 3–4 hechizos + foco + HUD de esencia. `astral_core` M1 + `almanac_core` M1.
+2. **[hecho, solo T1] Rituales + investigación** — altar T1 (T2 pendiente, ver `DESIGN_MAJESTIC_1-21-1.md §5b`), nodo `first_light`, libro-guía. `astral_core` M2 + `almanac_core` M2+M3.
+3. **Estructuras + Jefe I** — estructuras Acto I–II, arena, `expedition_core` M1. **Siguiente hito.**
 4. **Plano celeste** — dimensión, biomas, Actos III–IV, reliquias, jefes finales, tomos. `expedition_core` M2 + `almanac_core` M3.
 5. **Contenido v1 completo** (`PROGRESSION.md §6`) + pulido → `1.0.0` de los 4 mods.
 

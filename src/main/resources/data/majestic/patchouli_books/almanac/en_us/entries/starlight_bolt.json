@@ -1,0 +1,14 @@
+{
+  "name": "Starlight Bolt",
+  "category": "majestic:spells",
+  "icon": "majestic:starlight_focus",
+  "sort_num": 1,
+  "page_icon": "majestic:starlight_focus",
+  "pages": [
+    {
+      "type": "text",
+      "text": "A bolt of concentrated starlight that damages and blinds a target. Deals 4 damage and inflicts blindness."
+    }
+  ],
+  "advancement": "majestic:guide/starlight_bolt"
+}

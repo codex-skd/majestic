@@ -1,0 +1,9 @@
+{
+  "name": "The Almanac",
+  "landing_text": "A guide to the arcane arts of starlight.",
+  "model": "majestic:starlight_focus",
+  "subtitle": "Majestic",
+  "book_item": "majestic:starlight_focus",
+  "version": "1",
+  "creative_tab": "main"
+}

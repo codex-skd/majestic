@@ -1,0 +1,13 @@
+{
+  "name": "Engrave Spell",
+  "category": "majestic:rituals",
+  "icon": "majestic:astral_altar",
+  "sort_num": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "A ritual performed at the Astral Altar to inscribe a spell onto your Starlight Focus. Requires a blank page, a spell sigil in your off-hand, and the focus in your main hand. Costs 20 essence."
+    }
+  ],
+  "advancement": "majestic:guide/engrave_spell"
+}

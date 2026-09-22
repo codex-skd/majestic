@@ -1,7 +1,11 @@
 package com.skd.majestic;
 
 import com.skd.majestic.command.MajesticCommand;
+import com.skd.majestic.content.block.MajesticBlocks;
+import com.skd.majestic.content.component.MajesticDataComponents;
+import com.skd.majestic.content.event.MajesticEvents;
 import com.skd.majestic.content.item.MajesticItems;
+import com.skd.majestic.magic.ritual.MajesticRituals;
 import com.skd.majestic.magic.spell.MajesticSpells;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -23,13 +27,17 @@ public final class Majestic {
 
         // NOTE: AstralRegistries.register(modEventBus) is NOT called here — astral_core's own
         // AstralCore constructor already registers it on astral_core's own mod bus, which is what
-        // actually creates the SPELL_TYPES/ESSENCE_MODIFIERS registries via NewRegistryEvent.
+        // actually creates the SPELL_TYPES/RITUAL_TYPES/etc. registries via NewRegistryEvent.
         // Calling it again here would add a second NewRegistryEvent listener that tries to create
-        // the same registry keys a second time. We only need our OWN DeferredRegister tied to the
-        // already-created AstralRegistries.SPELL_TYPE_KEY, which MajesticSpells.register() does.
+        // the same registry keys a second time. We only need our OWN DeferredRegisters tied to the
+        // already-created AstralRegistries.*_KEY, which MajesticSpells/MajesticRituals.register() do.
         MajesticSpells.register(modEventBus);
         MajesticItems.register(modEventBus);
+        MajesticBlocks.register(modEventBus);
+        MajesticDataComponents.register(modEventBus);
+        MajesticRituals.register(modEventBus);
 
         NeoForge.EVENT_BUS.addListener(RegisterCommandsEvent.class, event -> MajesticCommand.register(event.getDispatcher()));
+        NeoForge.EVENT_BUS.addListener(com.skd.astralcore.event.NodeUnlockedEvent.class, MajesticEvents::onNodeUnlocked);
     }
 }

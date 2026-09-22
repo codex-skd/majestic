@@ -1,0 +1,13 @@
+{
+  "name": "Starlight Reveal",
+  "category": "majestic:spells",
+  "icon": "majestic:starlight_focus",
+  "sort_num": 3,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Reveals hidden things within an area using the power of starlight. An area-of-effect spell that costs 20 essence."
+    }
+  ],
+  "advancement": "majestic:guide/starlight_reveal"
+}

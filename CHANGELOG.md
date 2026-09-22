@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.0-beta.3]
+
+### Added
+- **Astral Altar (Tier 1)**: a multiblock (altar + 4 astral pillars) that runs the new
+  `engrave_spell` ritual. Hold your focus in your main hand and one of the 4 new spell sigils in
+  your off-hand, then interact with the altar to engrave that spell onto your focus — requires the
+  `first_light` research node and a blank page, and consumes essence.
+- **Research**: the `first_light` node, auto-unlocked the first time you successfully cast with
+  your focus.
+- **Guide book**: `majestic:almanac` (Vellumli), with categories for spells/rituals/research and
+  6 entries (the 4 spells, the engrave ritual, and the first_light node). Delivered to the player,
+  along with its unlock advancement, when `first_light` is researched.
+- New items: `blank_page` and 4 spell sigils (`starlight_{bolt,ward,reveal,surge}_sigil`).
+- The focus's cast spell is no longer hardcoded — it now reads a `recorded_spell` data component,
+  set by the engrave ritual (defaults to Starlight Bolt for focuses that predate this update).
+
+### Fixed
+- `DataGenerators`' spell JSON provider wrote to `data/majestic/spells/`, a path `almanac_core`'s
+  loader never reads — fixed to `data/majestic/almanac/spell/` (a bug present since beta.1 alpha,
+  masked because the hand-written fallback JSON already lived at the correct path).
+- `majestic` was still depending on `almanac_core` beta.1 in `libs/`, predating that library's
+  guide bridge (beta.2) — updated, and the guide/advancement wiring now uses the real bridge
+  (`EntryGate`, `VellumliBridge`) instead of a hand-rolled workaround.
+
+### Notes
+- Tier-1 altar only — Tier 2 (in the future Observatory structure) needs Act II content that
+  doesn't exist yet, so it's deferred rather than built half-finished.
+- Reagents are checked/consumed from the player's inventory, not from physical pedestals —
+  `astral_core`'s pedestal-item scanning isn't implemented yet (a known, documented gap).
+- Delegated to OpenCode and independently verified by Claude, who found and fixed the stale
+  `almanac_core` dependency above. See `docs/DESIGN_MAJESTIC_1-21-1.md §5b`/Historial for the
+  full account, including a recursive-delegation issue in the first two OpenCode attempts.
+
 ## [0.0.0-beta.2]
 
 ### Added

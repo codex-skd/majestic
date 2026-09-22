@@ -16,6 +16,36 @@ public final class MajesticItems {
             new Item.Properties()
     );
 
+    public static final DeferredItem<Item> BLANK_PAGE = ITEMS.registerItem(
+            "blank_page",
+            Item::new,
+            new Item.Properties()
+    );
+
+    public static final DeferredItem<Item> STARLIGHT_BOLT_SIGIL = ITEMS.registerItem(
+            "starlight_bolt_sigil",
+            Item::new,
+            new Item.Properties()
+    );
+
+    public static final DeferredItem<Item> STARLIGHT_WARD_SIGIL = ITEMS.registerItem(
+            "starlight_ward_sigil",
+            Item::new,
+            new Item.Properties()
+    );
+
+    public static final DeferredItem<Item> STARLIGHT_REVEAL_SIGIL = ITEMS.registerItem(
+            "starlight_reveal_sigil",
+            Item::new,
+            new Item.Properties()
+    );
+
+    public static final DeferredItem<Item> STARLIGHT_SURGE_SIGIL = ITEMS.registerItem(
+            "starlight_surge_sigil",
+            Item::new,
+            new Item.Properties()
+    );
+
     private MajesticItems() {}
 
     public static void register(IEventBus modEventBus) {
