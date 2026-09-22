@@ -7,7 +7,7 @@ project_id = 1692772
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
 game_versions = 9638, 9639, 11779, 10150
 release_type = beta
-relations = astral-core:requiredDependency,almanac-core:requiredDependency,expedition-core:requiredDependency,geckolib:requiredDependency
+relations = astral-core:requiredDependency,almanac-core:requiredDependency,geckolib:requiredDependency
 ```
 
 ## Proyecto
@@ -65,8 +65,14 @@ automáticamente, sin paso manual.
 ## Relaciones (dependencias declaradas en CurseForge)
 
 Majestic requiere en tiempo de ejecución los 3 cores del ecosistema + GeckoLib (los 4 `required`
-en `neoforge.mods.toml`). Declarado arriba (`relations = ...`) para que cada subida marque las 4
+en `neoforge.mods.toml`). Declarado arriba (`relations = ...`) para que cada subida marque estas
 dependencias — el launcher de CurseForge las instala automáticamente al instalar `majestic`.
+
+**`expedition-core` pendiente**: su proyecto CF (`1707718`) es nuevo y sigue en revisión
+(`isAvailable: false` en la Core API) — CurseForge rechaza `expedition-core` como slug de relación
+hasta que se apruebe (`errorCode 1018: Invalid slug in project relations`). Añadir
+`,expedition-core:requiredDependency` a `relations` (arriba) y volver a subir en cuanto el proyecto
+quede aprobado/público — verificar con `GET /v1/mods/1707718` (`isAvailable: true`).
 
 ## Descripción del proyecto y logo
 
