@@ -1,0 +1,473 @@
+{
+  "communities": {
+    "0": [
+      "blockstateprovider",
+      "cachedoutput",
+      "dataprovider",
+      "existingfilehelper",
+      "gatherdataevent",
+      "itemmodelprovider",
+      "languageprovider",
+      "packoutput",
+      "src_main_java_com_skd_majestic_datagen_datagenerators",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_datagenerators",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_datagenerators_datagenerators",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_datagenerators_ongatherdata",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_java_eventbussubscriber",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_java_override",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_java_subscribeevent",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_majesticblockstates",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_majesticblockstates_majesticblockstates",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_majesticblockstates_registerstatesandmodels",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_majesticitemmodels",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_majesticitemmodels_majesticitemmodels",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_majesticitemmodels_registermodels",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_majesticlang",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_majesticlang_addtranslations",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_majesticlang_majesticlang",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_researchnodejsonprovider",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_researchnodejsonprovider_getname",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_researchnodejsonprovider_researchnodejsonprovider",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_researchnodejsonprovider_run",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_ritualjsonprovider",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_ritualjsonprovider_getname",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_ritualjsonprovider_ritualjsonprovider",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_ritualjsonprovider_run",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_spelldata",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_spelljsonprovider",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_spelljsonprovider_getname",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_spelljsonprovider_run",
+      "src_main_java_com_skd_majestic_datagen_datagenerators_spelljsonprovider_spelljsonprovider"
+    ],
+    "1": [
+      "commandcontext",
+      "commanddispatcher",
+      "commandsourcestack",
+      "logger",
+      "mod",
+      "modcontainer",
+      "serverplayer",
+      "src_main_java_com_skd_majestic_command_majesticcommand",
+      "src_main_java_com_skd_majestic_command_majesticcommand_java_spelltype",
+      "src_main_java_com_skd_majestic_command_majesticcommand_majesticcommand",
+      "src_main_java_com_skd_majestic_command_majesticcommand_majesticcommand_majesticcommand",
+      "src_main_java_com_skd_majestic_command_majesticcommand_majesticcommand_register",
+      "src_main_java_com_skd_majestic_command_majesticcommand_majesticcommand_reportspellcooldown",
+      "src_main_java_com_skd_majestic_command_majesticcommand_majesticcommand_status",
+      "src_main_java_com_skd_majestic_magic_spell_majesticspells",
+      "src_main_java_com_skd_majestic_magic_spell_majesticspells_java_deferredholder",
+      "src_main_java_com_skd_majestic_magic_spell_majesticspells_java_deferredregister",
+      "src_main_java_com_skd_majestic_magic_spell_majesticspells_java_ieventbus",
+      "src_main_java_com_skd_majestic_magic_spell_majesticspells_java_spelltype",
+      "src_main_java_com_skd_majestic_magic_spell_majesticspells_majesticspells",
+      "src_main_java_com_skd_majestic_magic_spell_majesticspells_majesticspells_majesticspells",
+      "src_main_java_com_skd_majestic_magic_spell_majesticspells_majesticspells_register",
+      "src_main_java_com_skd_majestic_majestic",
+      "src_main_java_com_skd_majestic_majestic_java_ieventbus",
+      "src_main_java_com_skd_majestic_majestic_majestic",
+      "src_main_java_com_skd_majestic_majestic_majestic_majestic"
+    ],
+    "2": [
+      "baseentityblock",
+      "blockentity",
+      "blockentityticker",
+      "blockhitresult",
+      "interactionresult",
+      "mapcodec",
+      "nullable",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_astralaltarblock",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_astralaltarblock_astralaltarblock",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_astralaltarblock_codec",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_astralaltarblock_getticker",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_astralaltarblock_newblockentity",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_astralaltarblock_usewithoutitem",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_java_blockentitytype",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_java_blockpos",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_java_blockstate",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_java_level",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_java_override",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblock_java_player"
+    ],
+    "3": [
+      "ritual",
+      "ritualcontext",
+      "ritualresult",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_engravespellritual",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_engravespellritual_getdurationticks",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_engravespellritual_getessencecost",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_engravespellritual_getmultiblock",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_engravespellritual_gettype",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_engravespellritual_resolvespellid",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_engravespellritual_run",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_java_block",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_java_itemstack",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_java_multiblock",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_java_override",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_java_resourcelocation",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_java_ritualtype",
+      "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_java_tagkey"
+    ],
+    "4": [
+      "deferreditem",
+      "items",
+      "registerguilayersevent",
+      "src_main_java_com_skd_majestic_client_hud_essencehudoverlay",
+      "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_essencehudoverlay",
+      "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_essencehudoverlay_essencehudoverlay",
+      "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_essencehudoverlay_onregisterguilayers",
+      "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_java_eventbussubscriber",
+      "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_java_resourcelocation",
+      "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_java_subscribeevent",
+      "src_main_java_com_skd_majestic_content_item_majesticitems",
+      "src_main_java_com_skd_majestic_content_item_majesticitems_java_ieventbus",
+      "src_main_java_com_skd_majestic_content_item_majesticitems_java_item",
+      "src_main_java_com_skd_majestic_content_item_majesticitems_majesticitems",
+      "src_main_java_com_skd_majestic_content_item_majesticitems_majesticitems_majesticitems",
+      "src_main_java_com_skd_majestic_content_item_majesticitems_majesticitems_register"
+    ],
+    "5": [
+      "src_main_java_com_skd_majestic_magic_school_schools",
+      "src_main_java_com_skd_majestic_magic_school_schools_java_resourcelocation",
+      "src_main_java_com_skd_majestic_magic_school_schools_schools",
+      "src_main_java_com_skd_majestic_magic_school_schools_schools_schools",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_java_castcontext",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_java_castresult",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_java_override",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_java_resourcelocation",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_java_spelltype",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_starlightrevealspell",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_starlightrevealspell_cast",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_starlightrevealspell_getcooldownticks",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_starlightrevealspell_getcost",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_starlightrevealspell_getschool",
+      "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_starlightrevealspell_gettype"
+    ],
+    "6": [
+      "almanac_core",
+      "astral_core",
+      "docs_CONTENT_MAGIC_md",
+      "docs_curseforge_project_description_md",
+      "docs_curseforge_project_vars_md",
+      "docs_curseforge_versions_0_0_0-beta_2_md",
+      "expedition_core",
+      "geckolib",
+      "jei",
+      "majestic",
+      "readme",
+      "src_regalia_slots_api",
+      "vellumli"
+    ],
+    "7": [
+      "spell",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_java_castcontext",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_java_castresult",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_java_override",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_java_resourcelocation",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_java_spelltype",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_starlightboltspell",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_starlightboltspell_cast",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_starlightboltspell_getcooldownticks",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_starlightboltspell_getcost",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_starlightboltspell_getschool",
+      "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_starlightboltspell_gettype"
+    ],
+    "8": [
+      "blocks",
+      "deferredblock",
+      "src_main_java_com_skd_majestic_content_block_majesticblocks",
+      "src_main_java_com_skd_majestic_content_block_majesticblocks_java_block",
+      "src_main_java_com_skd_majestic_content_block_majesticblocks_java_blockentitytype",
+      "src_main_java_com_skd_majestic_content_block_majesticblocks_java_deferredholder",
+      "src_main_java_com_skd_majestic_content_block_majesticblocks_java_deferredregister",
+      "src_main_java_com_skd_majestic_content_block_majesticblocks_java_ieventbus",
+      "src_main_java_com_skd_majestic_content_block_majesticblocks_java_tagkey",
+      "src_main_java_com_skd_majestic_content_block_majesticblocks_majesticblocks",
+      "src_main_java_com_skd_majestic_content_block_majesticblocks_majesticblocks_majesticblocks",
+      "src_main_java_com_skd_majestic_content_block_majesticblocks_majesticblocks_register"
+    ],
+    "9": [
+      "interactionhand",
+      "interactionresultholder",
+      "item",
+      "src_main_java_com_skd_majestic_content_item_focusitem",
+      "src_main_java_com_skd_majestic_content_item_focusitem_focusitem",
+      "src_main_java_com_skd_majestic_content_item_focusitem_focusitem_focusitem",
+      "src_main_java_com_skd_majestic_content_item_focusitem_focusitem_use",
+      "src_main_java_com_skd_majestic_content_item_focusitem_java_itemstack",
+      "src_main_java_com_skd_majestic_content_item_focusitem_java_level",
+      "src_main_java_com_skd_majestic_content_item_focusitem_java_override",
+      "src_main_java_com_skd_majestic_content_item_focusitem_java_player",
+      "src_main_java_com_skd_majestic_content_item_focusitem_java_resourcelocation"
+    ],
+    "10": [
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell",
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_java_castcontext",
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_java_castresult",
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_java_override",
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_java_resourcelocation",
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_java_spelltype",
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_starlightsurgespell",
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_starlightsurgespell_cast",
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_starlightsurgespell_getcooldownticks",
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_starlightsurgespell_getcost",
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_starlightsurgespell_getschool",
+      "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_starlightsurgespell_gettype"
+    ],
+    "11": [
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell",
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_java_castcontext",
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_java_castresult",
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_java_override",
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_java_resourcelocation",
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_java_spelltype",
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_starlightwardspell",
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_starlightwardspell_cast",
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_starlightwardspell_getcooldownticks",
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_starlightwardspell_getcost",
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_starlightwardspell_getschool",
+      "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_starlightwardspell_gettype"
+    ],
+    "12": [
+      "altarblockentity",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblockentity",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblockentity_astralaltarblockentity",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblockentity_astralaltarblockentity_astralaltarblockentity",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblockentity_astralaltarblockentity_getexpectedmultiblock",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblockentity_java_block",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblockentity_java_blockpos",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblockentity_java_blockstate",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblockentity_java_multiblock",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblockentity_java_override",
+      "src_main_java_com_skd_majestic_content_block_astralaltarblockentity_java_tagkey"
+    ],
+    "13": [
+      "datacomponenttype",
+      "src_main_java_com_skd_majestic_content_component_majesticdatacomponents",
+      "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_java_deferredholder",
+      "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_java_deferredregister",
+      "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_java_ieventbus",
+      "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_java_resourcelocation",
+      "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_majesticdatacomponents",
+      "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_majesticdatacomponents_majesticdatacomponents",
+      "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_majesticdatacomponents_register"
+    ],
+    "14": [
+      "src_main_java_com_skd_majestic_magic_ritual_majesticrituals",
+      "src_main_java_com_skd_majestic_magic_ritual_majesticrituals_java_deferredholder",
+      "src_main_java_com_skd_majestic_magic_ritual_majesticrituals_java_deferredregister",
+      "src_main_java_com_skd_majestic_magic_ritual_majesticrituals_java_ieventbus",
+      "src_main_java_com_skd_majestic_magic_ritual_majesticrituals_java_ritualtype",
+      "src_main_java_com_skd_majestic_magic_ritual_majesticrituals_majesticrituals",
+      "src_main_java_com_skd_majestic_magic_ritual_majesticrituals_majesticrituals_majesticrituals",
+      "src_main_java_com_skd_majestic_magic_ritual_majesticrituals_majesticrituals_register"
+    ],
+    "15": [
+      "almanac_guide_book",
+      "astral_altar",
+      "blank_page",
+      "docs_curseforge_versions_0_0_0-beta_3_md",
+      "first_light",
+      "spell_sigils"
+    ],
+    "16": [
+      "docs_curseforge_versions_0_0_0-beta_1_md",
+      "starlight_bolt",
+      "starlight_focus",
+      "starlight_reveal",
+      "starlight_surge",
+      "starlight_ward"
+    ],
+    "17": [
+      "nodeunlockedevent",
+      "src_main_java_com_skd_majestic_content_event_majesticevents",
+      "src_main_java_com_skd_majestic_content_event_majesticevents_java_resourcelocation",
+      "src_main_java_com_skd_majestic_content_event_majesticevents_majesticevents",
+      "src_main_java_com_skd_majestic_content_event_majesticevents_majesticevents_majesticevents",
+      "src_main_java_com_skd_majestic_content_event_majesticevents_majesticevents_onnodeunlocked"
+    ],
+    "18": [
+      "gradlew",
+      "gradlew__entry",
+      "gradlew_die",
+      "gradlew_warn"
+    ],
+    "19": [
+      "build"
+    ],
+    "20": [
+      "changelog"
+    ],
+    "21": [
+      "settings"
+    ]
+  },
+  "cohesion": {
+    "0": 0.10960960960960961,
+    "1": 0.13846153846153847,
+    "2": 0.21578947368421053,
+    "3": 0.2222222222222222,
+    "4": 0.18333333333333332,
+    "5": 0.20833333333333334,
+    "6": 0.2564102564102564,
+    "7": 0.28205128205128205,
+    "8": 0.2878787878787879,
+    "9": 0.2727272727272727,
+    "10": 0.30303030303030304,
+    "11": 0.30303030303030304,
+    "12": 0.3090909090909091,
+    "13": 0.3611111111111111,
+    "14": 0.39285714285714285,
+    "15": 0.3333333333333333,
+    "16": 0.3333333333333333,
+    "17": 0.4666666666666667,
+    "18": 0.8333333333333334,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_main_java_com_skd_majestic_magic_ritual_engravespellritual_engravespellritual",
+      "label": "EngraveSpellRitual",
+      "degree": 13
+    },
+    {
+      "id": "majestic",
+      "label": "Majestic",
+      "degree": 13
+    },
+    {
+      "id": "src_main_java_com_skd_majestic_content_block_majesticblocks_majesticblocks",
+      "label": "MajesticBlocks",
+      "degree": 11
+    },
+    {
+      "id": "src_main_java_com_skd_majestic_magic_spell_majesticspells_majesticspells",
+      "label": "MajesticSpells",
+      "degree": 10
+    },
+    {
+      "id": "src_main_java_com_skd_majestic_magic_spell_starlightboltspell_starlightboltspell",
+      "label": "StarlightBoltSpell",
+      "degree": 9
+    },
+    {
+      "id": "src_main_java_com_skd_majestic_magic_spell_starlightrevealspell_starlightrevealspell",
+      "label": "StarlightRevealSpell",
+      "degree": 9
+    },
+    {
+      "id": "src_main_java_com_skd_majestic_magic_spell_starlightsurgespell_starlightsurgespell",
+      "label": "StarlightSurgeSpell",
+      "degree": 9
+    },
+    {
+      "id": "src_main_java_com_skd_majestic_magic_spell_starlightwardspell_starlightwardspell",
+      "label": "StarlightWardSpell",
+      "degree": 9
+    },
+    {
+      "id": "src_main_java_com_skd_majestic_content_block_astralaltarblock_astralaltarblock",
+      "label": "AstralAltarBlock",
+      "degree": 8
+    },
+    {
+      "id": "src_main_java_com_skd_majestic_content_block_astralaltarblockentity_astralaltarblockentity",
+      "label": "AstralAltarBlockEntity",
+      "degree": 8
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Project Description",
+      "target": "Majestic",
+      "source_files": [
+        "docs/curseforge/project_description.md",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "",
+      "why": "connects across different repos/directories; peripheral node `Project Description` unexpectedly reaches hub `Majestic`"
+    },
+    {
+      "source": "Project Variables",
+      "target": "Majestic",
+      "source_files": [
+        "docs/curseforge/project_vars.md",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "",
+      "why": "connects across different repos/directories; peripheral node `Project Variables` unexpectedly reaches hub `Majestic`"
+    },
+    {
+      "source": "Majestic - Content: Magic",
+      "target": "Astral Core",
+      "source_files": [
+        "docs/CONTENT_MAGIC.md",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "v0.0.0-beta.2 - Expedition Core & GeckoLib wired in",
+      "target": "Astral Core",
+      "source_files": [
+        "docs/curseforge/versions/0.0.0-beta.2.md",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "Majestic - Content: Magic",
+      "target": "Almanac Core",
+      "source_files": [
+        "docs/CONTENT_MAGIC.md",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "",
+      "why": "connects across different repos/directories"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Majestic` connect `Project Overview` to `Data Management`, `Majestic Spells`, `Item Registration`, `Majestic Blocks`, `Data Components`?",
+      "why": "High betweenness centrality (0.263) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `MajesticSpells` connect `Majestic Spells` to `Starlight Surge`, `Starlight Ward`, `Starlight Spells`, `Starlight Bolt`?",
+      "why": "High betweenness centrality (0.156) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `MajesticBlocks` connect `Majestic Blocks` to `Astral Altar Entity`?",
+      "why": "High betweenness centrality (0.086) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Changelog`, `JEI`, `Vellumli` to the rest of the system?",
+      "why": "5 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Data Management` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10960960960960961 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Majestic Spells` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13846153846153847 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
