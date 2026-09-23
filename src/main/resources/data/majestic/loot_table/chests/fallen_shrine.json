@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        { "type": "minecraft:item", "name": "majestic:star_fragment" }
+      ]
+    },
+    {
+      "rolls": { "type": "minecraft:uniform", "min": 1, "max": 3 },
+      "bonus_rolls": 0,
+      "entries": [
+        { "type": "minecraft:item", "name": "majestic:blank_page" }
+      ]
+    }
+  ]
+}

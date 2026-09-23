@@ -186,6 +186,47 @@ nodos Acto I, guía**. Alcance decidido para que sea autocontenido y no dependa 
   escriben a mano — no hay `Codec`/provider para ese formato todavía, excepción aceptada igual que
   el resto del ecosistema con formatos ajenos a un `Codec`.
 
+## 5c. Hito M3 — Fallen Shrine (Acto I) (2026-09-23)
+
+Primera estructura real del mod. Bloqueo de partida: una estructura jigsaw "de verdad" (piezas
+NBT) no se puede generar por texto — el usuario construye en el juego con un Structure Block
+(vanilla, sin mod adicional necesario) y exporta el `.nbt`; ver
+[`STRUCTURES_BUILD_GUIDE.md`](STRUCTURES_BUILD_GUIDE.md) para el flujo completo.
+
+**Alcance decidido**: `fallen_shrine` es una pieza única (sin conectores jigsaw) — jigsaw se usa
+solo como framework de registro (reutiliza el mismo `template_pool`/`structure`/`structure_set`
+que usaría una estructura multi-pieza), no porque haga falta variedad todavía. `observatory`
+(Acto II, jigsaw real con múltiples piezas + arena del jefe) queda para el siguiente hito.
+
+**Implementado por Claude directamente** (sin delegar en OpenCode — es casi 100% JSON de datapack
+más una línea de registro de ítem, no código Java sustancial):
+- Pieza `data/majestic/structures/fallen_shrine/shrine_01.nbt` (aportada por el usuario, construida
+  con Structure Block).
+- `worldgen/template_pool/fallen_shrine/start_pool.json` (1 elemento, `single_pool_element`,
+  `fallback: minecraft:empty`).
+- `worldgen/structure/fallen_shrine.json` (`type: minecraft:jigsaw`, `size: 1`, sin conectores).
+- `worldgen/structure_set/fallen_shrine.json` (`random_spread`, spacing 24/separation 10, salt
+  `20260923`).
+- Tag `tags/worldgen/biome/has_structure/fallen_shrine.json` (bosque/sabana/taiga/llanuras/prado —
+  no existe un tag vanilla genérico "overworld terrestre", se sigue la convención de vanilla de
+  listar biomas explícitos por estructura).
+- Loot table `loot_table/chests/fallen_shrine.json`: `majestic:star_fragment` garantizado (nuevo
+  ítem, llave del Acto II) + `majestic:blank_page` ×1-3.
+- Ítem `majestic:star_fragment` (`MajesticItems`), modelo + lang vía datagen.
+
+**Bloqueo real encontrado por Claude**: el `.nbt` exportado por el usuario **no contiene ningún
+cofre** — sin cofre, la loot table de arriba no tiene dónde aplicarse. Pendiente del usuario:
+colocar un cofre en la construcción, fijar su loot table ANTES de exportar con
+`/data merge block <x> <y> <z> {LootTable:"majestic:chests/fallen_shrine"}` (así es como vanilla
+guarda la referencia a la loot table directamente en el NBT del cofre, sin necesitar processors),
+y volver a guardar/copiar el `.nbt` (mismo nombre, sobrescribe). El resto del cableado ya está listo
+y no cambia.
+
+Verificado: `./gradlew build` limpio + arranque de **servidor dedicado real** (`runServer`, no
+`runGameTestServer` — este último nunca llega a generar mundo/recargar datapacks) hasta "Done" sin
+errores de carga de datapack. **Pendiente**: verificar en el juego que la estructura genera
+realmente en un chunk explorado (requiere jugar/explorar, no automatizable).
+
 ## 6. Historial
 
 | Fecha | Cambio |

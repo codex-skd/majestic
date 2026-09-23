@@ -180,6 +180,7 @@ public final class DataGenerators {
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "starlight_surge_sigil"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "astral_altar"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "astral_pillar"));
+            basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "star_fragment"));
         }
     }
 
@@ -198,6 +199,7 @@ public final class DataGenerators {
             add("item.majestic.starlight_surge_sigil", "Starlight Surge Sigil");
             add("block.majestic.astral_altar", "Astral Altar");
             add("block.majestic.astral_pillar", "Astral Pillar");
+            add("item.majestic.star_fragment", "Star Fragment");
             add("commands.majestic.status.essence", "Essence: %d/%d");
             add("commands.majestic.status.cooldown", "%s: on cooldown (%d ticks)");
             add("commands.majestic.status.no_cooldown", "%s: ready");

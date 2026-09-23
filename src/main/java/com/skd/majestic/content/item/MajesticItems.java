@@ -46,6 +46,12 @@ public final class MajesticItems {
             new Item.Properties()
     );
 
+    public static final DeferredItem<Item> STAR_FRAGMENT = ITEMS.registerItem(
+            "star_fragment",
+            Item::new,
+            new Item.Properties()
+    );
+
     private MajesticItems() {}
 
     public static void register(IEventBus modEventBus) {
