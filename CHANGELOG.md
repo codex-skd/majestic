@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.0-beta.4]
+
+### Added
+- **Fallen Shrine** (Act I): the mod's first real structure — a small ruined shrine of the Order
+  of Watchers, generated dispersed across forest/savanna/taiga/plains/meadow biomes. Built in-game
+  by hand with a Structure Block (see `docs/STRUCTURES_BUILD_GUIDE.md`).
+- Its chest drops `star_fragment` (guaranteed — a new item, the Act II key) plus 1-3 blank pages.
+
+### Notes
+- Single-piece structure for now — a real multi-piece jigsaw structure (`observatory`, Act II)
+  needs hand-built NBT pieces too and is the next structures milestone.
+- Implemented directly (JSON datapack content + one item registration, not substantial Java code —
+  no OpenCode delegation needed for this one). Verified with a real `runServer` boot (not
+  `runGameTestServer`, which never reaches world generation): clean boot, no datapack loading
+  errors. Actually finding the structure in an explored chunk still needs in-game play to confirm.
+
 ## [0.0.0-beta.3]
 
 ### Added

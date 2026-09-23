@@ -214,18 +214,17 @@ más una línea de registro de ítem, no código Java sustancial):
   ítem, llave del Acto II) + `majestic:blank_page` ×1-3.
 - Ítem `majestic:star_fragment` (`MajesticItems`), modelo + lang vía datagen.
 
-**Bloqueo real encontrado por Claude**: el `.nbt` exportado por el usuario **no contiene ningún
-cofre** — sin cofre, la loot table de arriba no tiene dónde aplicarse. Pendiente del usuario:
-colocar un cofre en la construcción, fijar su loot table ANTES de exportar con
-`/data merge block <x> <y> <z> {LootTable:"majestic:chests/fallen_shrine"}` (así es como vanilla
-guarda la referencia a la loot table directamente en el NBT del cofre, sin necesitar processors),
-y volver a guardar/copiar el `.nbt` (mismo nombre, sobrescribe). El resto del cableado ya está listo
-y no cambia.
+**Bloqueo real encontrado por Claude (resuelto)**: la primera exportación del usuario no tenía
+cofre; la segunda tenía un cofre pero con la loot table equivocada (`minecraft:chests/stronghold_library`,
+copiada de un ejemplo sin editar) — dos rondas de verificación (`gzip -dc` + búsqueda de la etiqueta
+`LootTable` en el NBT crudo) hasta confirmar `LootTable: "majestic:chests/fallen_shrine"` en la
+tercera exportación. Publicado en beta.4.
 
 Verificado: `./gradlew build` limpio + arranque de **servidor dedicado real** (`runServer`, no
 `runGameTestServer` — este último nunca llega a generar mundo/recargar datapacks) hasta "Done" sin
-errores de carga de datapack. **Pendiente**: verificar en el juego que la estructura genera
-realmente en un chunk explorado (requiere jugar/explorar, no automatizable).
+errores de carga de datapack, con el `.nbt` final (cofre + loot table correcta). **Pendiente**:
+verificar en el juego que la estructura genera realmente en un chunk explorado y que el cofre suelta
+el botín esperado (requiere jugar/explorar, no automatizable).
 
 ## 6. Historial
 
