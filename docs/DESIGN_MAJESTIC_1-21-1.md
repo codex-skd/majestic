@@ -228,6 +228,35 @@ errores de carga de datapack, con el `.nbt` final (cofre + loot table correcta).
 verificar en el juego que la estructura genera realmente en un chunk explorado y que el cofre suelta
 el botín esperado (requiere jugar/explorar, no automatizable).
 
+## 5d. Contaminación accidental de otra sesión + fix real de ruta (2026-09-23/24)
+
+Otra sesión de Claude (identificada como "Claude Opus 5.5" en el autor de los commits) trabajó por
+error contra este repo, aparentemente en una tarea de mantenimiento masivo de los repos hermanos
+(añadir CI/rama `main` a los que les faltaba) que incluyó `majestic` por descuido, **violando su
+regla explícita** (repo privado, solo rama `production`, sin espejo `main`, sin `.gitlab-ci.yml` —
+ver cabecera de este documento y `CLAUDE.md` del repo). Daño encontrado y corregido:
+
+- **`.gitlab-ci.yml` añadido indebidamente** (commits `4d6144b`/`14528c9`) → **eliminado** (este commit).
+- **Rama `minecraft/1.21.1/neoforge-21.1.249/main` creada y empujada al remoto** por ese mismo CI →
+  **borrada del remoto** (este commit/sesión). `majestic` vuelve a tener una única rama, `production`.
+- Esa misma sesión externa sí hizo un **fix real y correcto** (commit `fab2d5c`, beta.5): la ruta de
+  recurso de estructuras de datapack en 1.21.1 es `data/<ns>/structure/` (**singular**), no
+  `structures/` (plural) como se documentó por error en `STRUCTURES_BUILD_GUIDE.md` — confirmado
+  empíricamente listando el jar `neoforge-21.1.249-client-extra-aka-minecraft-resources.jar`
+  (`data/minecraft/structure/village/plains/...`). La carpeta `<mundo>/generated/<ns>/structures/`
+  (plural) que usa el Structure Block al exportar es un directorio distinto y sin relación con el
+  anterior — de ahí la confusión. `shrine_01.nbt` movido a `data/majestic/structure/fallen_shrine/`
+  y reemplazado por una exportación real de 1.21.1 (`DataVersion 3955`, verificado) — la versión
+  anterior era una exportación de otra versión de Minecraft (`DataVersion 4903`, "26.2"), que
+  tampoco habría funcionado aunque la ruta hubiera sido correcta.
+- `OBSERVATORY_BUILD_GUIDE.md` (escrito por Claude en esta sesión, en paralelo) no llegó a
+  mencionar la ruta final en el repo — solo la ruta de exportación del mundo (`generated/.../structures/`,
+  correcta tal cual, es la carpeta del mundo, no la del datapack) — no necesitó corrección.
+
+**Lección**: antes de asumir que una ruta de recurso de datapack es correcta por convención de
+versiones anteriores, verificar contra el jar real de la versión del proyecto en curso — el mismo
+error (asumir `structures/` plural) se coló en dos guías de este repo antes de detectarse.
+
 ## 6. Historial
 
 | Fecha | Cambio |
