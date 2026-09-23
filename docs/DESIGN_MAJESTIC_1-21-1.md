@@ -200,8 +200,10 @@ que usaría una estructura multi-pieza), no porque haga falta variedad todavía.
 
 **Implementado por Claude directamente** (sin delegar en OpenCode — es casi 100% JSON de datapack
 más una línea de registro de ítem, no código Java sustancial):
-- Pieza `data/majestic/structures/fallen_shrine/shrine_01.nbt` (aportada por el usuario, construida
-  con Structure Block).
+- Pieza `data/majestic/structure/fallen_shrine/shrine_01.nbt` — generada en el repo
+  [`taller_minecraft`](https://gitlab.com/stalking-dragons/minecraft/taller-minecraft)
+  (`structures/shrine/output/1.21.1/shrine.nbt`, DataVersion 3955, 2 cofres con
+  `majestic:chests/fallen_shrine`). Se regenera allí y se copia aquí; no editar a mano.
 - `worldgen/template_pool/fallen_shrine/start_pool.json` (1 elemento, `single_pool_element`,
   `fallback: minecraft:empty`).
 - `worldgen/structure/fallen_shrine.json` (`type: minecraft:jigsaw`, `size: 1`, sin conectores).

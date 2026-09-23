@@ -28,15 +28,17 @@
 4. Rellena:
    - **Structure name**: `majestic:<carpeta>/<pieza>` (ver nombres exactos en las secciones de
      abajo — el namespace `majestic:` es importante, así se guarda en
-     `data/majestic/structures/<carpeta>/<pieza>.nbt` dentro del mundo).
+     `generated/majestic/structures/<carpeta>/<pieza>.nbt` dentro del mundo).
    - **Offset / Size**: ajusta hasta que la caja roja cubra exactamente tu construcción (X = ancho,
      Y = alto, Z = profundidad).
    - Marca **Include entities** solo si has colocado alguna entidad a mano (normalmente no hace
      falta, los mobs se añaden por código).
 5. Pulsa **SAVE**. Sale un mensaje de éxito.
 6. El fichero queda en `<carpeta-del-mundo>/generated/majestic/structures/<carpeta>/<pieza>.nbt`.
-   Cópialo a `majestic/neoforge/1.21.1/src/main/resources/data/majestic/structures/<carpeta>/<pieza>.nbt`
-   en el repo (mantén la misma subcarpeta).
+   Cópialo a `majestic/neoforge/1.21.1/src/main/resources/data/majestic/structure/<carpeta>/<pieza>.nbt`
+   en el repo (mantén la misma subcarpeta). **Ojo**: en el mundo la carpeta es `structures` (plural),
+   pero dentro del mod/datapack es `structure` (singular desde 1.21) — si se copia a `structures/`
+   el juego no encuentra la plantilla y la estructura no genera nunca.
 7. Dime cuándo tengas los ficheros copiados — a partir de ahí yo delego el cableado en código
    (pools, structure set, loot tables, ítems nuevos).
 

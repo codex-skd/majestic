@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.0-beta.5]
+
+### Fixed
+- **Fallen Shrine never generated**: its template was shipped in `data/majestic/structures/`, but since
+  1.21 templates are loaded from `data/<ns>/structure/` (singular), so `majestic:fallen_shrine/shrine_01`
+  was never found. Moved to `data/majestic/structure/fallen_shrine/shrine_01.nbt`.
+- The template was a Minecraft 26.2 export (DataVersion 4903); replaced with the 1.21.1 export
+  (DataVersion 3955, validated against the 1.21.1 block report) from the `taller_minecraft` repo.
+  Same design: ruined shrine, 13×9×14, two chests rolling `majestic:chests/fallen_shrine`.
+
+### Docs
+- Structure build guide: correct in-mod path (`structure/`) vs world export path (`generated/<ns>/structures/`).
+
 ## [0.0.0-beta.4]
 
 ### Added
