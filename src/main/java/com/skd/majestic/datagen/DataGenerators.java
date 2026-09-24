@@ -7,6 +7,13 @@ import com.skd.majestic.content.block.MajesticBlocks;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.recipes.RecipeCategory;
+import net.minecraft.data.recipes.RecipeOutput;
+import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.world.item.Items;
+import com.skd.almanaccore.guide.VellumliBridge;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -33,6 +40,7 @@ public final class DataGenerators {
             generator.addProvider(true, new SpellJsonProvider(packOutput));
             generator.addProvider(true, new RitualJsonProvider(packOutput));
             generator.addProvider(true, new ResearchNodeJsonProvider(packOutput));
+            generator.addProvider(true, new MajesticRecipes(packOutput, lookupProvider));
         }
 
         if (event.includeClient()) {
@@ -188,6 +196,26 @@ public final class DataGenerators {
         }
     }
 
+    private static class MajesticRecipes extends RecipeProvider {
+        MajesticRecipes(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+            super(output, registries);
+        }
+
+        @Override
+        protected void buildRecipes(RecipeOutput output) {
+            // The guide book is a Vellumli book item carrying the majestic:almanac book component.
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+                            VellumliBridge.giveBookStack(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "almanac")))
+                    .pattern("LLL")
+                    .pattern("LBL")
+                    .pattern("LLL")
+                    .define('L', Items.LAPIS_LAZULI)
+                    .define('B', Items.BOOK)
+                    .unlockedBy("has_book", has(Items.BOOK))
+                    .save(output, ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "almanac"));
+        }
+    }
+
     private static class MajesticLang extends LanguageProvider {
         MajesticLang(PackOutput output) {
             super(output, Majestic.MOD_ID, "en_us");
@@ -213,6 +241,18 @@ public final class DataGenerators {
             add("entity.majestic.astral_construct", "Astral Construct");
             add("advancements.majestic.warden_of_the_gate.title", "Beyond the Gate");
             add("advancements.majestic.warden_of_the_gate.description", "Defeat the Warden of the Gate in the Observatory");
+            add("itemGroup.majestic.magic", "Majestic: Magic");
+            add("itemGroup.majestic.world", "Majestic: World");
+            add("book.majestic.almanac.name", "The Almanac");
+            add("book.majestic.almanac.landing_text", "A guide to the arcane arts of starlight.");
+            add("message.majestic.focus.no_spell", "No spell recorded on this focus.");
+            add("message.majestic.focus.cooldown", "Spell is on cooldown!");
+            add("hud.majestic.essence", "Essence: %d/%d");
+            add("spell.majestic.starlight_bolt", "Starlight Bolt");
+            add("spell.majestic.starlight_ward", "Starlight Ward");
+            add("spell.majestic.starlight_reveal", "Starlight Reveal");
+            add("spell.majestic.starlight_surge", "Starlight Surge");
+            add("commands.majestic.error", "Error: %s");
             add("commands.majestic.status.essence", "Essence: %d/%d");
             add("commands.majestic.status.cooldown", "%s: on cooldown (%d ticks)");
             add("commands.majestic.status.no_cooldown", "%s: ready");

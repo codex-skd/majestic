@@ -44,7 +44,7 @@ public class FocusItem extends Item {
         SpellType<?> spellType = AstralRegistries.SPELL_TYPES.get(spellId);
 
         if (spellType == null) {
-            serverPlayer.sendSystemMessage(Component.literal("No spell recorded on this focus."));
+            serverPlayer.sendSystemMessage(Component.translatable("message.majestic.focus.no_spell"));
             return InteractionResultHolder.fail(stack);
         }
 
@@ -52,7 +52,7 @@ public class FocusItem extends Item {
         ResearchApi.unlock(serverPlayer, FIRST_LIGHT_ID);
 
         if (CooldownTracker.isOnCooldown(serverPlayer, spellType)) {
-            serverPlayer.sendSystemMessage(Component.literal("Spell is on cooldown!"));
+            serverPlayer.sendSystemMessage(Component.translatable("message.majestic.focus.cooldown"));
             return InteractionResultHolder.fail(stack);
         }
 

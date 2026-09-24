@@ -16,7 +16,7 @@
 | Repo | `stalking-dragons/minecraft/majestic` |
 | Rama | `minecraft/1.21.1/neoforge-21.1.249/production` |
 | Deps reales | `astral_core`, `expedition_core`, `almanac_core`, `geckolib` |
-| Deps soft | `jei`, `vellumli` (transitivas vía `almanac_core`) |
+| Deps soft | `jei` (transitiva vía `almanac_core`). `vellumli` es **required** desde beta.12 (libro guía) |
 
 ---
 
@@ -298,6 +298,26 @@ invocado, sin excepciones; `runClient`: GeckoLib carga geo/animaciones del jefe 
 textura de `ether_lens` ausente, esperado). **Pendiente**: probar el combate completo en el juego (fases,
 pulsos, reinicio, botín, aparición real en un Observatory) y los assets del taller (constructo + lente).
 
+## 5g. Correcciones tras primera prueba en juego (2026-09-24, beta.12)
+
+Feedback del usuario tras jugar beta.11 y lo que destapó el análisis:
+
+| Problema reportado | Causa real | Solución |
+|---|---|---|
+| Ítems en inglés con el juego en español | No existía ningún `es_es` (E8 decía "a mano" y nunca se hizo) + textos fijos en código | `assets/majestic/lang/es_es.json` a mano (33 claves, paridad verificada con `en_us`) + libro `es_es/`; literales → claves |
+| No hay libro guía | 4 fallos: carpeta `patchouli_books/` (Vellumli lee `vellumli_books/`), sin `use_resource_pack` (excepción), Vellumli no declarado (crash latente al desbloquear `first_light`), solo se daba con `first_light` | Libro movido (`book.json` en `data/`, contenido en `assets/`), Vellumli **required**, entrega al primer login (flag en `PERSISTED_NBT_TAG`), receta (libro + 8 lapislázulis, datagen) |
+| No hay pestaña de creativo | J3 nunca implementado; además altar/pilar **sin `BlockItem`** | `MajesticCreativeTabs` (Magia, Mundo), `BlockItem`s registrados |
+| El jefe solo pega hacia delante / poco animado | La animación `attack` del taller es un tajo frontal (−100° pitch, −25° yaw); daño al inicio del golpe | Guía al taller [`BOSS_I_ANIMATION_V2_GUIDE.md`](BOSS_I_ANIMATION_V2_GUIDE.md) (barrido, golpe con onda, estocada, carrera, embestida) — el código se hará cuando llegue |
+
+Implementado por Claude directamente tras dos cortes de OpenCode por el sandbox (rechaza rutas que
+interpreta como externas y la sesión muere sin cambios).
+
+**Hueco de progresión detectado (pendiente de decisión)**: el Foco estelar, el Altar astral y el Pilar
+astral **no se pueden conseguir en supervivencia** (sin receta ni botín); los sigilos solo salen en el
+Observatory (Acto II) pero el grabado es del Acto I; las entradas de hechizos del libro dependen de
+advancements que ningún código concede. Requiere un pase de progresión (recetas + desbloqueos + entrada
+"Primeros pasos" en el libro).
+
 ## 6. Historial
 
 | Fecha | Cambio |
@@ -315,3 +335,4 @@ pulsos, reinicio, botín, aparición real en un Observatory) y los assets del ta
 | 2026-09-24 | **Texturas (beta.9)**: las 11 texturas de `TEXTURE_GUIDE.md` (9 ítems + 2 bloques) traídas desde `taller_minecraft/textures/majestic/output/1.21.1` (validación OK). Primer datagen de cliente commiteado (blockstates, modelos, `en_us`); borradas las copias manuales de `en_us.json`/`starlight_focus.json` que duplicaban la salida de datagen (con permiso del usuario). `runClient` arranca sin errores de modelo/textura de `majestic` en el log; sin verificación visual in-game. |
 | 2026-09-24 | **M5 — Jefe I (Warden of the Gate) implementado** (beta.10): jefe de 2 fases sobre el `BossEncounter` de `expedition_core`, esbirro `astral_construct`, Lente de éter, aparición al entrar en la arena del Observatory. Delegado a OpenCode `deepseek-v4.1-flash`, 2 correcciones de Claude. Ver §5f. |
 | 2026-09-24 | **Assets del taller para M5** (beta.11): modelo GeckoLib de `astral_construct` y textura `ether_lens` traídos de `taller_minecraft`; retirados los apaños de asset pendiente. `runClient` sin avisos de majestic. |
+| 2026-09-24 | **Correcciones tras prueba (beta.12)**: español, libro guía funcional (Vellumli required), pestañas de creativo, `BlockItem` de altar/pilar. Guía de animaciones v2 del jefe al taller. Ver §5g. |

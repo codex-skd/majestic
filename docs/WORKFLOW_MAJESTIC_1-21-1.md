@@ -36,7 +36,7 @@ ecosistema y aporta **todo lo concreto**:
 - Config, i18n (`en_us` generado, `es_es` a mano), assets.
 
 Dependencias (todas **externas, nunca jar-in-jar**): `astral_core`, `expedition_core`,
-`almanac_core`, `geckolib` = required; `jei`, `vellumli` = optional. En desarrollo las 3 librerías
+`almanac_core`, `geckolib`, `vellumli` = required; `jei` = optional. En desarrollo las 3 librerías
 SKD se consumen como `compileOnly files("libs/<jar>")`.
 
 ## Convenciones de nomenclatura
@@ -158,7 +158,7 @@ git push origin 1.21.1-neoforge-alpha.1
 
 CurseForge: proyecto **público, descarga libre**, `mod_license = All Rights Reserved`. Declarar
 `astral_core` / `expedition_core` / `almanac_core` / `geckolib` como **required dependencies** y
-`jei` / `vellumli` como **optional**.
+`vellumli` también como **required** (desde beta.12) y `jei` como **optional**.
 
 **3. Release estable** — `mod_version=1.0.0` + commit + tag `1.21.1-neoforge-1.0.0`.
 Los 4 mods del ecosistema (`astral_core`, `expedition_core`, `almanac_core`, `majestic`) suben a
@@ -215,6 +215,9 @@ Orden global y detalle en [`PROGRESSION.md §5`](PROGRESSION.md) y `§6` (alcanc
 3. **[hecho, falta probar en juego] Estructuras + Jefe I** — Fallen Shrine (M3), Observatory + arena (M4), Jefe I `warden_of_the_gate` (M5, ver `DESIGN_MAJESTIC_1-21-1.md §5f`). Assets del taller entregados (beta.11). Pendiente: altar T2. `expedition_core` M1.
 4. **Plano celeste** (**siguiente hito**) — dimensión, biomas, Actos III–IV, reliquias, jefes finales, tomos. `expedition_core` M2 + `almanac_core` M3.
 5. **Contenido v1 completo** (`PROGRESSION.md §6`) + pulido → `1.0.0` de los 4 mods.
+   - **Antes de la primera release (1.0.0): integrar más idiomas** además de `en_us` y `es_es` (pedido del usuario 2026-09-24).
+   - **Pase de progresión pendiente**: foco/altar/pilar sin forma de conseguirse en supervivencia, sigilos solo en el Acto II, entradas de hechizos del libro sin desbloqueo (ver `DESIGN_MAJESTIC_1-21-1.md §5g`).
+   - **Jefe I animaciones v2**: pendiente del taller (`BOSS_I_ANIMATION_V2_GUIDE.md`), luego cablear ataques en código.
 
 Claude compila y verifica cada hito (`./gradlew.bat runData build` + arranque `runClient`/`runServer`)
 antes de pasar al siguiente. La implementación se delega en OpenCode; el diseño, docs, git,

@@ -1,7 +1,9 @@
 package com.skd.majestic.content.item;
 
 import com.skd.majestic.Majestic;
+import com.skd.majestic.content.block.MajesticBlocks;
 import com.skd.majestic.content.entity.MajesticEntities;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.neoforged.bus.api.IEventBus;
@@ -65,6 +67,10 @@ public final class MajesticItems {
             Item::new,
             new Item.Properties()
     );
+
+    public static final DeferredItem<BlockItem> ASTRAL_ALTAR = ITEMS.registerSimpleBlockItem(MajesticBlocks.ASTRAL_ALTAR);
+
+    public static final DeferredItem<BlockItem> ASTRAL_PILLAR = ITEMS.registerSimpleBlockItem(MajesticBlocks.ASTRAL_PILLAR);
 
     public static final DeferredItem<Item> ETHER_LENS = ITEMS.registerItem(
             "ether_lens",

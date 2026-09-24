@@ -5,6 +5,7 @@ import com.skd.majestic.Majestic;
 import com.skd.majestic.content.item.MajesticItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -30,7 +31,7 @@ public final class EssenceHudOverlay {
 
             double essence = EssenceApi.get(mc.player);
             double capacity = EssenceApi.getCapacity(mc.player);
-            String text = String.format("Essence: %d/%d", (int) Math.round(essence), (int) Math.round(capacity));
+            Component text = Component.translatable("hud.majestic.essence", (int) Math.round(essence), (int) Math.round(capacity));
 
             guiGraphics.drawString(mc.font, text, 4, 4, 0xFFFFFF, true);
         });

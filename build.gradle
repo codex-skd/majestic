@@ -109,8 +109,14 @@ dependencies {
     // GeckoLib — real dependency (Act I-II bosses use expedition_core's GeoBossEntity/GeoBossRenderer base).
     implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
 
+    // vellumli (CC BY-NC-SA 3.0, real, required) — reads the majestic:almanac guide book
+    // (data/majestic/vellumli_books/). Sibling SKD repo, local jar, never bundled. Only its public
+    // VellumliAPI is called (through almanac_core's VellumliBridge) — no vellumli code is derived.
+    compileOnly files("libs/vellumli-${minecraft_version}-neoforge-${neo_version}-${vellumli_version}.jar")
+    localRuntime files("libs/vellumli-${minecraft_version}-neoforge-${neo_version}-${vellumli_version}.jar")
+
     // Wired in later milestones:
-    //   - jei / vellumli : soft, transitive via almanac_core
+    //   - jei : soft, transitive via almanac_core
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

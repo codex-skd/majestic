@@ -58,3 +58,4 @@ y se anota aquí con fecha.
 | 2026-09-08 | Autonomía total: fuera Mystical Realms y todos los mods de contenido de terceros. Dependencias = `common_toolkit`, `regalia_slots_api`, `vellumli` + excepciones GeckoLib (real) y JEI (soft). |
 | 2026-09-08 | `majestic` = All Rights Reserved; librerías = MIT. Sin bundling de dependencias. |
 | 2026-09-10 | Licencias confirmadas: `common_toolkit` MIT, `regalia_slots_api` LGPL-3.0 (uso como jar aparte, sin modificar). `astral_core`, `expedition_core`, `almanac_core` = required deps en CurseForge; `jei`/`vellumli` = optional. |
+| 2026-09-24 | `vellumli` pasa a **required** en `majestic` (no en `almanac_core`): el libro guía `majestic:almanac` depende de él y sin él el puente de guía fallaba (`NoClassDefFoundError`). Libro movido a `vellumli_books/` (`book.json` en `data/`, contenido en `assets/`, `use_resource_pack`). |

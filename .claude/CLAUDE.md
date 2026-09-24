@@ -14,7 +14,7 @@ grupo `stalking-dragons/minecraft`. Construye sobre `astral_core`, `expedition_c
 
 - **Licencia: All Rights Reserved.** `mod_license=All Rights Reserved`, `LICENSE` propio. Repo **privado**, **solo rama `production`**, **sin espejo `main`**, **sin `.gitlab-ci.yml`** de mirror. CI (build/test) se puede añadir más adelante.
 - CurseForge: proyecto **público, descarga libre**, licencia ARR.
-- **Sin bundling / jar-in-jar** de NINGUNA dependencia. `astral_core`, `expedition_core`, `almanac_core`, `geckolib` = required deps en `neoforge.mods.toml` y en CurseForge; `jei`, `vellumli` = optional.
+- **Sin bundling / jar-in-jar** de NINGUNA dependencia. `astral_core`, `expedition_core`, `almanac_core`, `geckolib`, `vellumli` = required deps en `neoforge.mods.toml` y en CurseForge (vellumli required desde beta.12: lee el libro guía); `jei` = optional.
 - En desarrollo, las 3 librerías SKD se consumen como `compileOnly files("libs/<jar>")` (jars construidos de los repos hermanos).
 - **Todo el contenido por datagen** (E8). `es_es` a mano; `en_us` generado.
 - 3 creative tabs: magia / mundo / reliquias (J3).

@@ -2,7 +2,30 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.0-beta.11]
+## [0.0.0-beta.12]
+
+### Added
+- **Traducción al español** (`es_es`): todos los ítems, bloques, entidades, pestañas, mensajes, HUD, comando y
+  el contenido del libro guía.
+- **Pestañas de creativo** "Majestic: Magia" y "Majestic: Mundo" (la de Reliquias llegará con las reliquias).
+  Los huevos de spawn también aparecen en la pestaña vanilla de huevos.
+- **Ítems del Altar astral y el Pilar astral**: nunca se habían registrado, no se podían tener en el inventario.
+- **Libro guía "El Almanaque"**: se entrega la primera vez que el jugador entra al mundo (una sola vez) y se
+  fabrica con un libro rodeado de 8 lapislázulis.
+
+### Fixed
+- El libro guía no existía en el juego: estaba en `data/majestic/patchouli_books/` (Vellumli lee
+  `vellumli_books/`) y sin `use_resource_pack`, que Vellumli exige (lanzaba excepción y lo descartaba).
+  Ahora `book.json` en `data/majestic/vellumli_books/almanac/` y el contenido en `assets/`.
+- Desbloquear el nodo `first_light` sin Vellumli instalado provocaba `NoClassDefFoundError`.
+- Textos fijos en inglés (mensajes del foco, comando `/majestic status`, HUD de esencia) pasados a claves de
+  traducción.
+
+### Changed
+- **Vellumli pasa a ser dependencia obligatoria** (antes no estaba declarada).
+- El libro ya no se entrega al desbloquear `first_light` (se da al entrar).
+
+
 
 ### Added
 - Modelo, animaciones y textura GeckoLib del **Constructo astral** (del taller): deja de ser invisible.

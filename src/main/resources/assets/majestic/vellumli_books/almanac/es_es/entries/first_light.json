@@ -1,0 +1,13 @@
+{
+  "name": "Primera luz",
+  "category": "majestic:research",
+  "icon": "minecraft:nether_star",
+  "sort_num": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Tu primer paso en las artes arcanas. Este saber se desbloquea simplemente al usar tu Foco estelar para lanzar un hechizo."
+    }
+  ],
+  "advancement": "majestic:guide/first_light"
+}

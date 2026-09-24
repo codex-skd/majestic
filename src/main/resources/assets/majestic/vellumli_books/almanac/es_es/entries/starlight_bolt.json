@@ -1,0 +1,14 @@
+{
+  "name": "Rayo estelar",
+  "category": "majestic:spells",
+  "icon": "majestic:starlight_focus",
+  "sort_num": 1,
+  "page_icon": "majestic:starlight_focus",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Un rayo de luz estelar concentrada que daña y ciega al objetivo. Inflige 4 de daño y causa ceguera."
+    }
+  ],
+  "advancement": "majestic:guide/starlight_bolt"
+}

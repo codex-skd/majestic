@@ -49,5 +49,12 @@ description='''Majestic is a magic and adventure mod: arcane-celestial magic —
     ordering="AFTER"
     side="BOTH"
 
+[[dependencies.${mod_id}]]
+    modId="vellumli"
+    type="required"
+    versionRange="[1.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
 # Wired when needed:
-#   jei, vellumli -> type="optional"
+#   jei -> type="optional"

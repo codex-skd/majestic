@@ -7,7 +7,7 @@ project_id = 1692772
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
 game_versions = 9638, 9639, 11779, 10150
 release_type = beta
-relations = astral-core:requiredDependency,almanac-core:requiredDependency,expedition-core:requiredDependency,geckolib:requiredDependency
+relations = astral-core:requiredDependency,almanac-core:requiredDependency,expedition-core:requiredDependency,geckolib:requiredDependency,vellumli:requiredDependency
 ```
 
 ## Proyecto
@@ -35,7 +35,7 @@ Autenticación Upload: cabecera `X-Api-Token`. Core: cabecera `x-api-key`.
 | `neoforge_version` (loader) | `21.1.249` |
 | `framework` | `neoforge` |
 | `java_version` | `21` |
-| `version` (`gradle.properties`) | `0.0.0-beta.11` |
+| `version` (`gradle.properties`) | `0.0.0-beta.12` |
 | `environment` | `Client`, `Server` (requerido en ambos) |
 
 ## Rama
@@ -46,7 +46,7 @@ minecraft/1.21.1/neoforge-21.1.249/production
 
 ## Tag
 
-Formato: `<mc-version>-<framework>-<version>`. Actual: `1.21.1-neoforge-beta.11`.
+Formato: `<mc-version>-<framework>-<version>`. Actual: `1.21.1-neoforge-beta.12`.
 
 ### IDs de `gameVersions` para 1.21.1 (verificados, mismos que el resto de mods 1.21.1 del workspace)
 

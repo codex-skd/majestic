@@ -27,30 +27,30 @@ public final class MajesticCommand {
             double essence = EssenceApi.get(player);
             double capacity = EssenceApi.getCapacity(player);
             context.getSource().sendSuccess(() ->
-                    Component.literal(String.format("Essence: %d/%d", (int) Math.round(essence), (int) Math.round(capacity))),
+                    Component.translatable("commands.majestic.status.essence", (int) Math.round(essence), (int) Math.round(capacity)),
                     false);
 
-            reportSpellCooldown(context, player, "Starlight Bolt", MajesticSpells.STARLIGHT_BOLT.get());
-            reportSpellCooldown(context, player, "Starlight Ward", MajesticSpells.STARLIGHT_WARD.get());
-            reportSpellCooldown(context, player, "Starlight Reveal", MajesticSpells.STARLIGHT_REVEAL.get());
-            reportSpellCooldown(context, player, "Starlight Surge", MajesticSpells.STARLIGHT_SURGE.get());
+            reportSpellCooldown(context, player, "spell.majestic.starlight_bolt", MajesticSpells.STARLIGHT_BOLT.get());
+            reportSpellCooldown(context, player, "spell.majestic.starlight_ward", MajesticSpells.STARLIGHT_WARD.get());
+            reportSpellCooldown(context, player, "spell.majestic.starlight_reveal", MajesticSpells.STARLIGHT_REVEAL.get());
+            reportSpellCooldown(context, player, "spell.majestic.starlight_surge", MajesticSpells.STARLIGHT_SURGE.get());
 
             return 1;
         } catch (Exception e) {
-            context.getSource().sendFailure(Component.literal("Error: " + e.getMessage()));
+            context.getSource().sendFailure(Component.translatable("commands.majestic.error", String.valueOf(e.getMessage())));
             return 0;
         }
     }
 
-    private static void reportSpellCooldown(CommandContext<CommandSourceStack> context, ServerPlayer player, String name, SpellType<?> spellType) {
+    private static void reportSpellCooldown(CommandContext<CommandSourceStack> context, ServerPlayer player, String nameKey, SpellType<?> spellType) {
         int remaining = CooldownTracker.get(player, spellType);
         if (remaining > 0) {
             context.getSource().sendSuccess(() ->
-                    Component.literal(String.format("%s: on cooldown (%d ticks)", name, remaining)),
+                    Component.translatable("commands.majestic.status.cooldown", Component.translatable(nameKey), remaining),
                     false);
         } else {
             context.getSource().sendSuccess(() ->
-                    Component.literal(String.format("%s: ready", name)),
+                    Component.translatable("commands.majestic.status.no_cooldown", Component.translatable(nameKey)),
                     false);
         }
     }
