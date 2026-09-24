@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1790256424.3043964,
-    "ast_hash": "884ad580aad17e7f3429568eec7290f6",
+    "mtime": 1790285757.822988,
+    "ast_hash": "33577bce2adc5dcc9d8eb5af8d15cfab",
     "semantic_hash": ""
   },
   "README.md": {
@@ -280,8 +280,8 @@
     "semantic_hash": ""
   },
   "docs/DESIGN_MAJESTIC_1-21-1.md": {
-    "mtime": 1790256424.312188,
-    "ast_hash": "7e7288d928dc6af7920dafa1efd0fa1b",
+    "mtime": 1790285757.8245573,
+    "ast_hash": "3ab9c03c10840678980778e6c0d2b94a",
     "semantic_hash": ""
   },
   "docs/INTEGRATIONS.md": {
@@ -320,8 +320,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_MAJESTIC_1-21-1.md": {
-    "mtime": 1790256424.322805,
-    "ast_hash": "eeb7a2ece766f59e2b258bd837bfde1c",
+    "mtime": 1790285757.8311713,
+    "ast_hash": "b09a0b0b76a33f89dd578115da610ea2",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -330,8 +330,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1790256424.3244588,
-    "ast_hash": "4a02062e318d091524c1d44c16c77907",
+    "mtime": 1790285757.8321764,
+    "ast_hash": "598f6fc30cf3fb9e5f07c984ffbb4260",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -570,8 +570,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/content/entity/boss/WardenOfTheGate.java": {
-    "mtime": 1790248655.921686,
-    "ast_hash": "0bf195db7f8bac139aecd95299523cb7",
+    "mtime": 1790285557.8297937,
+    "ast_hash": "00257e505120ac50f75203ecfbf1c128",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/content/event/ArenaSpawnEvents.java": {
@@ -580,8 +580,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/animations/warden_of_the_gate.animation.json": {
-    "mtime": 1790242506.3464348,
-    "ast_hash": "d7148622ac3b9d0dda2187140ee1ccaf",
+    "mtime": 1790285132.990487,
+    "ast_hash": "b21ea5c6195ab224773c2d384326f962",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/geo/warden_of_the_gate.geo.json": {
@@ -762,6 +762,16 @@
   "docs/curseforge/versions/0.0.0-beta.11.md": {
     "mtime": 1790254581.7591412,
     "ast_hash": "c3234691cfe15ddaec0a5f622dc1e1c5",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/content/entity/boss/WardenAttackGoal.java": {
+    "mtime": 1790285389.2570312,
+    "ast_hash": "9632d60d9ac1ffbf5c91a6fabca6b13e",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.12.md": {
+    "mtime": 1790263016.9511282,
+    "ast_hash": "f8820bddfc15dae18f775b47471ccf84",
     "semantic_hash": ""
   }
 }
