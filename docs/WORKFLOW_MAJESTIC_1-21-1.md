@@ -198,6 +198,10 @@ Leer solo `GRAPH_REPORT.md`, nunca `graph.json`/`graph.html`. Sin copias fechada
 | README.md | **Inglés** (en-US) |
 | Documentación interna (docs/, CHANGELOG, WORKFLOW) | **Castellano** (es-ES) |
 | CurseForge (descripción, release notes) | **Inglés** (en-US) |
+| Guías para `taller_minecraft` (`*_MODEL_GUIDE.md`, tandas nuevas de `TEXTURE_GUIDE.md`) | **Inglés** (en-US) — mejor comprensión en el taller |
+
+**Guías para el taller**: el taller genera y valida todo en su propio repo (`taller_minecraft/.../output/`);
+nunca se le pide copiar nada a majestic ni a otro proyecto. Majestic trae los ficheros desde ahí.
 
 ---
 

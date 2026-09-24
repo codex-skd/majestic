@@ -18,7 +18,10 @@
 - **Vista**: frontal/icono de inventario (igual que cualquier ítem vanilla — no isométrica, no 3D).
 - **Programa**: cualquier editor de pixel art (Aseprite, Piskel —gratis, en el navegador—, GIMP con
   zoom a píxel, o el propio editor de texturas de Blockbench). No hace falta nada especializado.
-- **Ruta de guardado**: `majestic/neoforge/1.21.1/src/main/resources/assets/majestic/textures/item/<nombre>.png`
+- **Entrega**: se generan y validan en el repo `taller_minecraft`
+  (`textures/majestic/output/1.21.1/assets/majestic/textures/item/<nombre>.png`); majestic las trae
+  desde ahí. El taller no copia nada a este proyecto. Ruta final dentro del mod, como referencia:
+  `assets/majestic/textures/item/<nombre>.png`
   (para ítems) o `.../textures/block/<nombre>.png` (para bloques) — nombres exactos en las tablas
   de abajo.
 
@@ -134,34 +137,37 @@ correspondiente arriba):
 
 ---
 
-## 4. Tanda 2 — hito Jefe I (pendiente del taller)
+## 4. Batch 2 — Boss I milestone (pending, for taller_minecraft)
 
-Las 11 texturas de arriba ya están hechas (beta.9). Esta tanda añade las del hito del Jefe I. Mismo
-formato técnico (§0) y misma paleta.
+> In English for the taller. Batch 1 (§1–§2) is done (beta.9). Same technical format (§0: 16×16 PNG,
+> real alpha, flat pixel art, 1px dark outline) and same palette.
+>
+> **Delivery**: produce and validate inside `taller_minecraft` only
+> (`textures/majestic/output/1.21.1/assets/majestic/textures/item/ether_lens.png` + the validation
+> file, as in batch 1). Do not copy anything into majestic — majestic pulls it from there.
 
-### `ether_lens.png` (ítem, `textures/item/`)
-**Lente de éter** — botín garantizado de `warden_of_the_gate` y **llave de la dimensión** (Acto III).
-Tiene que leerse como objeto importante, un escalón por encima del Fragmento estelar.
-- Una lente/monóculo circular de cristal en un aro de metal envejecido, con una pequeña asa o
-  cadena corta a un lado (como una lupa antigua o un astrolabio de bolsillo).
-- Aro: dorado apagado (`#d4af6a`) con sombra más oscura; 1px de contorno oscuro.
-- Cristal: **azul-violeta etéreo** — introduce un tono nuevo para la escuela Éter (sugerido
-  `#9a8cd8` → `#c8c0f0`), con 2-3 píxeles casi blancos de reflejo en diagonal y un punto de brillo
-  en el centro. Debe distinguirse claramente del azul pálido "astral" de los sigilos.
-- Un único ítem, sin variante animada (`.mcmeta`) en esta tanda.
+### `ether_lens.png` (item)
+**Ether Lens** — guaranteed drop of `warden_of_the_gate` and the **key to the dimension** (Act III).
+It must read as an important item, a step above the Star Fragment.
+- A round crystal lens in an aged metal ring, with a small handle or short chain on one side (like an
+  antique magnifying glass or a pocket astrolabe).
+- Ring: muted gold (`#d4af6a`) with a darker shade; 1px dark outline.
+- Crystal: **ethereal blue-violet** — a new hue for the Ether school (suggested `#9a8cd8` →
+  `#c8c0f0`), with 2–3 near-white diagonal reflection pixels and one bright point in the centre. It
+  must be clearly distinct from the pale "astral" blue used on the sigils.
+- Single static item, no animated variant (`.mcmeta`) in this batch.
 
-### Modelo de entidad: `astral_construct`
-Modelo GeckoLib completo (geo + animaciones + textura 64×64) — especificación aparte en
+### Entity model: `astral_construct`
+Full GeckoLib model (geo + animations + 64×64 texture) — separate spec in
 [`ASTRAL_CONSTRUCT_MODEL_GUIDE.md`](ASTRAL_CONSTRUCT_MODEL_GUIDE.md).
 
-### Lo que NO hace falta
-- Huevos de spawn (`warden_of_the_gate_spawn_egg`, `astral_construct_spawn_egg`): usan la plantilla
-  vanilla tintada, sin textura propia.
-- Partículas del pulso de luz de la fase 2: se usan partículas vanilla (`END_ROD`, `FLASH`).
+### Not needed
+- Spawn eggs (`warden_of_the_gate_spawn_egg`, `astral_construct_spawn_egg`): they use the tinted
+  vanilla template, no texture of their own.
+- Particles for the phase-2 light pulse: vanilla particles (`END_ROD`, `FLASH`).
 
 ## 5. Cuando termines
 
-Copia cada PNG directamente a su ruta (`textures/item/` o `textures/block/`) — no hace falta que
-me pases nada ni que yo las cablee, los modelos ya están generados por datagen apuntando a esos
-nombres exactos. Solo avísame para hacer un build + arranque de cliente y confirmar visualmente que
-cargan bien (sin el rombo morado/negro).
+Basta con dejarlas generadas y validadas en `taller_minecraft` (`VALIDATION OK`). Majestic las trae
+de ahí, hace build + arranque de cliente y confirma que cargan (sin el rombo morado/negro). Los
+modelos ya los genera datagen con esos nombres exactos.

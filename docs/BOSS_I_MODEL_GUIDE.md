@@ -28,14 +28,14 @@ más adelante — el modelo solo necesita una animación para el momento de la t
 
 ## 2. Ficheros a exportar (3, rutas exactas)
 
-| Fichero | Ruta en el repo | Qué exporta |
+| Fichero | Ruta dentro del mod (referencia) | Qué exporta |
 |---|---|---|
 | Geometría | `src/main/resources/assets/majestic/geo/warden_of_the_gate.geo.json` | Blockbench → Export → "Export Bedrock Geometry" |
 | Animaciones | `src/main/resources/assets/majestic/animations/warden_of_the_gate.animation.json` | Blockbench → pestaña Animate → Export → "Export Bedrock Animation" |
 | Textura | `src/main/resources/assets/majestic/textures/entity/warden_of_the_gate.png` | Blockbench → Textures → guardar el PNG del proyecto |
 
-(Estas 3 rutas son las que GeckoLib espera por convención — no hace falta que me las pases, cópialas
-directamente ahí cuando termines.)
+(Estas 3 rutas son las que GeckoLib espera por convención. El taller las genera en su propio repo con
+la misma estructura bajo `output/1.21.1/`; majestic las trae desde ahí — el taller no copia nada al mod.)
 
 ---
 
@@ -102,7 +102,7 @@ necesitas tocar nada de Java — solo los 3 ficheros de Blockbench en las rutas 
 
 ## 6. Cuando termines
 
-Copia los 3 ficheros a sus rutas exactas (sección 2) y avísame. Si solo tienes tiempo para un
+Deja los 3 ficheros generados y validados en `taller_minecraft` (sección 2); majestic los trae desde ahí. Si solo tienes tiempo para un
 primer pase, prioriza en este orden: geometría + textura básica + `idle`/`walk`/`attack` (el jefe ya
 sería jugable con esas 3 animaciones); `summon`/`phase_transition`/`death` se pueden añadir después
 sin rehacer nada.
