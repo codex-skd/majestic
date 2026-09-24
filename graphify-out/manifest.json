@@ -1,8 +1,8 @@
 {
   "build.gradle": {
-    "mtime": 1790106187.2102053,
-    "ast_hash": "f4a02e3dae2d8eaf658480e2035a47f3",
-    "semantic_hash": "f4a02e3dae2d8eaf658480e2035a47f3"
+    "mtime": 1790255974.3916728,
+    "ast_hash": "ce9db2605cdeec19fdc533e8b3bb684b",
+    "semantic_hash": ""
   },
   "gradlew": {
     "mtime": 1789088323.4827788,
@@ -15,19 +15,19 @@
     "semantic_hash": "ba08ad30df8cc6dfa7c71572775452a6"
   },
   "src/main/java/com/skd/majestic/Majestic.java": {
-    "mtime": 1790248336.4663353,
-    "ast_hash": "c5b57ceae897f4aefa9db3eb7950f175",
+    "mtime": 1790256247.5376153,
+    "ast_hash": "732c2b1b6c56d676aa9258b192a8a876",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/client/hud/EssenceHudOverlay.java": {
-    "mtime": 1789131965.900325,
-    "ast_hash": "34d0c5eebdf68cbfee2df0e3cb6cc5af",
-    "semantic_hash": "34d0c5eebdf68cbfee2df0e3cb6cc5af"
+    "mtime": 1790256212.7428372,
+    "ast_hash": "e58b700076ebb5a5628669159752a1eb",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/command/MajesticCommand.java": {
-    "mtime": 1789132566.7439287,
-    "ast_hash": "2d35bf3f47d8ae736ed1b6f71aa67b5a",
-    "semantic_hash": "2d35bf3f47d8ae736ed1b6f71aa67b5a"
+    "mtime": 1790256208.0505755,
+    "ast_hash": "ec417763ff954329f2571ca2f3f0ad50",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/content/block/AstralAltarBlock.java": {
     "mtime": 1790108707.4752438,
@@ -50,23 +50,23 @@
     "semantic_hash": "f25d70f4740e9b3b0ec813890fd6a2fb"
   },
   "src/main/java/com/skd/majestic/content/event/MajesticEvents.java": {
-    "mtime": 1790108992.6163816,
-    "ast_hash": "a864f4fe7fe193e6393f4aefe57f13d8",
-    "semantic_hash": "a864f4fe7fe193e6393f4aefe57f13d8"
+    "mtime": 1790256241.531489,
+    "ast_hash": "3a45ca3f59797a0ade078279811178a5",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/content/item/FocusItem.java": {
-    "mtime": 1790108590.511068,
-    "ast_hash": "6512b7b207afe76ec1e6f1388e0cd5bb",
-    "semantic_hash": "6512b7b207afe76ec1e6f1388e0cd5bb"
+    "mtime": 1790256208.0442953,
+    "ast_hash": "21fd55b12b75ff3a97c9909637ce56f6",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/content/item/MajesticItems.java": {
-    "mtime": 1790248318.8429742,
-    "ast_hash": "2abb6b5fb7655442ea6db7596e9e4636",
+    "mtime": 1790256233.0581312,
+    "ast_hash": "21262f1ad8e646dda84eec9992e7865e",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/datagen/DataGenerators.java": {
-    "mtime": 1790254243.4456227,
-    "ast_hash": "8ac1f78e4b1d74bb057eee50d1417c61",
+    "mtime": 1790256263.1068447,
+    "ast_hash": "b5aba9f4720ff8bac68f9fe8cdee1a9d",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/magic/ritual/EngraveSpellRitual.java": {
@@ -138,56 +138,6 @@
     "mtime": 1790108630.3534558,
     "ast_hash": "7133fd402f88aad4aec69778b20970ab",
     "semantic_hash": "7133fd402f88aad4aec69778b20970ab"
-  },
-  "src/main/resources/data/majestic/patchouli_books/almanac/book.json": {
-    "mtime": 1790108607.4982579,
-    "ast_hash": "a0ea28c058cb67e8b33113733cf9c00b",
-    "semantic_hash": "a0ea28c058cb67e8b33113733cf9c00b"
-  },
-  "src/main/resources/data/majestic/patchouli_books/almanac/en_us/categories/research.json": {
-    "mtime": 1790108612.695447,
-    "ast_hash": "ada8ec8f05524ecd21b96cf1ce014c68",
-    "semantic_hash": "ada8ec8f05524ecd21b96cf1ce014c68"
-  },
-  "src/main/resources/data/majestic/patchouli_books/almanac/en_us/categories/rituals.json": {
-    "mtime": 1790108611.6901402,
-    "ast_hash": "7fabd6c6eb918613352b8203e23a9389",
-    "semantic_hash": "7fabd6c6eb918613352b8203e23a9389"
-  },
-  "src/main/resources/data/majestic/patchouli_books/almanac/en_us/categories/spells.json": {
-    "mtime": 1790108610.8736544,
-    "ast_hash": "10a9f2e390f5705a368c6d741b0037fb",
-    "semantic_hash": "10a9f2e390f5705a368c6d741b0037fb"
-  },
-  "src/main/resources/data/majestic/patchouli_books/almanac/en_us/entries/engrave_spell.json": {
-    "mtime": 1790108625.1735632,
-    "ast_hash": "85cd5096d4601469162da7db40643c58",
-    "semantic_hash": "85cd5096d4601469162da7db40643c58"
-  },
-  "src/main/resources/data/majestic/patchouli_books/almanac/en_us/entries/first_light.json": {
-    "mtime": 1790108626.3165555,
-    "ast_hash": "041cb3e87eeeaaec0d4a1309e6633b36",
-    "semantic_hash": "041cb3e87eeeaaec0d4a1309e6633b36"
-  },
-  "src/main/resources/data/majestic/patchouli_books/almanac/en_us/entries/starlight_bolt.json": {
-    "mtime": 1790108617.1243315,
-    "ast_hash": "5706b5470095a2c74dbecb86a04c4053",
-    "semantic_hash": "5706b5470095a2c74dbecb86a04c4053"
-  },
-  "src/main/resources/data/majestic/patchouli_books/almanac/en_us/entries/starlight_reveal.json": {
-    "mtime": 1790108619.7448976,
-    "ast_hash": "4f8db35926850d52378c333180c756e5",
-    "semantic_hash": "4f8db35926850d52378c333180c756e5"
-  },
-  "src/main/resources/data/majestic/patchouli_books/almanac/en_us/entries/starlight_surge.json": {
-    "mtime": 1790108623.7186823,
-    "ast_hash": "f799e29792d4a4784a2d121a4dfcd56b",
-    "semantic_hash": "f799e29792d4a4784a2d121a4dfcd56b"
-  },
-  "src/main/resources/data/majestic/patchouli_books/almanac/en_us/entries/starlight_ward.json": {
-    "mtime": 1790108618.4532146,
-    "ast_hash": "3c6048730844aa47face91c3e85fbb7f",
-    "semantic_hash": "3c6048730844aa47face91c3e85fbb7f"
   },
   "src/main/resources/data/majestic/tags/blocks/altar_pillar.json": {
     "mtime": 1790108605.8393095,
@@ -295,8 +245,8 @@
     "semantic_hash": ""
   },
   ".claude/CLAUDE.md": {
-    "mtime": 1789088415.9988143,
-    "ast_hash": "db7896133f311fcfcde35598446763d0",
+    "mtime": 1790256399.8993433,
+    "ast_hash": "bc670012e9841db9bc4259836d200639",
     "semantic_hash": ""
   },
   ".gitlab-ci.yml": {
@@ -305,8 +255,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1790254320.8397763,
-    "ast_hash": "dedd0150139cb634f000451398d8b46c",
+    "mtime": 1790256424.3043964,
+    "ast_hash": "884ad580aad17e7f3429568eec7290f6",
     "semantic_hash": ""
   },
   "README.md": {
@@ -325,18 +275,18 @@
     "semantic_hash": ""
   },
   "docs/DESIGN_ECOSYSTEM.md": {
-    "mtime": 1789088520.1592605,
-    "ast_hash": "49261ccf8dbdfac22175b0405feab3de",
+    "mtime": 1790256399.8993433,
+    "ast_hash": "5ddd4e5e6b40dafde4e1e11304eae87f",
     "semantic_hash": ""
   },
   "docs/DESIGN_MAJESTIC_1-21-1.md": {
-    "mtime": 1790254320.840905,
-    "ast_hash": "ae2b7543cd38b6b1a13212867ec235c2",
+    "mtime": 1790256424.312188,
+    "ast_hash": "7e7288d928dc6af7920dafa1efd0fa1b",
     "semantic_hash": ""
   },
   "docs/INTEGRATIONS.md": {
-    "mtime": 1788991660.2617881,
-    "ast_hash": "51970cca2d159e238eaf0c1abd302600",
+    "mtime": 1790256399.8993433,
+    "ast_hash": "38b5e2b4253fdd30be84a1351b0bba5a",
     "semantic_hash": ""
   },
   "docs/LORE.md": {
@@ -365,13 +315,13 @@
     "semantic_hash": ""
   },
   "docs/TEXTURE_GUIDE.md": {
-    "mtime": 1790247477.6284997,
-    "ast_hash": "507cd98d5e7f45fceeae877ad81d0fee",
+    "mtime": 1790256015.5315807,
+    "ast_hash": "93a5fc2442942e5f07f1d2b79031891f",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_MAJESTIC_1-21-1.md": {
-    "mtime": 1790254320.8419104,
-    "ast_hash": "ba9287d377a21817e5a03af90880b0d0",
+    "mtime": 1790256424.322805,
+    "ast_hash": "eeb7a2ece766f59e2b258bd837bfde1c",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -380,8 +330,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1790254320.7360497,
-    "ast_hash": "d5c1a8959a07639dcd9fe789bfcd66bc",
+    "mtime": 1790256424.3244588,
+    "ast_hash": "4a02062e318d091524c1d44c16c77907",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -430,8 +380,8 @@
     "semantic_hash": ""
   },
   "src/generated/resources/assets/majestic/lang/en_us.json": {
-    "mtime": 1790248506.351015,
-    "ast_hash": "492f652832d1d04acd691505132799de",
+    "mtime": 1790256276.2373066,
+    "ast_hash": "8bad56a9bdd0964df505111720b0770e",
     "semantic_hash": ""
   },
   "src/generated/resources/assets/majestic/models/block/astral_altar.json": {
@@ -687,6 +637,131 @@
   "src/main/resources/assets/majestic/textures/item/ether_lens.png": {
     "mtime": 1790254242.1094873,
     "ast_hash": "f3570daf7fa4bf8327ff7e8189db6a1a",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/data/majestic/advancement/recipes/misc/almanac.json": {
+    "mtime": 1790256276.2202342,
+    "ast_hash": "d7c1cbf75f0ef8617fcf06490ac3cfc1",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/data/majestic/recipe/almanac.json": {
+    "mtime": 1790256276.218227,
+    "ast_hash": "73facbc5cae3398d79ba6dc19fe25868",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/content/MajesticCreativeTabs.java": {
+    "mtime": 1790256233.1127813,
+    "ast_hash": "80298cc51b7f38f1f1f33bfd0f542d16",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/lang/es_es.json": {
+    "mtime": 1790256292.277607,
+    "ast_hash": "42e6d2f8b3db4bb7256a4b364bf1443a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/categories/research.json": {
+    "mtime": 1790108612.695447,
+    "ast_hash": "ada8ec8f05524ecd21b96cf1ce014c68",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/categories/rituals.json": {
+    "mtime": 1790108611.6901402,
+    "ast_hash": "7fabd6c6eb918613352b8203e23a9389",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/categories/spells.json": {
+    "mtime": 1790108610.8736544,
+    "ast_hash": "10a9f2e390f5705a368c6d741b0037fb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/engrave_spell.json": {
+    "mtime": 1790108625.1735632,
+    "ast_hash": "85cd5096d4601469162da7db40643c58",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/first_light.json": {
+    "mtime": 1790108626.3165555,
+    "ast_hash": "041cb3e87eeeaaec0d4a1309e6633b36",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/starlight_bolt.json": {
+    "mtime": 1790108617.1243315,
+    "ast_hash": "5706b5470095a2c74dbecb86a04c4053",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/starlight_reveal.json": {
+    "mtime": 1790108619.7448976,
+    "ast_hash": "4f8db35926850d52378c333180c756e5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/starlight_surge.json": {
+    "mtime": 1790108623.7186823,
+    "ast_hash": "f799e29792d4a4784a2d121a4dfcd56b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/starlight_ward.json": {
+    "mtime": 1790108618.4532146,
+    "ast_hash": "3c6048730844aa47face91c3e85fbb7f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/categories/research.json": {
+    "mtime": 1790256179.8477468,
+    "ast_hash": "f43e1c6ba1f399236b9f62c818704512",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/categories/rituals.json": {
+    "mtime": 1790256179.8491936,
+    "ast_hash": "b88e692ef3d51aa919d79cb433b1fd20",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/categories/spells.json": {
+    "mtime": 1790256179.8491936,
+    "ast_hash": "72cdb4f14a7a6aeffce99d3623b88ad7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/engrave_spell.json": {
+    "mtime": 1790256179.8491936,
+    "ast_hash": "89b047bdc027618afc2979a334f3bd26",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/first_light.json": {
+    "mtime": 1790256179.8501983,
+    "ast_hash": "80925926d60ca66f546c9d9ea421192c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/starlight_bolt.json": {
+    "mtime": 1790256179.8501983,
+    "ast_hash": "057ef580def524867ebe5b2bb7c262f9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/starlight_reveal.json": {
+    "mtime": 1790256179.8501983,
+    "ast_hash": "6eccc29d5e76ae914ec99ba9e7e0ba4f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/starlight_surge.json": {
+    "mtime": 1790256179.851203,
+    "ast_hash": "cffbf4c4e8f32f6597b7ad0efcb051ed",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/starlight_ward.json": {
+    "mtime": 1790256179.851203,
+    "ast_hash": "99ca46f80e7fc04f7123fec25bcd5f51",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/vellumli_books/almanac/book.json": {
+    "mtime": 1790256039.861845,
+    "ast_hash": "9f7955f5f377039883a0b831a9bf4836",
+    "semantic_hash": ""
+  },
+  "docs/BOSS_I_ANIMATION_V2_GUIDE.md": {
+    "mtime": 1790256000.7933888,
+    "ast_hash": "42122c70d969b61004cd5dac6e6b869a",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.11.md": {
+    "mtime": 1790254581.7591412,
+    "ast_hash": "c3234691cfe15ddaec0a5f622dc1e1c5",
     "semantic_hash": ""
   }
 }
