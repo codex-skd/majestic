@@ -8,6 +8,7 @@ import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -181,6 +182,18 @@ public final class DataGenerators {
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "star_fragment"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "altar_blueprint_t2"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "astral_dust"));
+
+            withExistingParent("warden_of_the_gate_spawn_egg", mcLoc("item/template_spawn_egg"));
+            withExistingParent("astral_construct_spawn_egg", mcLoc("item/template_spawn_egg"));
+
+            // The ether_lens texture is still pending from the art pipeline, and basicItem would
+            // validate its existence and fail runData. Track it as generated, then build the model
+            // by hand so datagen succeeds before the texture ships.
+            existingFileHelper.trackGenerated(
+                    ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "item/ether_lens"),
+                    PackType.CLIENT_RESOURCES, ".png", "textures");
+            withExistingParent("ether_lens", mcLoc("item/generated"))
+                    .texture("layer0", modLoc("item/ether_lens"));
         }
     }
 
@@ -202,6 +215,13 @@ public final class DataGenerators {
             add("item.majestic.star_fragment", "Star Fragment");
             add("item.majestic.altar_blueprint_t2", "Tier 2 Altar Blueprint");
             add("item.majestic.astral_dust", "Astral Dust");
+            add("item.majestic.ether_lens", "Ether Lens");
+            add("item.majestic.warden_of_the_gate_spawn_egg", "Warden of the Gate Spawn Egg");
+            add("item.majestic.astral_construct_spawn_egg", "Astral Construct Spawn Egg");
+            add("entity.majestic.warden_of_the_gate", "Warden of the Gate");
+            add("entity.majestic.astral_construct", "Astral Construct");
+            add("advancements.majestic.warden_of_the_gate.title", "Beyond the Gate");
+            add("advancements.majestic.warden_of_the_gate.description", "Defeat the Warden of the Gate in the Observatory");
             add("commands.majestic.status.essence", "Essence: %d/%d");
             add("commands.majestic.status.cooldown", "%s: on cooldown (%d ticks)");
             add("commands.majestic.status.no_cooldown", "%s: ready");

@@ -2,7 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.0-beta.9]
+## [0.0.0-beta.10]
+
+### Added
+- **Jefe I — Warden of the Gate** (`majestic:warden_of_the_gate`), Acto II. Aparece la primera vez que un
+  jugador entra en la arena de un Observatory (uno por estructura). Dos fases: invoca Constructos
+  astrales; por debajo del 50 % de vida lanza pulsos de luz telegrafiados que dañan y ciegan a quien
+  esté a la vista (las columnas cubren). Barra de jefe, vida/daño escalados por jugadores en la arena,
+  reinicio si todos salen, botín por participante y 200 XP. Modelo y animaciones GeckoLib del taller.
+- **Constructo astral** (`majestic:astral_construct`), esbirro del jefe. Modelo pendiente del taller
+  (hasta entonces es invisible).
+- **Lente de éter** (`majestic:ether_lens`), botín garantizado del jefe y llave del Acto III. Textura
+  pendiente del taller.
+- Huevos de spawn de ambas entidades y logro "Beyond the Gate".
+
+
 
 ### Added
 - Texturas propias para los 9 ítems (`starlight_focus`, `blank_page`, los 4 sigilos, `star_fragment`,

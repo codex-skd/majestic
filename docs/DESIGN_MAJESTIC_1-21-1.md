@@ -257,6 +257,47 @@ para el usuario en [`TEXTURE_GUIDE.md`](TEXTURE_GUIDE.md). **Lección**: añadir
 visual/de cliente real (no solo boot de servidor) a la lista de comprobaciones de cada hito futuro
 que añada contenido visual nuevo.
 
+## 5f. Hito M5 — Jefe I: Warden of the Gate (2026-09-24)
+
+**Delegado a OpenCode** (`deepseek-v4.1-flash`, ~40 min, compiló y ejecutó `runData` él mismo), revisado
+y corregido por Claude. Decisiones cerradas con el usuario:
+
+| Decisión | Elección |
+|---|---|
+| Aparición | Al entrar un jugador en la pieza `arena` de un `observatory` (solo código, sin tocar el `.nbt`). Una vez por estructura, persistido en `SavedData` `majestic_arenas` (clave = esquina mínima de la pieza). |
+| Esbirros fase 1 | Mob nuevo `majestic:astral_construct` (modelo GeckoLib pendiente del taller, [`ASTRAL_CONSTRUCT_MODEL_GUIDE.md`](ASTRAL_CONSTRUCT_MODEL_GUIDE.md)). |
+| Fase 2 (<50 %) | Pulsos de luz telegrafiados (30 ticks de aviso, cada 140): daño 8 + ceguera a quien tenga línea de visión directa con el jefe — las columnas de tuff cubren. |
+| Lente de éter | Ítem `majestic:ether_lens` (épico, 1 por stack), textura pendiente del taller ([`TEXTURE_GUIDE.md §4`](TEXTURE_GUIDE.md)). |
+
+**Implementación** (`content/entity/`, `content/entity/boss/`, `content/event/ArenaSpawnEvents`,
+`client/entity/`):
+- `WardenOfTheGate` (`Monster` + `GeoBossEntity`): 300 PV / 12 daño / 10 armadura. Usa el
+  `BossEncounter` de `expedition_core` guardando la definición en un campo propio (la librería solo
+  persiste fase/estado, no la definición), `BossBarController` (azul, `NOTCHED_10`, jugadores dentro de la
+  arena), `ArenaLock` (arena de la pieza; si se invoca a mano, 12×6×12 alrededor). Escalado de vida/daño
+  por nº de jugadores (`ExpeditionConfig`) como modificador **permanente** `majestic:boss_scaling`.
+  Si nadie está en la arena durante `arenaEscapeGraceTicks` → reinicio completo (cura, quita escalado,
+  descarta esbirros). Botín por participante (`majestic:boss/warden_of_the_gate`: lente + 4–8 polvo astral
+  + 1–2 fragmentos), al inventario o al suelo si está lleno — no se usa `BossLootTable.distributeLoot`
+  porque pierde ítems con el inventario lleno. 200 XP.
+- Fase 1: cada 300 ticks, si hay <3 esbirros vivos, animación `summon` y 2 constructos a 3–5 bloques.
+- `AstralConstruct`: 30 PV; los invocados no sueltan botín ni XP; sin spawn natural en este hito.
+- Identificación de la pieza arena: `SinglePoolElement.template` es `protected` sin getter en 1.21.1 →
+  se compara `toString()` (`"Single[Left[majestic:observatory/arena]]"`), aislado en un helper.
+- Advancement `majestic:guide/warden_of_the_gate` (challenge). Su padre (`engrave_spell`) es un stub
+  sin `display`, así que **no aparece en la pantalla de logros** hasta que exista el árbol visible de
+  la guía — sí notifica al completarse.
+
+**Correcciones de Claude sobre la entrega**: el escalado se añadía como modificador transitorio (se
+perdía al recargar el mundo a mitad de combate) → permanente; la altura del `ArenaLock` solo cubría
+media pieza por encima del suelo → altura completa (las gradas cuentan como dentro).
+
+**Verificado**: `runData` + `build` OK; `runServer` puro con datapack de prueba temporal: ambas
+entidades se invocan, el jefe conserva 300 PV y la arena por defecto, el constructo guarda su marca de
+invocado, sin excepciones; `runClient`: GeckoLib carga geo/animaciones del jefe sin errores (único aviso:
+textura de `ether_lens` ausente, esperado). **Pendiente**: probar el combate completo en el juego (fases,
+pulsos, reinicio, botín, aparición real en un Observatory) y los assets del taller (constructo + lente).
+
 ## 6. Historial
 
 | Fecha | Cambio |
@@ -272,3 +313,4 @@ que añada contenido visual nuevo.
 | 2026-09-22 | **M2 implementado** (delegado a OpenCode `mimo-v2.5`, tras 3 intentos fallidos del mismo modelo por un problema nuevo — ver nota abajo —, verificado por Claude con 1 dependencia desactualizada corregida): `content/block/` (`AstralAltarBlock`+`AstralAltarBlockEntity extends astral_core.AltarBlockEntity`, `astral_pillar`), `content/component/MajesticDataComponents` (`recorded_spell`), `magic/ritual/` (`MajesticRituals`+`EngraveSpellRitual` — determina el hechizo a grabar por el sigilo en la mano secundaria, exige nodo `first_light` + página en blanco, consume esencia+items solo en la vía que ya no puede fallar), `content/event/MajesticEvents` (en `NodeUnlockedEvent` de `first_light`: concede el advancement de guía + entrega el libro), 4 sigilos + página en blanco (`MajesticItems`), datos: tag `#majestic:altar_pillar`, nodo `first_light` (JSON a mano + provider de datagen — quedó el JSON a mano sin usar, `ResearchNodeJsonProvider` es el que realmente corre), ritual `engrave_spell`, libro `majestic:almanac` (book+3 categorías+6 entradas+6 advancements, todo a mano). `FocusItem` reescrito: lee `recorded_spell` (default `starlight_bolt`), auto-desbloquea `first_light` en cada cast. `DataGenerators` arreglado (bug real de beta.1: JSON de hechizos se generaba en `data/majestic/spells/`, camino que `SpellLoader` de `almanac_core` nunca lee — corregido a `data/majestic/almanac/spell/`), + providers nuevos de ritual/nodo/bloques. **Bug real encontrado por Claude tras el build de OpenCode**: `majestic` seguía dependiendo del jar `almanac_core-...beta.1.jar` en `libs/` — beta.1 es anterior al paquete `guide/` (añadido en almanac_core beta.2, M3, esta misma sesión) — nunca se actualizó al cablear `almanac_core` en `majestic`. OpenCode se adaptó razonablemente a la ausencia (advancement con id construido a mano, sin entrega de libro), pero la causa real era una dependencia desactualizada, no una limitación real de `almanac_core`. Arreglado: jar actualizado a beta.2 en `libs/`, `almanac_core_version` en `gradle.properties`, y `MajesticEvents` reescrito para usar `EntryGate.advancementIdFor` + `VellumliBridge.giveBookStack` de verdad. Verificado: `./gradlew clean build` + `runGameTestServer` limpio con las 3 libs + GeckoLib. **Alcance**: solo altar T1 (T2 diferido a la estructura Observatorio); reagentes se leen del inventario del jugador, no de pedestales físicos (limitación real de `astral_core` M2, documentada en `§5b`); solo el nodo `first_light` (los 2-3 nodos adicionales de Acto I se añaden cuando exista la estructura Fallen Shrine que los justifique). Pendiente menor (cosmético, no bloqueante): el ítem de los 2 bloques nuevos usa `basicItem` (icono plano) en vez de heredar el modelo 3D del bloque. **Nota operativa sobre la delegación**: los 2 primeros intentos con `mimo-v2.5` fallaron por un problema nuevo — el modelo leyó los `CLAUDE.md` del repo (incluida la política "delega en OpenCode") e intentó sub-delegar recursivamente, atascándose contra el sandbox; el 3º intento con instrucciones anti-recursión parciales también se atascó intentando "verificar" firmas de API con `jar tf`/`mkdir /tmp` pese a que el prompt ya las daba exactas; el 4º intento (anti-recursión + "no verifiques nada externamente, las firmas ya son hechos") completó el hito con éxito. Detalle completo en memoria `opencode_run_hangs_zero_output.md` (Caso 10). |
 | 2026-09-24 | **M4 — Observatory (Acto II) implementado**: 5 piezas jigsaw (`entrance`→`corridor_a`/`corridor_b`→`study_room`→`arena`) generadas por el pipeline `taller_minecraft` (script Python `generate_observatory.py` + validación automática + previews renderizados), no construcción manual. Las 5 piezas pasaron `VALIDATION OK`; Claude verificó además el NBT crudo de cada una (no solo el reporte de texto) confirmando `DataVersion 3955` y los bloques Jigsaw exactamente como los especifica `OBSERVATORY_BUILD_GUIDE.md` (Name/Target/Pool letra por letra), y las 2 etiquetas `LootTable` de los cofres (`majestic:chests/observatory_study`/`observatory_arena`) correctamente embebidas. Cableado (Claude, directo, sin delegar — mismo criterio que Fallen Shrine): `worldgen/template_pool/observatory/{start_pool,corridors,study_pool,arena_pool}.json`, `worldgen/structure/observatory.json` (jigsaw, `size: 5` para cubrir la cadena de 4 piezas de profundidad), `worldgen/structure_set/observatory.json` (spacing 48/separación 16 — más rara que `fallen_shrine`), tag de biomas `has_structure/observatory`, loot tables `chests/observatory_{study,arena}.json`, ítems nuevos `altar_blueprint_t2` (plano de altar T2, hallazgo principal) y `astral_dust` (material, ambos cofres). Deliberadamente sin mobs/jefe todavía (Jefe I es un hito posterior — necesita GeckoLib real, fuera de alcance aquí). Verificado con `runServer` real hasta "Done" sin errores de carga de datapack. **Nota de proceso**: en medio de este hito, otra sesión de Claude ("Opus 5.5") trabajó por error contra este mismo repo (añadió `.gitlab-ci.yml` + rama `main`, pensado para las 3 librerías, no para `majestic`) — Claude actuó sobre eso sin confirmar con el usuario primero (asumiendo que la documentación del repo seguía siendo la fuente de verdad) y borró la rama remota; el usuario corrigió el error y Claude restauró todo (rama `main` al commit exacto que tenía, `.gitlab-ci.yml` de vuelta) antes de continuar con Observatory. Lección: verificar con el usuario antes de una acción remota destructiva, no solo con la documentación existente, sobre todo si el usuario contradice esa documentación. |
 | 2026-09-24 | **Texturas (beta.9)**: las 11 texturas de `TEXTURE_GUIDE.md` (9 ítems + 2 bloques) traídas desde `taller_minecraft/textures/majestic/output/1.21.1` (validación OK). Primer datagen de cliente commiteado (blockstates, modelos, `en_us`); borradas las copias manuales de `en_us.json`/`starlight_focus.json` que duplicaban la salida de datagen (con permiso del usuario). `runClient` arranca sin errores de modelo/textura de `majestic` en el log; sin verificación visual in-game. |
+| 2026-09-24 | **M5 — Jefe I (Warden of the Gate) implementado** (beta.10): jefe de 2 fases sobre el `BossEncounter` de `expedition_core`, esbirro `astral_construct`, Lente de éter, aparición al entrar en la arena del Observatory. Delegado a OpenCode `deepseek-v4.1-flash`, 2 correcciones de Claude. Ver §5f. |

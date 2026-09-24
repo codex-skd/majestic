@@ -3,6 +3,8 @@ package com.skd.majestic;
 import com.skd.majestic.command.MajesticCommand;
 import com.skd.majestic.content.block.MajesticBlocks;
 import com.skd.majestic.content.component.MajesticDataComponents;
+import com.skd.majestic.content.entity.MajesticEntities;
+import com.skd.majestic.content.event.ArenaSpawnEvents;
 import com.skd.majestic.content.event.MajesticEvents;
 import com.skd.majestic.content.item.MajesticItems;
 import com.skd.majestic.magic.ritual.MajesticRituals;
@@ -12,6 +14,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,8 +39,10 @@ public final class Majestic {
         MajesticBlocks.register(modEventBus);
         MajesticDataComponents.register(modEventBus);
         MajesticRituals.register(modEventBus);
+        MajesticEntities.register(modEventBus);
 
         NeoForge.EVENT_BUS.addListener(RegisterCommandsEvent.class, event -> MajesticCommand.register(event.getDispatcher()));
         NeoForge.EVENT_BUS.addListener(com.skd.astralcore.event.NodeUnlockedEvent.class, MajesticEvents::onNodeUnlocked);
+        NeoForge.EVENT_BUS.addListener(PlayerTickEvent.Post.class, ArenaSpawnEvents::onPlayerTick);
     }
 }

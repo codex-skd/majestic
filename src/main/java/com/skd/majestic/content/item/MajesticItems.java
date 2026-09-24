@@ -1,9 +1,11 @@
 package com.skd.majestic.content.item;
 
 import com.skd.majestic.Majestic;
-import net.minecraft.core.registries.Registries;
+import com.skd.majestic.content.entity.MajesticEntities;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -62,6 +64,22 @@ public final class MajesticItems {
             "astral_dust",
             Item::new,
             new Item.Properties()
+    );
+
+    public static final DeferredItem<Item> ETHER_LENS = ITEMS.registerItem(
+            "ether_lens",
+            Item::new,
+            new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)
+    );
+
+    public static final DeferredItem<DeferredSpawnEggItem> WARDEN_OF_THE_GATE_SPAWN_EGG = ITEMS.register(
+            "warden_of_the_gate_spawn_egg",
+            () -> new DeferredSpawnEggItem(MajesticEntities.WARDEN_OF_THE_GATE, 0x6E6E6E, 0xA8C8E8, new Item.Properties())
+    );
+
+    public static final DeferredItem<DeferredSpawnEggItem> ASTRAL_CONSTRUCT_SPAWN_EGG = ITEMS.register(
+            "astral_construct_spawn_egg",
+            () -> new DeferredSpawnEggItem(MajesticEntities.ASTRAL_CONSTRUCT, 0x8A8A8A, 0xD4AF6A, new Item.Properties())
     );
 
     private MajesticItems() {}
