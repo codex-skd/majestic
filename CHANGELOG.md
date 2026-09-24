@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.0-beta.7]
+
+### Notes
+- No gameplay changes. Expedition Core's CurseForge project was approved after being pending
+  review — this release just adds it to the declared CurseForge dependencies, so installing
+  Majestic through the app/launcher now installs all four required mods (Astral Core, Almanac
+  Core, Expedition Core, GeckoLib) automatically.
+
 ## [0.0.0-beta.6]
 
 ### Added

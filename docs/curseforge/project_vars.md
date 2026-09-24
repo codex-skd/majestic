@@ -7,7 +7,7 @@ project_id = 1692772
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
 game_versions = 9638, 9639, 11779, 10150
 release_type = beta
-relations = astral-core:requiredDependency,almanac-core:requiredDependency,geckolib:requiredDependency
+relations = astral-core:requiredDependency,almanac-core:requiredDependency,expedition-core:requiredDependency,geckolib:requiredDependency
 ```
 
 ## Proyecto
@@ -35,7 +35,7 @@ Autenticación Upload: cabecera `X-Api-Token`. Core: cabecera `x-api-key`.
 | `neoforge_version` (loader) | `21.1.249` |
 | `framework` | `neoforge` |
 | `java_version` | `21` |
-| `version` (`gradle.properties`) | `0.0.0-beta.6` |
+| `version` (`gradle.properties`) | `0.0.0-beta.7` |
 | `environment` | `Client`, `Server` (requerido en ambos) |
 
 ## Rama
@@ -46,7 +46,7 @@ minecraft/1.21.1/neoforge-21.1.249/production
 
 ## Tag
 
-Formato: `<mc-version>-<framework>-<version>`. Actual: `1.21.1-neoforge-beta.6` (ya creado y pusheado).
+Formato: `<mc-version>-<framework>-<version>`. Actual: `1.21.1-neoforge-beta.7` (ya creado y pusheado).
 
 ### IDs de `gameVersions` para 1.21.1 (verificados, mismos que el resto de mods 1.21.1 del workspace)
 
@@ -68,11 +68,9 @@ Majestic requiere en tiempo de ejecución los 3 cores del ecosistema + GeckoLib 
 en `neoforge.mods.toml`). Declarado arriba (`relations = ...`) para que cada subida marque estas
 dependencias — el launcher de CurseForge las instala automáticamente al instalar `majestic`.
 
-**`expedition-core` pendiente**: su proyecto CF (`1707718`) es nuevo y sigue en revisión
-(`isAvailable: false` en la Core API) — CurseForge rechaza `expedition-core` como slug de relación
-hasta que se apruebe (`errorCode 1018: Invalid slug in project relations`). Añadir
-`,expedition-core:requiredDependency` a `relations` (arriba) y volver a subir en cuanto el proyecto
-quede aprobado/público — verificar con `GET /v1/mods/1707718` (`isAvailable: true`).
+**`expedition-core`**: aprobado (`isAvailable: true` confirmado 2026-09-24) y añadido a `relations`
+arriba. Las 4 dependencias (`astral-core`, `almanac-core`, `expedition-core`, `geckolib`) quedan
+declaradas desde la subida de beta.7.
 
 ## Descripción del proyecto y logo
 
@@ -87,7 +85,7 @@ del ecosistema en `majestic` para el tono visual).
 2. **[hecho]** `project_id` copiado en este archivo y en `gradle.properties`.
 3. Pegar `docs/curseforge/project_description.md` en Edit Project → Description — **pendiente del usuario** (sin API).
 4. Subir el logo (`ChatGPT Image 12 sept 2026, 16_48_46.png`) en Edit Project → Logo — **pendiente del usuario** (sin API).
-5. `./gradlew clean build` — **[hecho]**, jar `majestic-1.21.1-neoforge-21.1.249-0.0.0-beta.6.jar`.
-6. `docs/curseforge/versions/0.0.0-beta.6.md` (HTML) — release notes de la versión ya taggeada.
+5. `./gradlew clean build` — **[hecho]**, jar `majestic-1.21.1-neoforge-21.1.249-0.0.0-beta.7.jar`.
+6. `docs/curseforge/versions/0.0.0-beta.7.md` (HTML) — release notes de la versión ya taggeada.
 7. Subir JAR: `powershell -File ../../../codex-docs/scripts/curseforge-upload.ps1` (desde este repo) — **[hecho]**.
 8. Verificar con GET (Core API key) y liberar manualmente desde la web si hace falta.
