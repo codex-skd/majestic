@@ -2,7 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.0-beta.12]
+## [0.0.0-beta.13]
+
+### Changed
+- **Guardián de la Puerta, combate v2** con las animaciones v2 del taller (`taller_minecraft` `961ea2d`):
+  - Tres ataques elegidos según la situación: **barrido** horizontal (arco de 140°, golpea a todos los de
+    delante), **golpe descendente** con onda en área (con 2+ jugadores cerca) y **estocada** (objetivo a
+    3–4,8 bloques). El daño llega en el fotograma del impacto (ticks 9 / 14 / 7), no al empezar el golpe.
+  - Idle y caminata más animados; en fase 2 **corre** (+30 % velocidad).
+  - Fase 2: **embestida avisada** cada 10 s (preparación de 0,8 s con línea de partículas en el suelo,
+    carga en línea recta, aturdido 1 s si choca contra una pared). Nunca coincide con los pulsos de luz.
+- El golpe cuerpo a cuerpo vanilla del jefe se sustituye por la nueva lógica de ataques.
+
+
 
 ### Added
 - **Traducción al español** (`es_es`): todos los ítems, bloques, entidades, pestañas, mensajes, HUD, comando y

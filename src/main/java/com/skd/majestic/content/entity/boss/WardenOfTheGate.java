@@ -25,6 +25,9 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -50,7 +53,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
@@ -61,6 +63,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
@@ -92,12 +95,83 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
 
     private static final RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.warden_of_the_gate.idle");
     private static final RawAnimation WALK = RawAnimation.begin().thenLoop("animation.warden_of_the_gate.walk");
+    private static final RawAnimation RUN = RawAnimation.begin().thenLoop("animation.warden_of_the_gate.run");
     private static final RawAnimation ATTACK = RawAnimation.begin().thenPlay("animation.warden_of_the_gate.attack");
+    private static final RawAnimation ATTACK_SLAM_ANIM =
+            RawAnimation.begin().thenPlay("animation.warden_of_the_gate.attack_slam");
+    private static final RawAnimation ATTACK_THRUST_ANIM =
+            RawAnimation.begin().thenPlay("animation.warden_of_the_gate.attack_thrust");
+    private static final RawAnimation CHARGE_WINDUP =
+            RawAnimation.begin().thenPlayAndHold("animation.warden_of_the_gate.charge_windup");
+    private static final RawAnimation CHARGE = RawAnimation.begin().thenLoop("animation.warden_of_the_gate.charge");
     private static final RawAnimation SUMMON = RawAnimation.begin().thenPlay("animation.warden_of_the_gate.summon");
     private static final RawAnimation PHASE_TRANSITION =
             RawAnimation.begin().thenPlay("animation.warden_of_the_gate.phase_transition");
     private static final RawAnimation DEATH =
             RawAnimation.begin().thenPlayAndHold("animation.warden_of_the_gate.death");
+
+    // --- Attack state ids ---
+    private static final int ATTACK_NONE = 0;
+    private static final int ATTACK_SWEEP = 1;
+    private static final int ATTACK_SLAM = 2;
+    private static final int ATTACK_THRUST = 3;
+
+    // --- Attack selection ranges ---
+    private static final double SLAM_RADIUS = 3.5;
+    private static final int SLAM_MIN_PLAYERS = 2;
+    private static final double THRUST_MIN_RANGE = 3.0;
+    private static final double THRUST_MAX_RANGE = 4.8;
+    private static final double THRUST_CONE_DEGREES = 25.0;
+    private static final double SWEEP_RANGE = 3.5;
+    private static final double SWEEP_ARC_DEGREES = 140.0;
+
+    // --- Attack impact ticks (server-side; animation timeline markers are client-only) ---
+    private static final int SWEEP_IMPACT_TICK = 9;
+    private static final int SLAM_IMPACT_TICK = 14;
+    private static final int THRUST_IMPACT_TICK = 7;
+
+    // --- Attack lengths in ticks (animation lengths) and cooldown between attacks ---
+    private static final int SWEEP_LENGTH_TICKS = 18;
+    private static final int SLAM_LENGTH_TICKS = 24;
+    private static final int THRUST_LENGTH_TICKS = 14;
+    private static final int ATTACK_COOLDOWN_TICKS = 10;
+
+    // --- Attack effects ---
+    private static final float SLAM_DAMAGE_MULTIPLIER = 1.25f;
+    private static final float THRUST_DAMAGE_MULTIPLIER = 1.10f;
+    private static final float SWEEP_DAMAGE_MULTIPLIER = 1.0f;
+    private static final double SLAM_KNOCKBACK = 0.6;
+    private static final double SLAM_KNOCKBACK_UP = 0.6;
+    private static final double THRUST_KNOCKBACK = 1.0;
+    private static final double SWEEP_KNOCKBACK = 0.8;
+    private static final double SLAM_PARTICLE_DISTANCE = 2.0;
+    private static final int SWEEP_PARTICLE_STEPS = 12;
+
+    // --- Phase 2 telegraphed charge ---
+    private static final int CHARGE_INTERVAL_TICKS = 200;
+    private static final int CHARGE_FIRST_DELAY_TICKS = 100;
+    private static final int CHARGE_WINDUP_TICKS = 16;
+    private static final int CHARGE_MAX_TICKS = 30;
+    private static final double CHARGE_MIN_RANGE = 6.0;
+    private static final double CHARGE_MAX_RANGE = 16.0;
+    private static final double CHARGE_SPEED = 0.55;
+    private static final float CHARGE_DAMAGE_MULTIPLIER = 1.3f;
+    private static final double CHARGE_KNOCKBACK = 1.5;
+    private static final double CHARGE_HITBOX_INFLATE = 0.5;
+    private static final int CHARGE_STUN_TICKS = 20;
+
+    // --- Phase 2 movement speed bonus (permanent modifier so it survives reload) ---
+    private static final ResourceLocation PHASE_TWO_SPEED_ID =
+            ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "phase_two_speed");
+    private static final double PHASE_TWO_SPEED_BONUS = 0.30;
+
+    // --- Synced movement state, read by the client animation controller ---
+    private static final byte MOVE_NORMAL = 0;
+    private static final byte MOVE_PHASE_TWO = 1;
+    private static final byte MOVE_CHARGE_WINDUP = 2;
+    private static final byte MOVE_CHARGING = 3;
+    private static final EntityDataAccessor<Byte> MOVE_STATE =
+            SynchedEntityData.defineId(WardenOfTheGate.class, EntityDataSerializers.BYTE);
 
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
     private final BossEncounter encounter;
@@ -122,6 +196,18 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
     private int pulseTelegraph;
     private boolean phaseTwo;
 
+    private int activeAttack = ATTACK_NONE;
+    private int attackTick;
+    private int attackCooldown;
+    private boolean attackImpactApplied;
+
+    private boolean chargeWindup;
+    private boolean charging;
+    private int chargeTimer;
+    private int chargeCooldown;
+    private Vec3 chargeDirection = Vec3.ZERO;
+    private final Set<UUID> chargeHitPlayers = new HashSet<>();
+
     public WardenOfTheGate(EntityType<? extends WardenOfTheGate> entityType, Level level) {
         super(entityType, level);
 
@@ -140,7 +226,7 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
                 BossEvent.BossBarOverlay.NOTCHED_10);
 
         this.goalSelector.addGoal(0, new FloatGoal(this));
-        this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.0, true));
+        this.goalSelector.addGoal(2, new WardenAttackGoal(this, 1.0));
         this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 16.0f));
         this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Player.class, true));
@@ -154,6 +240,32 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
                 .add(Attributes.MOVEMENT_SPEED, 0.25)
                 .add(Attributes.KNOCKBACK_RESISTANCE, 1.0)
                 .add(Attributes.FOLLOW_RANGE, 32.0);
+    }
+
+    @Override
+    protected void defineSynchedData(SynchedEntityData.Builder builder) {
+        super.defineSynchedData(builder);
+        builder.define(MOVE_STATE, MOVE_NORMAL);
+    }
+
+    private byte getMoveState() {
+        return this.entityData.get(MOVE_STATE);
+    }
+
+    private void updateMoveState() {
+        byte state;
+        if (this.charging) {
+            state = MOVE_CHARGING;
+        } else if (this.chargeWindup) {
+            state = MOVE_CHARGE_WINDUP;
+        } else if (this.phaseTwo) {
+            state = MOVE_PHASE_TWO;
+        } else {
+            state = MOVE_NORMAL;
+        }
+        if (this.entityData.get(MOVE_STATE) != state) {
+            this.entityData.set(MOVE_STATE, state);
+        }
     }
 
     // --- Arena ---
@@ -221,11 +333,19 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
             return;
         }
 
+        if (this.attackCooldown > 0) {
+            this.attackCooldown--;
+        }
+        tickAttack(level);
+
         if (this.phaseTwo) {
+            tickCharge(level);
             tickPulses(level);
         } else {
             tickSummoning(level);
         }
+
+        updateMoveState();
     }
 
     private boolean isEngaged() {
@@ -283,7 +403,27 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
         this.invulnerableTicks = 26;
         this.pulseCooldown = 140;
         this.pulseTelegraph = 0;
+        // A phase transition interrupts any attack that was mid-swing.
+        cancelAttack();
+        this.chargeCooldown = CHARGE_FIRST_DELAY_TICKS;
+        applyPhaseTwoSpeed();
         this.triggerAnim("main", "phase_transition");
+    }
+
+    private void applyPhaseTwoSpeed() {
+        AttributeInstance instance = this.getAttribute(Attributes.MOVEMENT_SPEED);
+        if (instance == null || instance.hasModifier(PHASE_TWO_SPEED_ID)) {
+            return;
+        }
+        instance.addPermanentModifier(new AttributeModifier(PHASE_TWO_SPEED_ID, PHASE_TWO_SPEED_BONUS,
+                AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+    }
+
+    private void removePhaseTwoSpeed() {
+        AttributeInstance instance = this.getAttribute(Attributes.MOVEMENT_SPEED);
+        if (instance != null) {
+            instance.removeModifier(PHASE_TWO_SPEED_ID);
+        }
     }
 
     private void updateBossBar(ServerLevel level) {
@@ -346,6 +486,7 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
     private void resetEncounter() {
         removeScaling(Attributes.MAX_HEALTH);
         removeScaling(Attributes.ATTACK_DAMAGE);
+        removePhaseTwoSpeed();
         this.setHealth(this.getMaxHealth());
         discardMinions();
         this.setTarget(null);
@@ -358,6 +499,7 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
         this.pulseCooldown = 140;
         this.pulseTelegraph = 0;
         this.participants.clear();
+        resetCombatState();
 
         BossEncounterData data = BossEncounter.getData(this);
         if (data != null) {
@@ -493,6 +635,10 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
     // --- Phase 2: light pulses ---
 
     private void tickPulses(ServerLevel level) {
+        if (this.chargeWindup || this.charging) {
+            return;
+        }
+
         if (this.pulseTelegraph > 0) {
             this.pulseTelegraph--;
             if (this.pulseTelegraph % 2 == 0) {
@@ -550,10 +696,402 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
         return super.hurt(damageSource, amount);
     }
 
-    @Override
-    public boolean doHurtTarget(Entity target) {
-        this.triggerAnim("main", "attack");
-        return super.doHurtTarget(target);
+    // --- Varied attacks (sweep / slam / thrust) ---
+
+    /** True while the boss should not path, look around or start another action. */
+    public boolean isCombatBusy() {
+        return this.activeAttack != ATTACK_NONE
+                || this.chargeWindup
+                || this.charging
+                || this.freezeTicks > 0
+                || this.invulnerableTicks > 0
+                || this.pulseTelegraph > 0;
+    }
+
+    private boolean canStartAttack() {
+        return isEngaged() && !isCombatBusy() && this.activeAttack == ATTACK_NONE && this.attackCooldown <= 0;
+    }
+
+    /**
+     * Picks and starts one attack if the boss is able to. Called every tick by
+     * {@link WardenAttackGoal}; a no-op while another action is in progress or no
+     * attack is in range.
+     */
+    public void tryPerformAttack(LivingEntity target) {
+        if (!canStartAttack()) {
+            return;
+        }
+
+        ServerLevel level = (ServerLevel) this.level();
+        int playersInSlamRange = countPlayersWithin(level, SLAM_RADIUS);
+        double horizontalDistance = horizontalDistanceTo(target);
+        boolean lineOfSight = this.hasLineOfSight(target);
+
+        if (playersInSlamRange >= SLAM_MIN_PLAYERS) {
+            startAttack(ATTACK_SLAM);
+        } else if (horizontalDistance >= THRUST_MIN_RANGE && horizontalDistance <= THRUST_MAX_RANGE && lineOfSight) {
+            startAttack(ATTACK_THRUST);
+        } else if (this.distanceTo(target) <= SWEEP_RANGE) {
+            startAttack(ATTACK_SWEEP);
+        }
+    }
+
+    private void startAttack(int attack) {
+        this.activeAttack = attack;
+        this.attackTick = 0;
+        this.attackImpactApplied = false;
+        this.getNavigation().stop();
+        Vec3 delta = this.getDeltaMovement();
+        this.setDeltaMovement(0.0, delta.y, 0.0);
+
+        switch (attack) {
+            case ATTACK_SLAM -> this.triggerAnim("main", "attack_slam");
+            case ATTACK_THRUST -> this.triggerAnim("main", "attack_thrust");
+            default -> this.triggerAnim("main", "attack");
+        }
+    }
+
+    private void tickAttack(ServerLevel level) {
+        if (this.activeAttack == ATTACK_NONE) {
+            return;
+        }
+
+        // A phase transition, pulse telegraph or death cancels the attack without damage.
+        if (this.freezeTicks > 0 || this.invulnerableTicks > 0) {
+            cancelAttack();
+            return;
+        }
+
+        this.attackTick++;
+        this.getNavigation().stop();
+        Vec3 delta = this.getDeltaMovement();
+        this.setDeltaMovement(0.0, delta.y, 0.0);
+
+        LivingEntity target = this.getTarget();
+        if (!this.attackImpactApplied && this.attackTick <= impactTick(this.activeAttack) && target != null) {
+            // Keep facing the target until the moment of impact, then lock the yaw.
+            this.getLookControl().setLookAt(target, 30.0f, 30.0f);
+        }
+
+        if (!this.attackImpactApplied && this.attackTick >= impactTick(this.activeAttack)) {
+            this.attackImpactApplied = true;
+            applyAttackImpact(level);
+        }
+
+        if (this.attackTick >= attackLength(this.activeAttack)) {
+            this.activeAttack = ATTACK_NONE;
+            this.attackImpactApplied = false;
+            this.attackCooldown = ATTACK_COOLDOWN_TICKS;
+        }
+    }
+
+    private void cancelAttack() {
+        this.activeAttack = ATTACK_NONE;
+        this.attackTick = 0;
+        this.attackImpactApplied = false;
+    }
+
+    private void resetCombatState() {
+        cancelAttack();
+        this.attackCooldown = 0;
+        this.chargeWindup = false;
+        this.charging = false;
+        this.chargeTimer = 0;
+        this.chargeCooldown = 0;
+        this.chargeDirection = Vec3.ZERO;
+        this.chargeHitPlayers.clear();
+    }
+
+    private static int impactTick(int attack) {
+        return switch (attack) {
+            case ATTACK_SLAM -> SLAM_IMPACT_TICK;
+            case ATTACK_THRUST -> THRUST_IMPACT_TICK;
+            default -> SWEEP_IMPACT_TICK;
+        };
+    }
+
+    private static int attackLength(int attack) {
+        return switch (attack) {
+            case ATTACK_SLAM -> SLAM_LENGTH_TICKS;
+            case ATTACK_THRUST -> THRUST_LENGTH_TICKS;
+            default -> SWEEP_LENGTH_TICKS;
+        };
+    }
+
+    private void applyAttackImpact(ServerLevel level) {
+        switch (this.activeAttack) {
+            case ATTACK_SLAM -> slamImpact(level);
+            case ATTACK_THRUST -> thrustImpact(level);
+            case ATTACK_SWEEP -> sweepImpact(level);
+            default -> { }
+        }
+    }
+
+    private void sweepImpact(ServerLevel level) {
+        float damage = attackDamage(SWEEP_DAMAGE_MULTIPLIER);
+        Vec3 forward = horizontalForward();
+        double halfArc = SWEEP_ARC_DEGREES / 2.0;
+
+        for (ServerPlayer player : level.players()) {
+            if (!arenaLock().contains(player.position())) {
+                continue;
+            }
+            double dx = player.getX() - this.getX();
+            double dz = player.getZ() - this.getZ();
+            if (Math.sqrt(dx * dx + dz * dz) > SWEEP_RANGE) {
+                continue;
+            }
+            if (horizontalAngle(forward, dx, dz) > halfArc) {
+                continue;
+            }
+            player.hurt(this.damageSources().mobAttack(this), damage);
+            knockbackAway(player, SWEEP_KNOCKBACK);
+        }
+
+        double baseYaw = this.getYRot();
+        for (int i = 0; i <= SWEEP_PARTICLE_STEPS; i++) {
+            double worldYaw = Math.toRadians(baseYaw - halfArc + SWEEP_ARC_DEGREES * i / SWEEP_PARTICLE_STEPS);
+            double px = this.getX() - Math.sin(worldYaw) * SWEEP_RANGE;
+            double pz = this.getZ() + Math.cos(worldYaw) * SWEEP_RANGE;
+            level.sendParticles(ParticleTypes.SWEEP_ATTACK, px, this.getY() + 1.0, pz, 1, 0.0, 0.0, 0.0, 0.0);
+        }
+        level.playSound(null, this.blockPosition(), SoundEvents.PLAYER_ATTACK_SWEEP, SoundSource.HOSTILE, 1.0f, 1.0f);
+    }
+
+    private void slamImpact(ServerLevel level) {
+        float damage = attackDamage(SLAM_DAMAGE_MULTIPLIER);
+
+        for (ServerPlayer player : level.players()) {
+            if (!arenaLock().contains(player.position())) {
+                continue;
+            }
+            if (this.distanceTo(player) > SLAM_RADIUS) {
+                continue;
+            }
+            player.hurt(this.damageSources().mobAttack(this), damage);
+            knockbackAway(player, SLAM_KNOCKBACK);
+            player.push(0.0, SLAM_KNOCKBACK_UP, 0.0);
+        }
+
+        Vec3 forward = horizontalForward();
+        double tipX = this.getX() + forward.x * SLAM_PARTICLE_DISTANCE;
+        double tipZ = this.getZ() + forward.z * SLAM_PARTICLE_DISTANCE;
+        double tipY = this.getY() + 1.5;
+        level.sendParticles(ParticleTypes.EXPLOSION, tipX, tipY, tipZ, 1, 0.0, 0.0, 0.0, 0.0);
+        level.sendParticles(ParticleTypes.CLOUD, tipX, this.getY() + 0.2, tipZ, 24, 1.6, 0.2, 1.6, 0.05);
+        for (int i = 0; i < 16; i++) {
+            double angle = Math.PI * 2.0 * i / 16.0;
+            double px = this.getX() + Math.cos(angle) * SLAM_RADIUS;
+            double pz = this.getZ() + Math.sin(angle) * SLAM_RADIUS;
+            level.sendParticles(ParticleTypes.CLOUD, px, this.getY() + 0.15, pz, 1, 0.0, 0.0, 0.0, 0.02);
+            level.sendParticles(ParticleTypes.CRIT, px, this.getY() + 0.15, pz, 2, 0.1, 0.1, 0.1, 0.05);
+        }
+        level.playSound(null, this.blockPosition(), SoundEvents.GENERIC_EXPLODE.value(), SoundSource.HOSTILE, 0.6f, 0.9f);
+    }
+
+    private void thrustImpact(ServerLevel level) {
+        LivingEntity target = this.getTarget();
+        if (target == null) {
+            return;
+        }
+        double dx = target.getX() - this.getX();
+        double dz = target.getZ() - this.getZ();
+        if (Math.sqrt(dx * dx + dz * dz) > THRUST_MAX_RANGE) {
+            return;
+        }
+        if (horizontalAngle(horizontalForward(), dx, dz) > THRUST_CONE_DEGREES / 2.0) {
+            return;
+        }
+        target.hurt(this.damageSources().mobAttack(this), attackDamage(THRUST_DAMAGE_MULTIPLIER));
+        knockbackAway(target, THRUST_KNOCKBACK);
+    }
+
+    private float attackDamage(float multiplier) {
+        return (float) (this.getAttributeValue(Attributes.ATTACK_DAMAGE) * multiplier);
+    }
+
+    private void knockbackAway(LivingEntity target, double strength) {
+        double dx = this.getX() - target.getX();
+        double dz = this.getZ() - target.getZ();
+        target.knockback(strength, dx, dz);
+    }
+
+    private Vec3 horizontalForward() {
+        double yaw = Math.toRadians(this.getYRot());
+        return new Vec3(-Math.sin(yaw), 0.0, Math.cos(yaw));
+    }
+
+    private static double horizontalAngle(Vec3 forward, double dx, double dz) {
+        double length = Math.sqrt(dx * dx + dz * dz);
+        if (length < 1.0E-4) {
+            return 0.0;
+        }
+        double nx = dx / length;
+        double nz = dz / length;
+        double dot = Mth.clamp(forward.x * nx + forward.z * nz, -1.0, 1.0);
+        return Math.toDegrees(Math.acos(dot));
+    }
+
+    private double horizontalDistanceTo(Entity other) {
+        double dx = this.getX() - other.getX();
+        double dz = this.getZ() - other.getZ();
+        return Math.sqrt(dx * dx + dz * dz);
+    }
+
+    private int countPlayersWithin(ServerLevel level, double radius) {
+        int count = 0;
+        for (ServerPlayer player : level.players()) {
+            if (arenaLock().contains(player.position()) && this.distanceTo(player) <= radius) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // --- Phase 2: telegraphed charge ---
+
+    private void tickCharge(ServerLevel level) {
+        if (this.charging) {
+            tickCharging(level);
+            return;
+        }
+        if (this.chargeWindup) {
+            tickChargeWindup(level);
+            return;
+        }
+
+        if (this.chargeCooldown > 0) {
+            this.chargeCooldown--;
+            return;
+        }
+        if (this.pulseTelegraph > 0 || this.freezeTicks > 0 || this.invulnerableTicks > 0
+                || this.activeAttack != ATTACK_NONE) {
+            return;
+        }
+
+        LivingEntity target = this.getTarget();
+        if (!(target instanceof Player)) {
+            return;
+        }
+        double distance = horizontalDistanceTo(target);
+        if (distance < CHARGE_MIN_RANGE || distance > CHARGE_MAX_RANGE) {
+            return;
+        }
+        if (!this.hasLineOfSight(target) || !arenaLock().contains(target.position())) {
+            return;
+        }
+        startChargeWindup(level, target);
+    }
+
+    private void startChargeWindup(ServerLevel level, LivingEntity target) {
+        this.chargeWindup = true;
+        this.chargeTimer = CHARGE_WINDUP_TICKS;
+        this.getNavigation().stop();
+        Vec3 delta = this.getDeltaMovement();
+        this.setDeltaMovement(0.0, delta.y, 0.0);
+        this.getLookControl().setLookAt(target, 30.0f, 30.0f);
+        level.playSound(null, this.blockPosition(), SoundEvents.RAVAGER_ROAR, SoundSource.HOSTILE, 1.0f, 1.0f);
+    }
+
+    private void tickChargeWindup(ServerLevel level) {
+        LivingEntity target = this.getTarget();
+        this.getNavigation().stop();
+        Vec3 delta = this.getDeltaMovement();
+        this.setDeltaMovement(0.0, delta.y, 0.0);
+        if (target != null) {
+            this.getLookControl().setLookAt(target, 30.0f, 30.0f);
+            drawChargeTelegraph(level, target);
+        }
+
+        this.chargeTimer--;
+        if (this.chargeTimer > 0) {
+            return;
+        }
+
+        // Lock the charge direction to the target's position at the end of the windup.
+        Vec3 direction = target != null
+                ? new Vec3(target.getX() - this.getX(), 0.0, target.getZ() - this.getZ())
+                : Vec3.ZERO;
+        if (direction.lengthSqr() < 1.0E-4) {
+            Vec3 forward = horizontalForward();
+            direction = new Vec3(forward.x, 0.0, forward.z);
+        }
+        this.chargeDirection = direction.normalize();
+        this.chargeWindup = false;
+        this.charging = true;
+        this.chargeTimer = CHARGE_MAX_TICKS;
+        this.chargeHitPlayers.clear();
+        // The first move happens next tick; clear any stale collision flag from before.
+        this.horizontalCollision = false;
+    }
+
+    private void tickCharging(ServerLevel level) {
+        this.chargeTimer--;
+
+        if (this.horizontalCollision || !arenaLock().contains(this.position()) || this.chargeTimer <= 0) {
+            finishCharge(level, this.horizontalCollision);
+            return;
+        }
+
+        this.setDeltaMovement(this.chargeDirection.x * CHARGE_SPEED, this.getDeltaMovement().y,
+                this.chargeDirection.z * CHARGE_SPEED);
+
+        float yaw = (float) Math.toDegrees(Math.atan2(-this.chargeDirection.x, this.chargeDirection.z));
+        this.setYRot(yaw);
+        this.setYBodyRot(yaw);
+        this.setYHeadRot(yaw);
+
+        AABB hitBox = this.getBoundingBox().inflate(CHARGE_HITBOX_INFLATE);
+        for (ServerPlayer player : level.players()) {
+            if (!arenaLock().contains(player.position())) {
+                continue;
+            }
+            if (!hitBox.intersects(player.getBoundingBox())) {
+                continue;
+            }
+            if (!this.chargeHitPlayers.add(player.getUUID())) {
+                continue;
+            }
+            player.hurt(this.damageSources().mobAttack(this), attackDamage(CHARGE_DAMAGE_MULTIPLIER));
+            player.knockback(CHARGE_KNOCKBACK, -this.chargeDirection.x, -this.chargeDirection.z);
+            level.playSound(null, player.blockPosition(), SoundEvents.IRON_GOLEM_ATTACK, SoundSource.HOSTILE, 1.0f, 1.0f);
+        }
+    }
+
+    private void finishCharge(ServerLevel level, boolean hitWall) {
+        this.charging = false;
+        this.chargeWindup = false;
+        this.chargeDirection = Vec3.ZERO;
+        this.chargeHitPlayers.clear();
+        this.chargeCooldown = CHARGE_INTERVAL_TICKS;
+        this.getNavigation().stop();
+        Vec3 delta = this.getDeltaMovement();
+        this.setDeltaMovement(0.0, delta.y, 0.0);
+
+        if (hitWall) {
+            this.freezeTicks = Math.max(this.freezeTicks, CHARGE_STUN_TICKS);
+            level.sendParticles(ParticleTypes.CRIT, this.getX(), this.getY() + 1.0, this.getZ(), 24, 0.6, 0.8, 0.6, 0.1);
+            level.playSound(null, this.blockPosition(), SoundEvents.ANVIL_LAND, SoundSource.HOSTILE, 0.6f, 0.8f);
+        }
+    }
+
+    private void drawChargeTelegraph(ServerLevel level, LivingEntity target) {
+        double dx = target.getX() - this.getX();
+        double dz = target.getZ() - this.getZ();
+        double length = Math.sqrt(dx * dx + dz * dz);
+        if (length < 1.0E-4) {
+            return;
+        }
+        double nx = dx / length;
+        double nz = dz / length;
+        int steps = (int) Math.min(length, CHARGE_MAX_RANGE);
+        for (int d = 1; d <= steps; d++) {
+            double px = this.getX() + nx * d;
+            double pz = this.getZ() + nz * d;
+            BlockPos ground = findGround(level, Mth.floor(px), Mth.floor(pz));
+            double py = ground != null ? ground.getY() + 0.1 : this.getY() + 0.1;
+            level.sendParticles(ParticleTypes.END_ROD, px, py, pz, 1, 0.0, 0.0, 0.0, 0.0);
+        }
     }
 
     @Override
@@ -566,6 +1104,7 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
 
         this.encounter.defeat(this);
         discardMinions();
+        resetCombatState();
         this.bossBar.removeAllPlayers();
         this.bossBar.setVisible(false);
         this.triggerAnim("main", "death");
@@ -638,6 +1177,8 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
         AnimationController<WardenOfTheGate> controller =
                 new AnimationController<>(this, "main", 5, this::mainController);
         controller.triggerableAnim("attack", ATTACK)
+                .triggerableAnim("attack_slam", ATTACK_SLAM_ANIM)
+                .triggerableAnim("attack_thrust", ATTACK_THRUST_ANIM)
                 .triggerableAnim("summon", SUMMON)
                 .triggerableAnim("phase_transition", PHASE_TRANSITION)
                 .triggerableAnim("death", DEATH);
@@ -645,7 +1186,16 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
     }
 
     private PlayState mainController(AnimationState<WardenOfTheGate> state) {
-        state.setAnimation(state.isMoving() ? WALK : IDLE);
+        byte moveState = this.getMoveState();
+        if (moveState == MOVE_CHARGING) {
+            state.setAnimation(CHARGE);
+        } else if (moveState == MOVE_CHARGE_WINDUP) {
+            state.setAnimation(CHARGE_WINDUP);
+        } else if (state.isMoving()) {
+            state.setAnimation(moveState == MOVE_PHASE_TWO ? RUN : WALK);
+        } else {
+            state.setAnimation(IDLE);
+        }
         return PlayState.CONTINUE;
     }
 
@@ -703,6 +1253,14 @@ public class WardenOfTheGate extends Monster implements GeoBossEntity {
         }
 
         this.phaseTwo = tag.getBoolean("PhaseTwo");
+        if (this.phaseTwo) {
+            applyPhaseTwoSpeed();
+        } else {
+            removePhaseTwoSpeed();
+        }
+
+        // Windup/charge/attack state is transient and always resets to normal on load.
+        resetCombatState();
 
         this.minionIds.clear();
         ListTag minions = tag.getList("Minions", Tag.TAG_COMPOUND);

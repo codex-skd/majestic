@@ -217,7 +217,7 @@ Orden global y detalle en [`PROGRESSION.md §5`](PROGRESSION.md) y `§6` (alcanc
 5. **Contenido v1 completo** (`PROGRESSION.md §6`) + pulido → `1.0.0` de los 4 mods.
    - **Antes de la primera release (1.0.0): integrar más idiomas** además de `en_us` y `es_es` (pedido del usuario 2026-09-24).
    - **Pase de progresión pendiente**: foco/altar/pilar sin forma de conseguirse en supervivencia, sigilos solo en el Acto II, entradas de hechizos del libro sin desbloqueo (ver `DESIGN_MAJESTIC_1-21-1.md §5g`).
-   - **Jefe I animaciones v2**: pendiente del taller (`BOSS_I_ANIMATION_V2_GUIDE.md`), luego cablear ataques en código.
+   - **Jefe I animaciones v2**: hechas (beta.13). Falta probar el combate en juego.
 
 Claude compila y verifica cada hito (`./gradlew.bat runData build` + arranque `runClient`/`runServer`)
 antes de pasar al siguiente. La implementación se delega en OpenCode; el diseño, docs, git,
