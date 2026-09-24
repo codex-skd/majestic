@@ -1,0 +1,16 @@
+{
+  "block.majestic.astral_altar": "Astral Altar",
+  "block.majestic.astral_pillar": "Astral Pillar",
+  "commands.majestic.status.cooldown": "%s: on cooldown (%d ticks)",
+  "commands.majestic.status.essence": "Essence: %d/%d",
+  "commands.majestic.status.no_cooldown": "%s: ready",
+  "item.majestic.altar_blueprint_t2": "Tier 2 Altar Blueprint",
+  "item.majestic.astral_dust": "Astral Dust",
+  "item.majestic.blank_page": "Blank Page",
+  "item.majestic.star_fragment": "Star Fragment",
+  "item.majestic.starlight_bolt_sigil": "Starlight Bolt Sigil",
+  "item.majestic.starlight_focus": "Starlight Focus",
+  "item.majestic.starlight_reveal_sigil": "Starlight Reveal Sigil",
+  "item.majestic.starlight_surge_sigil": "Starlight Surge Sigil",
+  "item.majestic.starlight_ward_sigil": "Starlight Ward Sigil"
+}

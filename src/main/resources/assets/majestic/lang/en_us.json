@@ -1,6 +1,0 @@
-{
-  "item.majestic.starlight_focus": "Starlight Focus",
-  "commands.majestic.status.essence": "Essence: %d/%d",
-  "commands.majestic.status.cooldown": "%s: on cooldown (%d ticks)",
-  "commands.majestic.status.no_cooldown": "%s: ready"
-}

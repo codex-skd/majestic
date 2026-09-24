@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.0-beta.9]
+
+### Added
+- Texturas propias para los 9 ítems (`starlight_focus`, `blank_page`, los 4 sigilos, `star_fragment`,
+  `altar_blueprint_t2`, `astral_dust`) y los 2 bloques (`astral_altar`, `astral_pillar`), generadas
+  y validadas con el pipeline de `taller_minecraft` según `docs/TEXTURE_GUIDE.md`. Se acaba el
+  tablero morado/negro de textura ausente.
+
+### Fixed
+- El datagen de cliente (blockstates, modelos de ítem/bloque, `en_us`) nunca se había llegado a
+  commitear en `src/generated/resources`: ahora se genera y versiona. Los ítems/bloques que no
+  tenían nombre traducido (sigilos, fragmento estelar, plano, polvo astral, altar, pilar) ya lo
+  tienen.
+- Eliminadas las copias a mano de `lang/en_us.json` y `models/item/starlight_focus.json`, que
+  duplicaban la salida de datagen y hacían fallar `processResources` (mismo caso que beta.8).
+
 ## [0.0.0-beta.8]
 
 ### Fixed
