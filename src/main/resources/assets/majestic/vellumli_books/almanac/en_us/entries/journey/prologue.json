@@ -1,0 +1,16 @@
+{
+  "name": "Prologue",
+  "category": "majestic:journey",
+  "icon": "majestic:starlight_focus",
+  "sort_num": 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)When the sun sinks and the stars awaken,$(br)those who once kept watch walk again.$(br)Hooded, their lanterns dark, they wander the night,$(br)still clutching the words they failed to guard.$(br2)Take the first page back from the fallen,$(br)and the road to the light will open.$()"
+    },
+    {
+      "type": "text",
+      "text": "Keep this Almanac with you. A recovered page, once read, becomes part of it and reveals the next step of the journey."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "I. The Fallen Shrines",
+  "category": "majestic:journey",
+  "icon": "majestic:beginning_page",
+  "sort_num": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Journal of the Order of Watchers, first entry.$()$(br2)We raised small shrines wherever the sky is open: in forests, on plains and meadows, in the taiga and the savanna. Look for weathered stone brick, moss and the blue flame of soul lanterns."
+    },
+    {
+      "type": "text",
+      "text": "The shrines lie far apart, several hundred blocks from one another. In the chest of each one, the Order left the next page of this journal.$(br2)Find a Fallen Shrine and recover it."
+    }
+  ],
+  "advancement": "majestic:journey/chapter_1"
+}

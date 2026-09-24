@@ -2,7 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.0-beta.13]
+## [0.0.0-beta.14]
+
+### Added
+- **El Viaje (Journey I)**, la guía como viaje real:
+  - Nueva categoría del Almanaque **El Viaje** con un **Prólogo** siempre visible (un acertijo que apunta a los
+    Vigías caídos) y dos capítulos que se desbloquean con hojas del diario de la Orden.
+  - **Hoja del comienzo**: la suelta el Vigía caído (garantizada mientras el jugador no haya leído el
+    Capítulo 1). Usarla con el Almanaque en el inventario desbloquea **Capítulo 1 — Los Santuarios caídos**.
+  - **Hoja del santuario**: garantizada en el cofre del Santuario caído. Con el Capítulo 1 leído, desbloquea
+    **Capítulo 2 — El Observatorio** (y su guardián). Solo afecta a quien la usa.
+- **4 mobs nocturnos** que aparecen de noche en el Overworld: **Vigía caído** (cuerpo a cuerpo, no-muerto, arde
+  al sol), **Cultista astrólogo** (lanza rayos de luz estelar a distancia), **Reptador meteórico** (trepa paredes)
+  y **Polilla umbría** (vuela y se lanza en picado). Con huevos de spawn y botín propio.
+- Modelos de los 4 mobs y texturas de las hojas pendientes del taller (`docs/JOURNEY_I_TALLER_GUIDE.md`): hasta
+  entonces los mobs son invisibles y las hojas se ven sin textura.
+
+
 
 ### Changed
 - **Guardián de la Puerta, combate v2** con las animaciones v2 del taller (`taller_minecraft` `961ea2d`):

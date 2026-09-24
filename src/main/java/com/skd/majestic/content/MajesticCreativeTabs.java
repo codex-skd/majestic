@@ -27,6 +27,8 @@ public final class MajesticCreativeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(MajesticItems.STARLIGHT_FOCUS.get());
                         output.accept(MajesticItems.BLANK_PAGE.get());
+                        output.accept(MajesticItems.BEGINNING_PAGE.get());
+                        output.accept(MajesticItems.SHRINE_PAGE.get());
                         output.accept(MajesticItems.STARLIGHT_BOLT_SIGIL.get());
                         output.accept(MajesticItems.STARLIGHT_WARD_SIGIL.get());
                         output.accept(MajesticItems.STARLIGHT_REVEAL_SIGIL.get());
@@ -48,6 +50,10 @@ public final class MajesticCreativeTabs {
                         output.accept(MajesticItems.ETHER_LENS.get());
                         output.accept(MajesticItems.WARDEN_OF_THE_GATE_SPAWN_EGG.get());
                         output.accept(MajesticItems.ASTRAL_CONSTRUCT_SPAWN_EGG.get());
+                        output.accept(MajesticItems.FALLEN_WATCHER_SPAWN_EGG.get());
+                        output.accept(MajesticItems.STARGAZER_CULTIST_SPAWN_EGG.get());
+                        output.accept(MajesticItems.METEOR_CRAWLER_SPAWN_EGG.get());
+                        output.accept(MajesticItems.UMBRAL_MOTH_SPAWN_EGG.get());
                     })
                     .build());
 
@@ -62,6 +68,10 @@ public final class MajesticCreativeTabs {
         if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
             event.accept(MajesticItems.WARDEN_OF_THE_GATE_SPAWN_EGG.get());
             event.accept(MajesticItems.ASTRAL_CONSTRUCT_SPAWN_EGG.get());
+            event.accept(MajesticItems.FALLEN_WATCHER_SPAWN_EGG.get());
+            event.accept(MajesticItems.STARGAZER_CULTIST_SPAWN_EGG.get());
+            event.accept(MajesticItems.METEOR_CRAWLER_SPAWN_EGG.get());
+            event.accept(MajesticItems.UMBRAL_MOTH_SPAWN_EGG.get());
         }
     }
 }

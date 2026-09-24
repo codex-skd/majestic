@@ -15,6 +15,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.world.item.Items;
 import com.skd.almanaccore.guide.VellumliBridge;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -192,7 +193,18 @@ public final class DataGenerators {
 
             withExistingParent("warden_of_the_gate_spawn_egg", mcLoc("item/template_spawn_egg"));
             withExistingParent("astral_construct_spawn_egg", mcLoc("item/template_spawn_egg"));
+            withExistingParent("fallen_watcher_spawn_egg", mcLoc("item/template_spawn_egg"));
+            withExistingParent("stargazer_cultist_spawn_egg", mcLoc("item/template_spawn_egg"));
+            withExistingParent("meteor_crawler_spawn_egg", mcLoc("item/template_spawn_egg"));
+            withExistingParent("umbral_moth_spawn_egg", mcLoc("item/template_spawn_egg"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "ether_lens"));
+
+            // Temporary until the journal page textures ship: mark them generated so the model
+            // generator does not fail texture validation while the PNGs are missing.
+            existingFileHelper.trackGenerated(modLoc("item/beginning_page"), PackType.CLIENT_RESOURCES, ".png", "textures");
+            withExistingParent("beginning_page", mcLoc("item/generated")).texture("layer0", modLoc("item/beginning_page"));
+            existingFileHelper.trackGenerated(modLoc("item/shrine_page"), PackType.CLIENT_RESOURCES, ".png", "textures");
+            withExistingParent("shrine_page", mcLoc("item/generated")).texture("layer0", modLoc("item/shrine_page"));
         }
     }
 
@@ -225,6 +237,10 @@ public final class DataGenerators {
         protected void addTranslations() {
             add("item.majestic.starlight_focus", "Starlight Focus");
             add("item.majestic.blank_page", "Blank Page");
+            add("item.majestic.beginning_page", "Page of the Beginning");
+            add("item.majestic.beginning_page.desc", "A torn page from the Order of Watchers' journal.");
+            add("item.majestic.shrine_page", "Shrine Page");
+            add("item.majestic.shrine_page.desc", "The next page of the Order's journal.");
             add("item.majestic.starlight_bolt_sigil", "Starlight Bolt Sigil");
             add("item.majestic.starlight_ward_sigil", "Starlight Ward Sigil");
             add("item.majestic.starlight_reveal_sigil", "Starlight Reveal Sigil");
@@ -237,14 +253,29 @@ public final class DataGenerators {
             add("item.majestic.ether_lens", "Ether Lens");
             add("item.majestic.warden_of_the_gate_spawn_egg", "Warden of the Gate Spawn Egg");
             add("item.majestic.astral_construct_spawn_egg", "Astral Construct Spawn Egg");
+            add("item.majestic.fallen_watcher_spawn_egg", "Fallen Watcher Spawn Egg");
+            add("item.majestic.stargazer_cultist_spawn_egg", "Stargazer Cultist Spawn Egg");
+            add("item.majestic.meteor_crawler_spawn_egg", "Meteor Crawler Spawn Egg");
+            add("item.majestic.umbral_moth_spawn_egg", "Umbral Moth Spawn Egg");
             add("entity.majestic.warden_of_the_gate", "Warden of the Gate");
             add("entity.majestic.astral_construct", "Astral Construct");
+            add("entity.majestic.fallen_watcher", "Fallen Watcher");
+            add("entity.majestic.stargazer_cultist", "Stargazer Cultist");
+            add("entity.majestic.meteor_crawler", "Meteor Crawler");
+            add("entity.majestic.umbral_moth", "Umbral Moth");
+            add("entity.majestic.starlight_bolt", "Starlight Bolt");
             add("advancements.majestic.warden_of_the_gate.title", "Beyond the Gate");
             add("advancements.majestic.warden_of_the_gate.description", "Defeat the Warden of the Gate in the Observatory");
             add("itemGroup.majestic.magic", "Majestic: Magic");
             add("itemGroup.majestic.world", "Majestic: World");
             add("book.majestic.almanac.name", "The Almanac");
             add("book.majestic.almanac.landing_text", "A guide to the arcane arts of starlight.");
+            add("book.majestic.almanac.chapter_1", "I. The Fallen Shrines");
+            add("book.majestic.almanac.chapter_2", "II. The Observatory");
+            add("message.majestic.page.no_book", "You need the Almanac with you to read this page.");
+            add("message.majestic.page.already_read", "The Almanac already holds this page.");
+            add("message.majestic.page.needs_previous", "This page makes no sense yet. Something comes before it.");
+            add("message.majestic.page.new_chapter", "A new chapter unfolds in the Almanac: %s");
             add("message.majestic.focus.no_spell", "No spell recorded on this focus.");
             add("message.majestic.focus.cooldown", "Spell is on cooldown!");
             add("hud.majestic.essence", "Essence: %d/%d");

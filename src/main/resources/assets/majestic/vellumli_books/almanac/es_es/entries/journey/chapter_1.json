@@ -1,0 +1,17 @@
+{
+  "name": "I. Los Santuarios caídos",
+  "category": "majestic:journey",
+  "icon": "majestic:beginning_page",
+  "sort_num": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Diario de la Orden de los Observadores, primera entrada.$()$(br2)Alzamos pequeños santuarios allí donde el cielo está abierto: en bosques, llanuras y praderas, en la taiga y en la sabana. Busca ladrillo de piedra gastado, musgo y la llama azul de los faroles de almas."
+    },
+    {
+      "type": "text",
+      "text": "Los santuarios están muy separados, a varios cientos de bloques unos de otros. En el cofre de cada uno, la Orden dejó la siguiente página de este diario.$(br2)Encuentra un Santuario caído y recupérala."
+    }
+  ],
+  "advancement": "majestic:journey/chapter_1"
+}
