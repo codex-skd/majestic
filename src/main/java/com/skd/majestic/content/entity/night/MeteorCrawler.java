@@ -6,6 +6,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
@@ -33,8 +34,10 @@ public class MeteorCrawler extends Spider implements GeoEntity {
     private static final RawAnimation DEATH = RawAnimation.begin().thenPlayAndHold("animation.meteor_crawler.death");
 
     private static final int DEATH_LENGTH_TICKS = 20;
+    private static final int ATTACK_IMPACT_TICKS = 5;
 
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+    private final DelayedMeleeAttack pendingAttack = new DelayedMeleeAttack();
 
     public MeteorCrawler(EntityType<? extends MeteorCrawler> entityType, Level level) {
         super(entityType, level);
@@ -50,12 +53,30 @@ public class MeteorCrawler extends Spider implements GeoEntity {
 
     @Override
     public boolean doHurtTarget(Entity target) {
+        if (!(target instanceof LivingEntity livingTarget)) {
+            return super.doHurtTarget(target);
+        }
+        if (!this.pendingAttack.schedule(livingTarget, ATTACK_IMPACT_TICKS)) {
+            return false;
+        }
         this.triggerAnim("main", "attack");
-        return super.doHurtTarget(target);
+        return true;
+    }
+
+    @Override
+    public void tick() {
+        super.tick();
+        if (!this.level().isClientSide() && this.pendingAttack.isPending()) {
+            LivingEntity target = this.pendingAttack.tick();
+            if (target != null && target.isAlive() && this.isWithinMeleeAttackRange(target)) {
+                super.doHurtTarget(target);
+            }
+        }
     }
 
     @Override
     public void die(DamageSource damageSource) {
+        this.pendingAttack.cancel();
         super.die(damageSource);
         if (!this.level().isClientSide()) {
             this.triggerAnim("main", "death");

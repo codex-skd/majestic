@@ -2,7 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.0-beta.14]
+## [0.0.0-beta.15]
+
+### Added
+- Modelos, animaciones y texturas del taller (`taller_minecraft` `e1d5454`) para los 4 mobs nocturnos: ya no son
+  invisibles.
+- Texturas de la **Hoja del comienzo** y la **Hoja del santuario**.
+
+### Changed
+- **Santuario caído** con un solo cofre (el que tenía un bloque encima se ha quitado): una Hoja del santuario por
+  estructura.
+- El daño del Vigía caído y del Reptador meteórico llega en el fotograma del impacto (0,3 s / 0,25 s); la Polilla
+  umbría anima el picado al empezar a bajar, no al tocar.
+- Retirado el apaño de textura pendiente de las hojas (datagen vuelve a validarlas).
+
+
 
 ### Added
 - **El Viaje (Journey I)**, la guía como viaje real:

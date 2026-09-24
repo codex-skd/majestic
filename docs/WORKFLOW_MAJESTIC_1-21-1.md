@@ -206,7 +206,7 @@ Orden global y detalle en [`PROGRESSION.md §5`](PROGRESSION.md) y `§6` (alcanc
 1. **[hecho] Alpha jugable** — 1 escuela (Luz Estelar) + 3–4 hechizos + foco + HUD de esencia. `astral_core` M1 + `almanac_core` M1.
 2. **[hecho, solo T1] Rituales + investigación** — altar T1 (T2 pendiente, ver `DESIGN_MAJESTIC_1-21-1.md §5b`), nodo `first_light`, libro-guía. `astral_core` M2 + `almanac_core` M2+M3.
 3. **[hecho, falta probar en juego] Estructuras + Jefe I** — Fallen Shrine (M3), Observatory + arena (M4), Jefe I `warden_of_the_gate` (M5, ver `DESIGN_MAJESTIC_1-21-1.md §5f`). Assets del taller entregados (beta.11). Pendiente: altar T2. `expedition_core` M1.
-3b. **[hecho, beta.14] Journey I — la guía como viaje**: 4 mobs nocturnos, hojas del diario que desbloquean capítulos del Almanaque (Prólogo → Cap. 1 Santuario → Cap. 2 Observatorio). Pendiente del taller: modelos de mobs, texturas de hojas, Santuario con un solo cofre (`JOURNEY_I_TALLER_GUIDE.md`). Siguiente tramo del viaje: a definir con el usuario.
+3b. **[hecho, beta.14] Journey I — la guía como viaje**: 4 mobs nocturnos, hojas del diario que desbloquean capítulos del Almanaque (Prólogo → Cap. 1 Santuario → Cap. 2 Observatorio). Assets del taller integrados en beta.15. Siguiente tramo del viaje: a definir con el usuario.
 4. **Plano celeste** (**siguiente hito**) — dimensión, biomas, Actos III–IV, reliquias, jefes finales, tomos. `expedition_core` M2 + `almanac_core` M3.
 5. **Contenido v1 completo** (`PROGRESSION.md §6`) + pulido → `1.0.0` de los 4 mods.
    - **Antes de la primera release (1.0.0): integrar más idiomas** además de `en_us` y `es_es` (pedido del usuario 2026-09-24).

@@ -15,7 +15,6 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.world.item.Items;
 import com.skd.almanaccore.guide.VellumliBridge;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.PackType;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -198,13 +197,8 @@ public final class DataGenerators {
             withExistingParent("meteor_crawler_spawn_egg", mcLoc("item/template_spawn_egg"));
             withExistingParent("umbral_moth_spawn_egg", mcLoc("item/template_spawn_egg"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "ether_lens"));
-
-            // Temporary until the journal page textures ship: mark them generated so the model
-            // generator does not fail texture validation while the PNGs are missing.
-            existingFileHelper.trackGenerated(modLoc("item/beginning_page"), PackType.CLIENT_RESOURCES, ".png", "textures");
-            withExistingParent("beginning_page", mcLoc("item/generated")).texture("layer0", modLoc("item/beginning_page"));
-            existingFileHelper.trackGenerated(modLoc("item/shrine_page"), PackType.CLIENT_RESOURCES, ".png", "textures");
-            withExistingParent("shrine_page", mcLoc("item/generated")).texture("layer0", modLoc("item/shrine_page"));
+            basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "beginning_page"));
+            basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "shrine_page"));
         }
     }
 

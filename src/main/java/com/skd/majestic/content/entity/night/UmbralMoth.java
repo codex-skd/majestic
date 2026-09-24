@@ -9,6 +9,7 @@ import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnGroupData;
@@ -44,7 +45,13 @@ public class UmbralMoth extends Phantom implements GeoEntity {
 
     private static final int DEATH_LENGTH_TICKS = 20;
 
+    private static final int SWOOP_WINDOW_TICKS = 25;
+    private static final double SWOOP_DESCENT_THRESHOLD = -0.1;
+    private static final double SWOOP_HORIZONTAL_RANGE_SQR = 49.0;
+
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+
+    private int swoopWindow;
 
     public UmbralMoth(EntityType<? extends UmbralMoth> entityType, Level level) {
         super(entityType, level);
@@ -76,10 +83,40 @@ public class UmbralMoth extends Phantom implements GeoEntity {
         return data;
     }
 
+    /**
+     * The swoop animation must start 10 ticks before its impact, but it used to be triggered
+     * on contact. Phantom#attackPhase is private and cannot be read (no access transformer),
+     * so the dive is inferred from the sweep goal's movement instead: once targeting, the
+     * phantom circles above the victim and PhantomSweepAttackGoal then points its move target
+     * straight at it, which PhantomMoveControl turns into a sustained descent. A downward
+     * velocity toward a nearby, lower target is therefore the most reliable server-side proxy
+     * for the start of a swoop; the window suppresses retriggers during the same dive.
+     */
     @Override
-    public boolean doHurtTarget(Entity target) {
-        this.triggerAnim("main", "swoop");
-        return super.doHurtTarget(target);
+    public void tick() {
+        super.tick();
+
+        if (this.level().isClientSide()) {
+            return;
+        }
+
+        if (this.swoopWindow > 0) {
+            this.swoopWindow--;
+        }
+
+        LivingEntity target = this.getTarget();
+        if (target == null || this.swoopWindow > 0) {
+            return;
+        }
+
+        double dx = target.getX() - this.getX();
+        double dz = target.getZ() - this.getZ();
+        if (this.getDeltaMovement().y < SWOOP_DESCENT_THRESHOLD
+                && target.getY() < this.getY()
+                && dx * dx + dz * dz <= SWOOP_HORIZONTAL_RANGE_SQR) {
+            this.triggerAnim("main", "swoop");
+            this.swoopWindow = SWOOP_WINDOW_TICKS;
+        }
     }
 
     @Override
