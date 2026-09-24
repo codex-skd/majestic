@@ -137,7 +137,7 @@ correspondiente arriba):
 
 ---
 
-## 4. Batch 2 — Boss I milestone (pending, for taller_minecraft)
+## 4. Batch 2 — Boss I milestone (done, beta.11)
 
 > In English for the taller. Batch 1 (§1–§2) is done (beta.9). Same technical format (§0: 16×16 PNG,
 > real alpha, flat pixel art, 1px dark outline) and same palette.
@@ -165,6 +165,26 @@ Full GeckoLib model (geo + animations + 64×64 texture) — separate spec in
 - Spawn eggs (`warden_of_the_gate_spawn_egg`, `astral_construct_spawn_egg`): they use the tinted
   vanilla template, no texture of their own.
 - Particles for the phase-2 light pulse: vanilla particles (`END_ROD`, `FLASH`).
+
+## 4b. Batch 3 — guide book (pending, for taller_minecraft)
+
+> In English for the taller. Same format as §0 (16×16 PNG, real alpha, flat pixel art, 1px dark outline).
+> Batch 2 (`ether_lens`, `astral_construct`) is done (beta.11).
+>
+> **Delivery**: produce and validate inside `taller_minecraft` only
+> (`textures/majestic/output/1.21.1/assets/majestic/textures/item/almanac.png` + the validation file).
+> Do not copy anything into majestic — majestic pulls it from there.
+
+### `almanac.png` (item — the guide book "The Almanac")
+The mod's guide book, given to every player on first join and craftable (book surrounded by lapis).
+It must read as **a book**, clearly different from a vanilla book and from the Vellumli default book.
+- Closed hardcover book seen slightly from the front (same framing as vanilla `book.png`).
+- Cover: deep night-blue leather (`#1f2a4a` → `#2e3d66`), 1px darker spine on the left.
+- Front emblem: a small **8-point star** in muted gold (`#d4af6a`) in the middle of the cover, with 1–2
+  pale-blue (`#a8c8e8`) highlight pixels — same star motif as the Observatory mosaic and the Warden's
+  chest plate.
+- Gold corner caps (1–2 px each) and a thin gold band near the spine.
+- Page edges visible on the right side: parchment (`#d8c9a3` / `#b8a67e`).
 
 ## 5. Cuando termines
 
