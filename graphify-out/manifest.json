@@ -60,14 +60,14 @@
     "semantic_hash": "6512b7b207afe76ec1e6f1388e0cd5bb"
   },
   "src/main/java/com/skd/majestic/content/item/MajesticItems.java": {
-    "mtime": 1790108567.8769293,
-    "ast_hash": "fc66e12427da645c28c85d918e0bfbfc",
-    "semantic_hash": "fc66e12427da645c28c85d918e0bfbfc"
+    "mtime": 1790208518.813158,
+    "ast_hash": "412955d287a0113e323d2f4178bdc7e8",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/datagen/DataGenerators.java": {
-    "mtime": 1790108653.685078,
-    "ast_hash": "5f30d96027b0213f258152d6feb18614",
-    "semantic_hash": "5f30d96027b0213f258152d6feb18614"
+    "mtime": 1790210013.5830662,
+    "ast_hash": "f1dca21830905c6ebf5da3518f7717d8",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/magic/ritual/EngraveSpellRitual.java": {
     "mtime": 1790108735.6501112,
@@ -149,31 +149,6 @@
     "ast_hash": "7133fd402f88aad4aec69778b20970ab",
     "semantic_hash": "7133fd402f88aad4aec69778b20970ab"
   },
-  "src/main/resources/data/majestic/almanac/research_node/first_light.json": {
-    "mtime": 1790108606.3321397,
-    "ast_hash": "a864965562abe6faf8716c5f32a75b69",
-    "semantic_hash": "a864965562abe6faf8716c5f32a75b69"
-  },
-  "src/main/resources/data/majestic/almanac/spell/starlight_bolt.json": {
-    "mtime": 1789132359.1604557,
-    "ast_hash": "7e0e0f9c25d7b7f7cfea5315207ef09f",
-    "semantic_hash": "7e0e0f9c25d7b7f7cfea5315207ef09f"
-  },
-  "src/main/resources/data/majestic/almanac/spell/starlight_reveal.json": {
-    "mtime": 1789132360.5219314,
-    "ast_hash": "244bf224280c9622cc0a2b9215147abe",
-    "semantic_hash": "244bf224280c9622cc0a2b9215147abe"
-  },
-  "src/main/resources/data/majestic/almanac/spell/starlight_surge.json": {
-    "mtime": 1789132361.0344937,
-    "ast_hash": "4aaaf1b11aa797fe131e57ae367aa5c9",
-    "semantic_hash": "4aaaf1b11aa797fe131e57ae367aa5c9"
-  },
-  "src/main/resources/data/majestic/almanac/spell/starlight_ward.json": {
-    "mtime": 1789132359.741784,
-    "ast_hash": "eb4bfa02908c53b1437283fd19087f2d",
-    "semantic_hash": "eb4bfa02908c53b1437283fd19087f2d"
-  },
   "src/main/resources/data/majestic/patchouli_books/almanac/book.json": {
     "mtime": 1790108607.4982579,
     "ast_hash": "a0ea28c058cb67e8b33113733cf9c00b",
@@ -228,5 +203,230 @@
     "mtime": 1790108605.8393095,
     "ast_hash": "39c67bea49c34b0b2a4c82b868e83f4e",
     "semantic_hash": "39c67bea49c34b0b2a4c82b868e83f4e"
+  },
+  "src/generated/resources/data/majestic/almanac/research_node/first_light.json": {
+    "mtime": 1790210215.1167574,
+    "ast_hash": "2a5aa4cd8670a1f1638975dc2a641f34",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/data/majestic/almanac/ritual/engrave_spell.json": {
+    "mtime": 1790210215.1155357,
+    "ast_hash": "7bb11dc0ea27b648887a9892fb75fdc9",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/data/majestic/almanac/spell/starlight_bolt.json": {
+    "mtime": 1790210215.1135323,
+    "ast_hash": "42c5a42660f6e7b6be5efe0a650f0d4f",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/data/majestic/almanac/spell/starlight_reveal.json": {
+    "mtime": 1790210215.1135323,
+    "ast_hash": "77df11166494039f35fe7d865c1ad1ff",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/data/majestic/almanac/spell/starlight_surge.json": {
+    "mtime": 1790210215.1135323,
+    "ast_hash": "9aea4c4ad037b0c04df4d73ddde37573",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/data/majestic/almanac/spell/starlight_ward.json": {
+    "mtime": 1790210215.1135323,
+    "ast_hash": "c7977e549da335113231ac0032896325",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/loot_table/chests/fallen_shrine.json": {
+    "mtime": 1790195267.0908043,
+    "ast_hash": "8498d2f8d8712e0022da9f0c40aebd15",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/loot_table/chests/observatory_arena.json": {
+    "mtime": 1790208581.4641356,
+    "ast_hash": "96fb11b696caba72e0d81c71ba159d64",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/loot_table/chests/observatory_study.json": {
+    "mtime": 1790208573.2206962,
+    "ast_hash": "161eec85cb0660e85390ca0d9b32f59d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/tags/worldgen/biome/has_structure/fallen_shrine.json": {
+    "mtime": 1790195261.1163821,
+    "ast_hash": "6942f22f205306f688a9c7b3fa113ac6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/tags/worldgen/biome/has_structure/observatory.json": {
+    "mtime": 1790208566.7706344,
+    "ast_hash": "6942f22f205306f688a9c7b3fa113ac6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/worldgen/structure/fallen_shrine.json": {
+    "mtime": 1790195252.1848986,
+    "ast_hash": "8535fabee1d9b70733c815af4c178bc6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/worldgen/structure/observatory.json": {
+    "mtime": 1790208549.8150866,
+    "ast_hash": "a5dc0d7a1d1ac54925864343bbf555ba",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/worldgen/structure_set/fallen_shrine.json": {
+    "mtime": 1790195256.6946046,
+    "ast_hash": "3af80d1f1146d658558bf2a0ad43b8f5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/worldgen/structure_set/observatory.json": {
+    "mtime": 1790208557.7895744,
+    "ast_hash": "a94702f16c1a19dbcfa76a74c7132abb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/worldgen/template_pool/fallen_shrine/start_pool.json": {
+    "mtime": 1790195246.4827955,
+    "ast_hash": "857e50f444b898981621b50817876484",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/worldgen/template_pool/observatory/arena_pool.json": {
+    "mtime": 1790208543.9900815,
+    "ast_hash": "d176c4ffdd9936e046875287e64d6e39",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/worldgen/template_pool/observatory/corridors.json": {
+    "mtime": 1790208533.8343866,
+    "ast_hash": "449db0588a1528f51efce6ba2d04c98d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/worldgen/template_pool/observatory/start_pool.json": {
+    "mtime": 1790208528.7181897,
+    "ast_hash": "d38a63cc27551ed0d8d0d66fabd189f0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/worldgen/template_pool/observatory/study_pool.json": {
+    "mtime": 1790208539.0687702,
+    "ast_hash": "507ff6678bb9aebd3313909a59a603a7",
+    "semantic_hash": ""
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1789088415.9988143,
+    "ast_hash": "db7896133f311fcfcde35598446763d0",
+    "semantic_hash": ""
+  },
+  ".gitlab-ci.yml": {
+    "mtime": 1790208115.5042472,
+    "ast_hash": "7ed75f36b968f8a2eb46941ef222398d",
+    "semantic_hash": ""
+  },
+  "CHANGELOG.md": {
+    "mtime": 1790210388.0119886,
+    "ast_hash": "a7210c61d1ca26dc12b454ebb641ae5c",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1790106293.029352,
+    "ast_hash": "7db78fe2195060441e92fdc615239a50",
+    "semantic_hash": ""
+  },
+  "docs/CONTENT_MAGIC.md": {
+    "mtime": 1789080973.3313608,
+    "ast_hash": "ba495d5b04a602b876dd631fddb21a89",
+    "semantic_hash": ""
+  },
+  "docs/CONTENT_WORLD.md": {
+    "mtime": 1788991485.3371449,
+    "ast_hash": "5cb846bfb98b3014ad0b407695f63d03",
+    "semantic_hash": ""
+  },
+  "docs/DESIGN_ECOSYSTEM.md": {
+    "mtime": 1789088520.1592605,
+    "ast_hash": "49261ccf8dbdfac22175b0405feab3de",
+    "semantic_hash": ""
+  },
+  "docs/DESIGN_MAJESTIC_1-21-1.md": {
+    "mtime": 1790210369.1307983,
+    "ast_hash": "88f6974daf7d6fa10573b0152ae31f6a",
+    "semantic_hash": ""
+  },
+  "docs/INTEGRATIONS.md": {
+    "mtime": 1788991660.2617881,
+    "ast_hash": "51970cca2d159e238eaf0c1abd302600",
+    "semantic_hash": ""
+  },
+  "docs/LORE.md": {
+    "mtime": 1788991611.567799,
+    "ast_hash": "2abf4352c1d372bd83d060f7b946ff43",
+    "semantic_hash": ""
+  },
+  "docs/OBSERVATORY_BUILD_GUIDE.md": {
+    "mtime": 1790206135.3538196,
+    "ast_hash": "6e94025aab3a2efb2e315a1db00d4a21",
+    "semantic_hash": ""
+  },
+  "docs/PROGRESSION.md": {
+    "mtime": 1789058234.4976747,
+    "ast_hash": "c1f921421174ca38ecd71fa5fd90a8e7",
+    "semantic_hash": ""
+  },
+  "docs/README.md": {
+    "mtime": 1789088294.318071,
+    "ast_hash": "d91a2f54c7626dcd341f1ab127e39dfd",
+    "semantic_hash": ""
+  },
+  "docs/STRUCTURES_BUILD_GUIDE.md": {
+    "mtime": 1790207033.6833956,
+    "ast_hash": "04e271bc64af5195ed1e8c7ca5ccc076",
+    "semantic_hash": ""
+  },
+  "docs/TEXTURE_GUIDE.md": {
+    "mtime": 1790210046.9077716,
+    "ast_hash": "35e7656ab11b136498c14eda008f2224",
+    "semantic_hash": ""
+  },
+  "docs/WORKFLOW_MAJESTIC_1-21-1.md": {
+    "mtime": 1790109133.953178,
+    "ast_hash": "1d7b3167cd8bb61f58aa4acdf70e343b",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/project_description.md": {
+    "mtime": 1789210978.3706503,
+    "ast_hash": "59276c55a4283a186ae9aac1f6f9b55a",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/project_vars.md": {
+    "mtime": 1790210405.4590166,
+    "ast_hash": "0c9cc8c72dab4edeeef1bd322ac347dc",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.1.md": {
+    "mtime": 1789238225.539142,
+    "ast_hash": "b182847952dc7330932abec0e7779e29",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.2.md": {
+    "mtime": 1790106359.7305605,
+    "ast_hash": "7c52e55a1480a2be3387a6cf9693a5a3",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.3.md": {
+    "mtime": 1790109200.7574568,
+    "ast_hash": "66b76d7b18cafec04cce084b280aaefd",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.4.md": {
+    "mtime": 1790204079.9514081,
+    "ast_hash": "136b24e015ec81eeef1ae624a7ec5d42",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.6.md": {
+    "mtime": 1790208801.4870472,
+    "ast_hash": "deba335d36615ed4548671c3f7ae054e",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.7.md": {
+    "mtime": 1790209007.275144,
+    "ast_hash": "f5afb8cc15e709368e3cd1c6bf7538ff",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.8.md": {
+    "mtime": 1790210394.4301448,
+    "ast_hash": "ac309c99feed9176adf64d0d448c90ea",
+    "semantic_hash": ""
   }
 }
