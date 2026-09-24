@@ -60,13 +60,13 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/content/item/MajesticItems.java": {
-    "mtime": 1790256233.0581312,
-    "ast_hash": "21262f1ad8e646dda84eec9992e7865e",
+    "mtime": 1790288485.2844288,
+    "ast_hash": "4b45894dfdd12a61e95a20952e767a32",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/datagen/DataGenerators.java": {
-    "mtime": 1790256263.1068447,
-    "ast_hash": "b5aba9f4720ff8bac68f9fe8cdee1a9d",
+    "mtime": 1790288554.5048144,
+    "ast_hash": "a1615885d9a4d5af771e3fb65ae07e5f",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/magic/ritual/EngraveSpellRitual.java": {
@@ -175,8 +175,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/data/majestic/loot_table/chests/fallen_shrine.json": {
-    "mtime": 1790195267.0908043,
-    "ast_hash": "8498d2f8d8712e0022da9f0c40aebd15",
+    "mtime": 1790288586.0471961,
+    "ast_hash": "99ca16b4836b712b2d31f18c5a803359",
     "semantic_hash": ""
   },
   "src/main/resources/data/majestic/loot_table/chests/observatory_arena.json": {
@@ -250,13 +250,13 @@
     "semantic_hash": ""
   },
   ".gitlab-ci.yml": {
-    "mtime": 1790208115.5042472,
-    "ast_hash": "7ed75f36b968f8a2eb46941ef222398d",
+    "mtime": 1790286984.2717113,
+    "ast_hash": "ea206a6f4c590af5d6d578294ecf77e9",
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1790285757.822988,
-    "ast_hash": "33577bce2adc5dcc9d8eb5af8d15cfab",
+    "mtime": 1790289011.7276475,
+    "ast_hash": "f825e16fc85b2bc118083a05690c927d",
     "semantic_hash": ""
   },
   "README.md": {
@@ -280,8 +280,8 @@
     "semantic_hash": ""
   },
   "docs/DESIGN_MAJESTIC_1-21-1.md": {
-    "mtime": 1790285757.8245573,
-    "ast_hash": "3ab9c03c10840678980778e6c0d2b94a",
+    "mtime": 1790289011.7281544,
+    "ast_hash": "4d87a0b8464d1281ec81b3602c039497",
     "semantic_hash": ""
   },
   "docs/INTEGRATIONS.md": {
@@ -320,8 +320,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_MAJESTIC_1-21-1.md": {
-    "mtime": 1790285757.8311713,
-    "ast_hash": "b09a0b0b76a33f89dd578115da610ea2",
+    "mtime": 1790289030.6294858,
+    "ast_hash": "6785baf79b685d8ff1296a5bafcfe7a3",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -330,8 +330,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1790285757.8321764,
-    "ast_hash": "598f6fc30cf3fb9e5f07c984ffbb4260",
+    "mtime": 1790289011.7293656,
+    "ast_hash": "64e19373845313f13636b4f243c414d1",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -380,8 +380,8 @@
     "semantic_hash": ""
   },
   "src/generated/resources/assets/majestic/lang/en_us.json": {
-    "mtime": 1790256276.2373066,
-    "ast_hash": "8bad56a9bdd0964df505111720b0770e",
+    "mtime": 1790288648.2277594,
+    "ast_hash": "47c6abc09987096e6ddd4770b024ccc7",
     "semantic_hash": ""
   },
   "src/generated/resources/assets/majestic/models/block/astral_altar.json": {
@@ -540,8 +540,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/client/entity/MajesticEntityRenderers.java": {
-    "mtime": 1790248300.963927,
-    "ast_hash": "e19f0ba69563d4beb244bba2fa7ba377",
+    "mtime": 1790288457.8261359,
+    "ast_hash": "94151d15ae0fdc7e3a8e988aac41e32f",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/client/entity/WardenOfTheGateModel.java": {
@@ -560,8 +560,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/content/entity/MajesticEntities.java": {
-    "mtime": 1790248123.9573839,
-    "ast_hash": "f489e9720d90d1579cce7e649e4e6e03",
+    "mtime": 1790288623.3599613,
+    "ast_hash": "560321739482fa770e8b845a303930f7",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/content/entity/boss/MajesticArenaData.java": {
@@ -650,13 +650,13 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/content/MajesticCreativeTabs.java": {
-    "mtime": 1790256233.1127813,
-    "ast_hash": "80298cc51b7f38f1f1f33bfd0f542d16",
+    "mtime": 1790288509.9861617,
+    "ast_hash": "e28fa03e8f948744eb94772dbfc61b36",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/lang/es_es.json": {
-    "mtime": 1790256292.277607,
-    "ast_hash": "42e6d2f8b3db4bb7256a4b364bf1443a",
+    "mtime": 1790288889.063382,
+    "ast_hash": "3eae29a4c44ca80f8fdbdcc9ac4226c2",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/categories/research.json": {
@@ -772,6 +772,186 @@
   "docs/curseforge/versions/0.0.0-beta.12.md": {
     "mtime": 1790263016.9511282,
     "ast_hash": "f8820bddfc15dae18f775b47471ccf84",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/beginning_page.json": {
+    "mtime": 1790288648.2251081,
+    "ast_hash": "8d1b1bb51046f1c1993eecaadfa9880e",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/fallen_watcher_spawn_egg.json": {
+    "mtime": 1790288648.2246084,
+    "ast_hash": "470b40d045f2939a8ee89ac35d64f032",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/meteor_crawler_spawn_egg.json": {
+    "mtime": 1790288648.2256083,
+    "ast_hash": "470b40d045f2939a8ee89ac35d64f032",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/shrine_page.json": {
+    "mtime": 1790288648.2246084,
+    "ast_hash": "90f0b56addf9ac07cd877e2b46659ae7",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/stargazer_cultist_spawn_egg.json": {
+    "mtime": 1790288648.2256083,
+    "ast_hash": "470b40d045f2939a8ee89ac35d64f032",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/umbral_moth_spawn_egg.json": {
+    "mtime": 1790288648.2256083,
+    "ast_hash": "470b40d045f2939a8ee89ac35d64f032",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/client/entity/FallenWatcherModel.java": {
+    "mtime": 1790288432.2122712,
+    "ast_hash": "57f3e9d7767fba03263a41ebb49ebebd",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/client/entity/MajesticEntityGeoModel.java": {
+    "mtime": 1790288411.9173975,
+    "ast_hash": "7a758aa693592480d0a1dfbb92f86ec5",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/client/entity/MajesticGeoRenderer.java": {
+    "mtime": 1790288423.3612552,
+    "ast_hash": "ea20d3fa621a77e8e2b1c7f05877aaa5",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/client/entity/MeteorCrawlerModel.java": {
+    "mtime": 1790288433.4350698,
+    "ast_hash": "48ed612c35b8bbedcd119896e4ac4f42",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/client/entity/StargazerCultistModel.java": {
+    "mtime": 1790288432.9572937,
+    "ast_hash": "4855e07e3ad2ad85dd0e56400df20e59",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/client/entity/UmbralMothModel.java": {
+    "mtime": 1790288433.9931362,
+    "ast_hash": "a618149becac3b0ffbeabff57667c482",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/content/entity/night/FallenWatcher.java": {
+    "mtime": 1790288339.4892385,
+    "ast_hash": "9d93553b522e9f100f1ec2cbf80a1b07",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/content/entity/night/MeteorCrawler.java": {
+    "mtime": 1790288378.6781723,
+    "ast_hash": "81bef1756d01a00cd145918a8770a773",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/content/entity/night/StargazerCultist.java": {
+    "mtime": 1790288367.4261005,
+    "ast_hash": "0626a3e08966f3ebd4db3004c42cae6b",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/content/entity/night/StarlightBoltProjectile.java": {
+    "mtime": 1790288326.346864,
+    "ast_hash": "5d7a2ddbd0b6f7c1e628e811bf61b2d2",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/content/entity/night/UmbralMoth.java": {
+    "mtime": 1790288392.9505222,
+    "ast_hash": "0dcb77b448ab0a92826ad2fc8cb74586",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/majestic/content/item/JournalPageItem.java": {
+    "mtime": 1790288403.2467804,
+    "ast_hash": "268f1265fa326c1e18420fcb8c6d94c0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/categories/journey.json": {
+    "mtime": 1790287632.7309911,
+    "ast_hash": "ed46546ebd4446a7437943538899ff9c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/journey/chapter_1.json": {
+    "mtime": 1790287632.733052,
+    "ast_hash": "8cb026bcbc981163ef1066747b1b933b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/journey/chapter_2.json": {
+    "mtime": 1790287632.7340088,
+    "ast_hash": "7c68c6c23bbc8a591b3eecc0cdf34111",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/journey/prologue.json": {
+    "mtime": 1790287632.7321,
+    "ast_hash": "f25960183a4eea752a46283c75473fab",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/categories/journey.json": {
+    "mtime": 1790287632.7350159,
+    "ast_hash": "0132cf03bbb4e16e482ac745ff75a875",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/journey/chapter_1.json": {
+    "mtime": 1790287632.7359333,
+    "ast_hash": "2218157897521edbc1b3ab19b16d6c37",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/journey/chapter_2.json": {
+    "mtime": 1790287632.7368255,
+    "ast_hash": "510c751ac9af4e9712a8bb15d07d1bf3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/journey/prologue.json": {
+    "mtime": 1790287632.7359333,
+    "ast_hash": "459350479efc6bc7160ed6427d23cf59",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/advancement/journey/chapter_1.json": {
+    "mtime": 1790288562.108183,
+    "ast_hash": "7133fd402f88aad4aec69778b20970ab",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/advancement/journey/chapter_2.json": {
+    "mtime": 1790288562.5643127,
+    "ast_hash": "7133fd402f88aad4aec69778b20970ab",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/loot_table/entities/fallen_watcher.json": {
+    "mtime": 1790288574.3736093,
+    "ast_hash": "d543a14a35db0a26eab5fd590c666d04",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/loot_table/entities/meteor_crawler.json": {
+    "mtime": 1790288576.466675,
+    "ast_hash": "0577d964a5ecafeffe66751057531349",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/loot_table/entities/stargazer_cultist.json": {
+    "mtime": 1790288575.4529202,
+    "ast_hash": "6629746c4fdde0642f3fb89582d9ac24",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/loot_table/entities/umbral_moth.json": {
+    "mtime": 1790288577.4972746,
+    "ast_hash": "77bc7ed248e755e38b0a7221bf1fc487",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/neoforge/biome_modifier/night_mobs.json": {
+    "mtime": 1790288563.6165009,
+    "ast_hash": "2ce82b26224071d42c0bca50f094bcc4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/minecraft/tags/entity_type/undead.json": {
+    "mtime": 1790288564.133543,
+    "ast_hash": "747b72630e03f1b10a52f9df4ec08bb4",
+    "semantic_hash": ""
+  },
+  "docs/JOURNEY_I_TALLER_GUIDE.md": {
+    "mtime": 1790287581.0524046,
+    "ast_hash": "005976b5319d36d61b8c8f928af93f1e",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.13.md": {
+    "mtime": 1790286606.9521227,
+    "ast_hash": "e958fd79c494b9b982e35e735eb0713c",
     "semantic_hash": ""
   }
 }
