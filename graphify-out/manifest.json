@@ -109,16 +109,6 @@
     "ast_hash": "191fa489e4326ba01b8c7d25b8c3392c",
     "semantic_hash": "191fa489e4326ba01b8c7d25b8c3392c"
   },
-  "src/main/resources/assets/majestic/lang/en_us.json": {
-    "mtime": 1789132364.597204,
-    "ast_hash": "168e35c5768c4992c9078bc9f4cf94aa",
-    "semantic_hash": "168e35c5768c4992c9078bc9f4cf94aa"
-  },
-  "src/main/resources/assets/majestic/models/item/starlight_focus.json": {
-    "mtime": 1789132364.5744667,
-    "ast_hash": "741849f4faddd8a6cbfa5005c9f7e9c1",
-    "semantic_hash": "741849f4faddd8a6cbfa5005c9f7e9c1"
-  },
   "src/main/resources/data/majestic/advancement/guide/engrave_spell.json": {
     "mtime": 1790108631.786618,
     "ast_hash": "7133fd402f88aad4aec69778b20970ab",
@@ -205,32 +195,32 @@
     "semantic_hash": "39c67bea49c34b0b2a4c82b868e83f4e"
   },
   "src/generated/resources/data/majestic/almanac/research_node/first_light.json": {
-    "mtime": 1790210215.1167574,
+    "mtime": 1790212339.5830872,
     "ast_hash": "2a5aa4cd8670a1f1638975dc2a641f34",
     "semantic_hash": ""
   },
   "src/generated/resources/data/majestic/almanac/ritual/engrave_spell.json": {
-    "mtime": 1790210215.1155357,
+    "mtime": 1790212339.5815587,
     "ast_hash": "7bb11dc0ea27b648887a9892fb75fdc9",
     "semantic_hash": ""
   },
   "src/generated/resources/data/majestic/almanac/spell/starlight_bolt.json": {
-    "mtime": 1790210215.1135323,
+    "mtime": 1790212339.579528,
     "ast_hash": "42c5a42660f6e7b6be5efe0a650f0d4f",
     "semantic_hash": ""
   },
   "src/generated/resources/data/majestic/almanac/spell/starlight_reveal.json": {
-    "mtime": 1790210215.1135323,
+    "mtime": 1790212339.579528,
     "ast_hash": "77df11166494039f35fe7d865c1ad1ff",
     "semantic_hash": ""
   },
   "src/generated/resources/data/majestic/almanac/spell/starlight_surge.json": {
-    "mtime": 1790210215.1135323,
+    "mtime": 1790212339.579528,
     "ast_hash": "9aea4c4ad037b0c04df4d73ddde37573",
     "semantic_hash": ""
   },
   "src/generated/resources/data/majestic/almanac/spell/starlight_ward.json": {
-    "mtime": 1790210215.1135323,
+    "mtime": 1790212339.579528,
     "ast_hash": "c7977e549da335113231ac0032896325",
     "semantic_hash": ""
   },
@@ -315,8 +305,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1790210388.0119886,
-    "ast_hash": "a7210c61d1ca26dc12b454ebb641ae5c",
+    "mtime": 1790212633.6500974,
+    "ast_hash": "1dea9ac673bc1ab23e007b9717c1776d",
     "semantic_hash": ""
   },
   "README.md": {
@@ -340,8 +330,8 @@
     "semantic_hash": ""
   },
   "docs/DESIGN_MAJESTIC_1-21-1.md": {
-    "mtime": 1790210369.1307983,
-    "ast_hash": "88f6974daf7d6fa10573b0152ae31f6a",
+    "mtime": 1790212692.6793354,
+    "ast_hash": "21fb867a56c63c28cba00138dbd4c3cc",
     "semantic_hash": ""
   },
   "docs/INTEGRATIONS.md": {
@@ -390,8 +380,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1790210405.4590166,
-    "ast_hash": "0c9cc8c72dab4edeeef1bd322ac347dc",
+    "mtime": 1790212633.7587886,
+    "ast_hash": "78ca8abf623f3f96ddc81c979a702bc5",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -427,6 +417,151 @@
   "docs/curseforge/versions/0.0.0-beta.8.md": {
     "mtime": 1790210394.4301448,
     "ast_hash": "ac309c99feed9176adf64d0d448c90ea",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/blockstates/astral_altar.json": {
+    "mtime": 1790212339.6065288,
+    "ast_hash": "d1c9859603576e00f7471490a847670a",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/blockstates/astral_pillar.json": {
+    "mtime": 1790212339.6075287,
+    "ast_hash": "9e572c5632a22f9bb890ed8d7d838215",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/lang/en_us.json": {
+    "mtime": 1790212339.6143763,
+    "ast_hash": "87d9d74ae03c6a2f8bdb3b03ca53e63e",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/block/astral_altar.json": {
+    "mtime": 1790212339.6075287,
+    "ast_hash": "1a22bcad8c224e433def901aa564544c",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/block/astral_pillar.json": {
+    "mtime": 1790212339.6075287,
+    "ast_hash": "d9185d0876e21400f7b4a7f220d000e6",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/altar_blueprint_t2.json": {
+    "mtime": 1790212339.612338,
+    "ast_hash": "7527e00d0b9122c19c85ef23a9ad12ee",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/astral_altar.json": {
+    "mtime": 1790212339.6070287,
+    "ast_hash": "c9bcfc5c6972ab3ba625002b1b8120a9",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/astral_dust.json": {
+    "mtime": 1790212339.6118379,
+    "ast_hash": "2356faa8e368e4db5f9b9b901440902e",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/astral_pillar.json": {
+    "mtime": 1790212339.6070287,
+    "ast_hash": "9604f6775f315a3762a49807cbbac5e8",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/blank_page.json": {
+    "mtime": 1790212339.6113374,
+    "ast_hash": "270d3c38ccfd883c6224e6e263b0137a",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/star_fragment.json": {
+    "mtime": 1790212339.6113374,
+    "ast_hash": "8a01bd3c76f35fa5e6cc18c4ec75db8a",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/starlight_bolt_sigil.json": {
+    "mtime": 1790212339.6113374,
+    "ast_hash": "1ce3d6be7cebc51d3203a0332ddfa4e2",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/starlight_focus.json": {
+    "mtime": 1790212339.612338,
+    "ast_hash": "aad6f55ffc1555f5f9063c97a3e55d6f",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/starlight_reveal_sigil.json": {
+    "mtime": 1790212339.6113374,
+    "ast_hash": "0bfc7887651c2104d10245054f283a8b",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/starlight_surge_sigil.json": {
+    "mtime": 1790212339.612338,
+    "ast_hash": "077e46c82dc329eff45fbb202a5cbe10",
+    "semantic_hash": ""
+  },
+  "src/generated/resources/assets/majestic/models/item/starlight_ward_sigil.json": {
+    "mtime": 1790212339.612338,
+    "ast_hash": "5cd6fb503993f08aaff595f67b19584f",
+    "semantic_hash": ""
+  },
+  "docs/BOSS_I_MODEL_GUIDE.md": {
+    "mtime": 1790210777.5976882,
+    "ast_hash": "e236850a4510b4edb2843310933b1b60",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.9.md": {
+    "mtime": 1790212633.6895473,
+    "ast_hash": "55945f7651a4ec84fa9c9c394a0fa2fb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/block/astral_altar.png": {
+    "mtime": 1790212307.4220605,
+    "ast_hash": "31f1c0bc437e841c76317a47ed7e796b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/block/astral_pillar.png": {
+    "mtime": 1790212307.4220605,
+    "ast_hash": "124523f96849807831a86d3880607614",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/item/altar_blueprint_t2.png": {
+    "mtime": 1790212307.4131675,
+    "ast_hash": "e1ba78f4d7bf741472ee0ea279b39f5f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/item/astral_dust.png": {
+    "mtime": 1790212307.4161222,
+    "ast_hash": "c8d23726fbf7cf4758c9b94541598dc0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/item/blank_page.png": {
+    "mtime": 1790212307.4150107,
+    "ast_hash": "57deedc3a29f1995603fbac94ca8ba78",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/item/star_fragment.png": {
+    "mtime": 1790212307.4155111,
+    "ast_hash": "f1470ce1ad579d51922bf0578e2c05c4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/item/starlight_bolt_sigil.png": {
+    "mtime": 1790212307.4175212,
+    "ast_hash": "caee27dce8616272bef1bbb75bc0a53d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/item/starlight_focus.png": {
+    "mtime": 1790212307.414198,
+    "ast_hash": "6d1eb62c96a050d043045c2e728c086f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/item/starlight_reveal_sigil.png": {
+    "mtime": 1790212307.4190607,
+    "ast_hash": "b254de1c24401debe9d6cdff0b70d8da",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/item/starlight_surge_sigil.png": {
+    "mtime": 1790212307.4195611,
+    "ast_hash": "7508f8b12b1c847f4af148828a0c7aeb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/item/starlight_ward_sigil.png": {
+    "mtime": 1790212307.418553,
+    "ast_hash": "7b43bf1382dd20e779ac3c2980a49745",
     "semantic_hash": ""
   }
 }

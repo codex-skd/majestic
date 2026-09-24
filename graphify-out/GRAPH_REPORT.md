@@ -1,16 +1,16 @@
 # Graph Report - 1.21.1  (2026-09-24)
 
 ## Corpus Check
-- 85 files · ~25,210 words
+- 101 files · ~26,703 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 455 nodes · 632 edges · 59 communities (36 shown, 23 thin omitted)
+- 468 nodes · 639 edges · 62 communities (39 shown, 23 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bd242e9e`
+- Built from commit: `eac09e46`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -64,13 +64,15 @@
 - Starlight Surge
 - Starlight Ward
 - Vellumli
+- Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)
+- Majestic
 
 ## God Nodes (most connected - your core abstractions)
 1. `EngraveSpellRitual` - 13 edges
 2. `Flujo de trabajo — Majestic (NeoForge)` - 13 edges
 3. `MajesticBlocks` - 11 edges
-4. `Majestic` - 11 edges
-5. `MajesticSpells` - 10 edges
+4. `MajesticSpells` - 10 edges
+5. `Changelog` - 10 edges
 6. `Majestic — Diseño del ecosistema` - 10 edges
 7. `Majestic — Diseño técnico (mod principal)` - 10 edges
 8. `1. Ítems (9)` - 10 edges
@@ -99,7 +101,7 @@
 - **** —  [EXTRACTED 1.00]
 - **Mod Dependency** — astral_core, almanac_core, expedition_core, geckolib [EXTRACTED 1.00]
 
-## Communities (59 total, 23 thin omitted)
+## Communities (62 total, 23 thin omitted)
 
 ### Community 0 - "Data Management"
 Cohesion: 0.11
@@ -118,8 +120,8 @@ Cohesion: 0.22
 Nodes (11): Ritual, RitualContext, RitualResult, EngraveSpellRitual, Block, ItemStack, Multiblock, Override (+3 more)
 
 ### Community 4 - "Item Registration"
-Cohesion: 0.13
-Nodes (15): DeferredItem, Items, Dependencies (required), License, Majestic, Requirements, The idea, RegisterGuiLayersEvent (+7 more)
+Cohesion: 0.18
+Nodes (10): DeferredItem, Items, RegisterGuiLayersEvent, EssenceHudOverlay, EventBusSubscriber, ResourceLocation, SubscribeEvent, IEventBus (+2 more)
 
 ### Community 5 - "Starlight Spells"
 Cohesion: 0.12
@@ -167,7 +169,7 @@ Nodes (3): gradlew script, die(), warn()
 
 ### Community 20 - "Changelog"
 Cohesion: 0.07
-Nodes (26): [0.0.0-beta.1], [0.0.0-beta.2], [0.0.0-beta.3], [0.0.0-beta.4], [0.0.0-beta.5], [0.0.0-beta.6], [0.0.0-beta.7], [0.0.0-beta.8] (+18 more)
+Nodes (29): [0.0.0-beta.1], [0.0.0-beta.2], [0.0.0-beta.3], [0.0.0-beta.4], [0.0.0-beta.5], [0.0.0-beta.6], [0.0.0-beta.7], [0.0.0-beta.8] (+21 more)
 
 ### Community 22 - "1. Ítems (9)"
 Cohesion: 0.11
@@ -205,25 +207,33 @@ Nodes (7): 0. Herramientas, 1. Flujo de exportación (repetir por cada pieza), 2
 Cohesion: 0.40
 Nodes (4): CLAUDE.md — majestic (1.21.1), Prioridad de instrucciones, Recordatorios específicos, Workflow del mod
 
+### Community 59 - "Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)"
+Cohesion: 0.22
+Nodes (8): 0. Concepto, 1. Herramientas, 2. Ficheros a exportar (3, rutas exactas), 3. Jerarquía de huesos (bones), 4. Animaciones (6 — nombres exactos), 5. Qué hace Claude con esto (no hace falta que te preocupes por ello), 6. Cuando termines, Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)
+
+### Community 60 - "Majestic"
+Cohesion: 0.33
+Nodes (5): Dependencies (required), License, Majestic, Requirements, The idea
+
 ## Knowledge Gaps
-- **147 isolated node(s):** `Workflow del mod`, `Recordatorios específicos`, `Prioridad de instrucciones`, `Fixed`, `Notes` (+142 more)
+- **156 isolated node(s):** `Workflow del mod`, `Recordatorios específicos`, `Prioridad de instrucciones`, `Added`, `Fixed` (+151 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **23 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Majestic` connect `Item Registration` to `Majestic Blocks`, `Majestic Spells`, `Item Interaction`, `Data Management`?**
-  _High betweenness centrality (0.070) - this node is a cross-community bridge._
 - **Why does `MajesticSpells` connect `Majestic Spells` to `Starlight Surge`, `Starlight Ward`, `Starlight Spells`?**
-  _High betweenness centrality (0.049) - this node is a cross-community bridge._
+  _High betweenness centrality (0.056) - this node is a cross-community bridge._
 - **Why does `MajesticBlocks` connect `Majestic Blocks` to `Astral Altar Entity`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Why does `Majestic — Diseño del ecosistema` connect `Data Components` to `Starlight Bolt`?**
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
 - **What connects `Workflow del mod`, `Recordatorios específicos`, `Prioridad de instrucciones` to the rest of the system?**
-  _147 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _156 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Data Management` be split into smaller, more focused modules?**
   _Cohesion score 0.10960960960960961 - nodes in this community are weakly interconnected._
 - **Should `Majestic Spells` be split into smaller, more focused modules?**
   _Cohesion score 0.13846153846153847 - nodes in this community are weakly interconnected._
-- **Should `Item Registration` be split into smaller, more focused modules?**
-  _Cohesion score 0.12554112554112554 - nodes in this community are weakly interconnected._
+- **Should `Starlight Spells` be split into smaller, more focused modules?**
+  _Cohesion score 0.12315270935960591 - nodes in this community are weakly interconnected._
