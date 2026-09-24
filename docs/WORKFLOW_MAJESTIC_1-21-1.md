@@ -212,7 +212,7 @@ Orden global y detalle en [`PROGRESSION.md §5`](PROGRESSION.md) y `§6` (alcanc
 
 1. **[hecho] Alpha jugable** — 1 escuela (Luz Estelar) + 3–4 hechizos + foco + HUD de esencia. `astral_core` M1 + `almanac_core` M1.
 2. **[hecho, solo T1] Rituales + investigación** — altar T1 (T2 pendiente, ver `DESIGN_MAJESTIC_1-21-1.md §5b`), nodo `first_light`, libro-guía. `astral_core` M2 + `almanac_core` M2+M3.
-3. **[hecho, falta probar en juego] Estructuras + Jefe I** — Fallen Shrine (M3), Observatory + arena (M4), Jefe I `warden_of_the_gate` (M5, ver `DESIGN_MAJESTIC_1-21-1.md §5f`). Pendiente: assets del taller (constructo, lente) y altar T2. `expedition_core` M1.
+3. **[hecho, falta probar en juego] Estructuras + Jefe I** — Fallen Shrine (M3), Observatory + arena (M4), Jefe I `warden_of_the_gate` (M5, ver `DESIGN_MAJESTIC_1-21-1.md §5f`). Assets del taller entregados (beta.11). Pendiente: altar T2. `expedition_core` M1.
 4. **Plano celeste** (**siguiente hito**) — dimensión, biomas, Actos III–IV, reliquias, jefes finales, tomos. `expedition_core` M2 + `almanac_core` M3.
 5. **Contenido v1 completo** (`PROGRESSION.md §6`) + pulido → `1.0.0` de los 4 mods.
 

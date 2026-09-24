@@ -8,7 +8,6 @@ import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.PackType;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -185,15 +184,7 @@ public final class DataGenerators {
 
             withExistingParent("warden_of_the_gate_spawn_egg", mcLoc("item/template_spawn_egg"));
             withExistingParent("astral_construct_spawn_egg", mcLoc("item/template_spawn_egg"));
-
-            // The ether_lens texture is still pending from the art pipeline, and basicItem would
-            // validate its existence and fail runData. Track it as generated, then build the model
-            // by hand so datagen succeeds before the texture ships.
-            existingFileHelper.trackGenerated(
-                    ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "item/ether_lens"),
-                    PackType.CLIENT_RESOURCES, ".png", "textures");
-            withExistingParent("ether_lens", mcLoc("item/generated"))
-                    .texture("layer0", modLoc("item/ether_lens"));
+            basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "ether_lens"));
         }
     }
 

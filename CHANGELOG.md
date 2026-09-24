@@ -2,7 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.0-beta.10]
+## [0.0.0-beta.11]
+
+### Added
+- Modelo, animaciones y textura GeckoLib del **Constructo astral** (del taller): deja de ser invisible.
+- Textura de la **Lente de éter** (del taller).
+
+### Changed
+- Quitados los apaños para assets pendientes: el modelo de `ether_lens` vuelve a `basicItem` (datagen
+  valida la textura) y el renderer del constructo ya no se salta el dibujado.
+
+
 
 ### Added
 - **Jefe I — Warden of the Gate** (`majestic:warden_of_the_gate`), Acto II. Aparece la primera vez que un
