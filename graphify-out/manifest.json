@@ -65,8 +65,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/datagen/DataGenerators.java": {
-    "mtime": 1790248373.530348,
-    "ast_hash": "22543bc789d427d180fa1c522b7ba140",
+    "mtime": 1790254243.4456227,
+    "ast_hash": "8ac1f78e4b1d74bb057eee50d1417c61",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/magic/ritual/EngraveSpellRitual.java": {
@@ -305,8 +305,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1790249395.7151468,
-    "ast_hash": "7122f2d7109bf30525fc55af13d71aa5",
+    "mtime": 1790254320.8397763,
+    "ast_hash": "dedd0150139cb634f000451398d8b46c",
     "semantic_hash": ""
   },
   "README.md": {
@@ -330,8 +330,8 @@
     "semantic_hash": ""
   },
   "docs/DESIGN_MAJESTIC_1-21-1.md": {
-    "mtime": 1790249395.6653376,
-    "ast_hash": "f39962c15654fb7fa9fff6749a954943",
+    "mtime": 1790254320.840905,
+    "ast_hash": "ae2b7543cd38b6b1a13212867ec235c2",
     "semantic_hash": ""
   },
   "docs/INTEGRATIONS.md": {
@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_MAJESTIC_1-21-1.md": {
-    "mtime": 1790249395.6788876,
-    "ast_hash": "0ee4eb59f8a94e454d7a41515d7ac04f",
+    "mtime": 1790254320.8419104,
+    "ast_hash": "ba9287d377a21817e5a03af90880b0d0",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -380,8 +380,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1790249395.8690798,
-    "ast_hash": "fa7fd013171831d286e5322101766ee2",
+    "mtime": 1790254320.7360497,
+    "ast_hash": "d5c1a8959a07639dcd9fe789bfcd66bc",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -580,13 +580,13 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/client/entity/AstralConstructModel.java": {
-    "mtime": 1790248298.545781,
-    "ast_hash": "a3063bafcce26865f8cb1047a7dbbd8f",
+    "mtime": 1790254243.4456227,
+    "ast_hash": "573dee5060ab7ced714706766173daf1",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/client/entity/AstralConstructRenderer.java": {
-    "mtime": 1790248299.924034,
-    "ast_hash": "fba020e85d381514ce6f9cfbe7b07f76",
+    "mtime": 1790254243.4456227,
+    "ast_hash": "67d2acf44aef9ee73a2926ac9c12d59a",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/client/entity/MajesticEntityRenderers.java": {
@@ -662,6 +662,31 @@
   "src/main/resources/assets/majestic/textures/entity/warden_of_the_gate.png": {
     "mtime": 1790242506.348461,
     "ast_hash": "5bc515fb5fbe18d76b372f8c6edc168f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/animations/astral_construct.animation.json": {
+    "mtime": 1790254242.069443,
+    "ast_hash": "7a2069eaaead340a0cc4618e6aa09f2b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/geo/astral_construct.geo.json": {
+    "mtime": 1790254242.0706384,
+    "ast_hash": "1716ff650053a5becaa10325d00f0e82",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.10.md": {
+    "mtime": 1790252626.0171542,
+    "ast_hash": "7477a5a3ebc3aea6b7851125290c1162",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/entity/astral_construct.png": {
+    "mtime": 1790254242.0706384,
+    "ast_hash": "e56541a8e42b5ccf07ebac8805a91541",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/item/ether_lens.png": {
+    "mtime": 1790254242.1094873,
+    "ast_hash": "f3570daf7fa4bf8327ff7e8189db6a1a",
     "semantic_hash": ""
   }
 }
