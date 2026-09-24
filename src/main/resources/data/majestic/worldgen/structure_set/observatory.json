@@ -1,0 +1,11 @@
+{
+  "structures": [
+    { "structure": "majestic:observatory", "weight": 1 }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 20260924,
+    "spacing": 48,
+    "separation": 16
+  }
+}

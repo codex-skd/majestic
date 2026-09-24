@@ -181,6 +181,8 @@ public final class DataGenerators {
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "astral_altar"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "astral_pillar"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "star_fragment"));
+            basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "altar_blueprint_t2"));
+            basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "astral_dust"));
         }
     }
 
@@ -200,6 +202,8 @@ public final class DataGenerators {
             add("block.majestic.astral_altar", "Astral Altar");
             add("block.majestic.astral_pillar", "Astral Pillar");
             add("item.majestic.star_fragment", "Star Fragment");
+            add("item.majestic.altar_blueprint_t2", "Tier 2 Altar Blueprint");
+            add("item.majestic.astral_dust", "Astral Dust");
             add("commands.majestic.status.essence", "Essence: %d/%d");
             add("commands.majestic.status.cooldown", "%s: on cooldown (%d ticks)");
             add("commands.majestic.status.no_cooldown", "%s: ready");

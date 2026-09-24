@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.0-beta.6]
+
+### Added
+- **Observatory** (Act II): a real 5-piece jigsaw structure — entrance, one of two corridor
+  variants, a study room, and a boss arena (no boss yet). Generated with the `taller_minecraft`
+  pipeline and validated piece-by-piece before being wired in.
+- The study room's chest guarantees a **Tier 2 Altar Blueprint** plus spell sigils and Astral Dust;
+  the arena's chest holds a small amount of Astral Dust. Two new items: `altar_blueprint_t2` and
+  `astral_dust`.
+
+### Notes
+- Rarer than Fallen Shrine (larger spacing/separation) — this is meant to feel like a real
+  milestone find.
+- No mobs or boss yet — the arena is just the physical room for now; Boss I needs GeckoLib work
+  that's out of scope for this structures milestone.
+- Verified with a real `runServer` boot: clean "Done", no datapack loading errors.
+
 ## [0.0.0-beta.5]
 
 ### Fixed

@@ -52,6 +52,18 @@ public final class MajesticItems {
             new Item.Properties()
     );
 
+    public static final DeferredItem<Item> ALTAR_BLUEPRINT_T2 = ITEMS.registerItem(
+            "altar_blueprint_t2",
+            Item::new,
+            new Item.Properties()
+    );
+
+    public static final DeferredItem<Item> ASTRAL_DUST = ITEMS.registerItem(
+            "astral_dust",
+            Item::new,
+            new Item.Properties()
+    );
+
     private MajesticItems() {}
 
     public static void register(IEventBus modEventBus) {
