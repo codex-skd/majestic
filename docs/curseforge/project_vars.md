@@ -35,7 +35,7 @@ Autenticación Upload: cabecera `X-Api-Token`. Core: cabecera `x-api-key`.
 | `neoforge_version` (loader) | `21.1.249` |
 | `framework` | `neoforge` |
 | `java_version` | `21` |
-| `version` (`gradle.properties`) | `0.0.0-beta.7` |
+| `version` (`gradle.properties`) | `0.0.0-beta.8` |
 | `environment` | `Client`, `Server` (requerido en ambos) |
 
 ## Rama
@@ -46,7 +46,7 @@ minecraft/1.21.1/neoforge-21.1.249/production
 
 ## Tag
 
-Formato: `<mc-version>-<framework>-<version>`. Actual: `1.21.1-neoforge-beta.7` (ya creado y pusheado).
+Formato: `<mc-version>-<framework>-<version>`. Actual: `1.21.1-neoforge-beta.8` (ya creado y pusheado).
 
 ### IDs de `gameVersions` para 1.21.1 (verificados, mismos que el resto de mods 1.21.1 del workspace)
 
@@ -85,7 +85,7 @@ del ecosistema en `majestic` para el tono visual).
 2. **[hecho]** `project_id` copiado en este archivo y en `gradle.properties`.
 3. Pegar `docs/curseforge/project_description.md` en Edit Project → Description — **pendiente del usuario** (sin API).
 4. Subir el logo (`ChatGPT Image 12 sept 2026, 16_48_46.png`) en Edit Project → Logo — **pendiente del usuario** (sin API).
-5. `./gradlew clean build` — **[hecho]**, jar `majestic-1.21.1-neoforge-21.1.249-0.0.0-beta.7.jar`.
-6. `docs/curseforge/versions/0.0.0-beta.7.md` (HTML) — release notes de la versión ya taggeada.
+5. `./gradlew clean build` — **[hecho]**, jar `majestic-1.21.1-neoforge-21.1.249-0.0.0-beta.8.jar`.
+6. `docs/curseforge/versions/0.0.0-beta.8.md` (HTML) — release notes de la versión ya taggeada.
 7. Subir JAR: `powershell -File ../../../codex-docs/scripts/curseforge-upload.ps1` (desde este repo) — **[hecho]**.
 8. Verificar con GET (Core API key) y liberar manualmente desde la web si hace falta.

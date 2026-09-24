@@ -160,8 +160,8 @@ public final class DataGenerators {
 
         @Override
         protected void registerStatesAndModels() {
-            simpleBlock(MajesticBlocks.ASTRAL_ALTAR.get());
-            simpleBlock(MajesticBlocks.ASTRAL_PILLAR.get());
+            simpleBlockWithItem(MajesticBlocks.ASTRAL_ALTAR.get(), cubeAll(MajesticBlocks.ASTRAL_ALTAR.get()));
+            simpleBlockWithItem(MajesticBlocks.ASTRAL_PILLAR.get(), cubeAll(MajesticBlocks.ASTRAL_PILLAR.get()));
         }
     }
 
@@ -178,8 +178,6 @@ public final class DataGenerators {
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "starlight_ward_sigil"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "starlight_reveal_sigil"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "starlight_surge_sigil"));
-            basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "astral_altar"));
-            basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "astral_pillar"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "star_fragment"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "altar_blueprint_t2"));
             basicItem(ResourceLocation.fromNamespaceAndPath(Majestic.MOD_ID, "astral_dust"));

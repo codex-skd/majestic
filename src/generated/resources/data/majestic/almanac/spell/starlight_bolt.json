@@ -1,12 +1,12 @@
 {
+  "cast_type": "touch",
+  "cooldown": 20,
+  "cost": 15.0,
+  "effects": [],
   "school": "majestic:starlight",
   "tier": 1,
-  "cost": 20.0,
-  "cast_type": "area",
-  "cooldown": 100,
   "unlock": {
     "type": "none",
     "value": "majestic:none"
-  },
-  "effects": []
+  }
 }

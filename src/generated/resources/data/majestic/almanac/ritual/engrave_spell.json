@@ -1,0 +1,11 @@
+{
+  "altar_tier": 1,
+  "duration": 60,
+  "essence": 20.0,
+  "inputs": [],
+  "outputs": [],
+  "risk": {
+    "chance": 0.0,
+    "penalty": "none"
+  }
+}

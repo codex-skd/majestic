@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.0-beta.8]
+
+### Fixed
+- `runData` failed outright: the 4 spell JSON and the `first_light` research node JSON existed both
+  as hand-written files (leftover from the alpha, before the datagen path was fixed in beta.3) and
+  as datagen output at the same destination path, with no duplicate-handling strategy set. Removed
+  the hand-written copies; datagen output (`src/generated/resources`, committed) is now the only
+  source.
+- `astral_altar`/`astral_pillar` item icons used a flat `basicItem` texture instead of inheriting
+  the block's own 3D model — switched to `simpleBlockWithItem`, so one block texture now serves
+  both the world model and the inventory icon.
+
+### Notes
+- Running `runData` for the first time surfaced a real gap: no PNG texture exists anywhere under
+  `assets/majestic/` yet — all 9 items and 2 blocks currently render as the missing-texture
+  checkerboard in game. `./gradlew build`/`runServer` never catch this since neither runs datagen's
+  texture validation. Full guide for the 11 missing textures in `docs/TEXTURE_GUIDE.md`.
+
 ## [0.0.0-beta.7]
 
 ### Notes

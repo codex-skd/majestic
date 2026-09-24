@@ -228,6 +228,35 @@ errores de carga de datapack, con el `.nbt` final (cofre + loot table correcta).
 verificar en el juego que la estructura genera realmente en un chunk explorado y que el cofre suelta
 el botín esperado (requiere jugar/explorar, no automatizable).
 
+## 5e. Bug real: duplicados JSON a mano vs datagen (2026-09-24)
+
+Al intentar generar de verdad las texturas (`docs/TEXTURE_GUIDE.md`), se ejecutó `runData` por
+primera vez en este repo y **falló**: `data/majestic/almanac/spell/starlight_bolt.json` (y los
+otros 3 hechizos) y `data/majestic/almanac/research_node/first_light.json` existían A LA VEZ como
+JSON a mano en `src/main/resources/` (herencia de la alpha, cuando el path de datagen aún estaba
+roto) y como salida de datagen en `src/generated/resources/` — desde que se arregló el path del
+datagen (beta.3), ambos apuntan al mismo destino, y `processResources` no sabe cuál priorizar
+(`duplicate but no duplicate handling strategy has been set`). Contenido idéntico en ambos casos
+(solo difería el orden de las claves) — se borraron las 5 copias a mano, `src/generated/resources`
+(ya commiteado, no autogenerado en cada `build`) queda como única fuente. **`./gradlew build`/
+`runServer` nunca lo detectaron porque ninguno de los dos ejecuta `runData`** — solo se ve al
+generar assets de verdad.
+
+De paso, aprovechado para arreglar el hueco cosmético ya documentado en M2: los ítems de
+`astral_altar`/`astral_pillar` usaban `basicItem` (icono plano) en vez de heredar el modelo 3D del
+bloque — cambiado a `simpleBlockWithItem` en `MajesticBlockStates`, así una sola textura de bloque
+sirve también de icono de inventario.
+
+**Hueco real descubierto**: no existe NINGUNA textura PNG en `assets/majestic/` — los 9 ítems y 2
+bloques actuales renderizan con el rombo morado/negro de "textura ausente" en el juego. Nunca se
+detectó porque la verificación de este ecosistema (`runGameTestServer`/`runServer`) solo comprueba
+que el *datapack* (lado servidor) cargue, nunca que las *texturas* (lado cliente, `assets/`)
+existan — `runData` sí lo valida (confirmado: falla con `IllegalArgumentException: Texture
+majestic:block/astral_altar does not exist` hasta que exista el PNG real). Especificación completa
+para el usuario en [`TEXTURE_GUIDE.md`](TEXTURE_GUIDE.md). **Lección**: añadir una verificación
+visual/de cliente real (no solo boot de servidor) a la lista de comprobaciones de cada hito futuro
+que añada contenido visual nuevo.
+
 ## 6. Historial
 
 | Fecha | Cambio |
