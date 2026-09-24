@@ -2,16 +2,20 @@ image: alpine:latest
 
 variables:
   GIT_DEPTH: 0
+  # Public allowlist — ONLY these paths ever reach */main (and the GitHub mirror).
+  # Anything else (docs/, .claude/, graphify-out/, scripts/, .gitlab-ci.yml...) stays private.
+  # Mods: keep as is. Datapacks/resourcepacks: override PUBLIC_REQUIRED in the repo's copy, e.g.
+  #   "datapack/ build_fix_pack.py version.txt .gitignore README.md CHANGELOG.md"
+  PUBLIC_REQUIRED: "src/ build.gradle settings.gradle gradle.properties gradlew gradlew.bat .gitignore README.md CHANGELOG.md"
+  PUBLIC_OPTIONAL: "LICENSE NOTICE libs/"
 
 stages:
   - publish
 
 publish-public:
   stage: publish
-  only:
-    - /^minecraft\/.*\/.*\/production$/
-  except:
-    - main
+  rules:
+    - if: '$CI_COMMIT_BRANCH =~ /^minecraft\/.*\/.*\/production$/'
   script:
     - apk add --no-cache git
     - git config user.email "ci@mods-minecraft.dev"
@@ -21,34 +25,39 @@ publish-public:
     - MAIN_BRANCH=$(echo "$CI_COMMIT_BRANCH" | sed 's|/production$|/main|')
     - echo "Publishing to $MAIN_BRANCH"
 
-    # Fetch main branch. Fail if it doesn't exist — the agent must create it manually.
+    # Orphan snapshot: main never shares history with production, so no private
+    # commit can ever become reachable from main. main always has exactly one commit.
+    - git checkout --quiet --orphan public-snapshot
+    - git rm -rf --cached --quiet .
+    - git clean -fdxq
+
+    # Required paths (must exist)
+    - git checkout "$CI_COMMIT_SHA" -- $PUBLIC_REQUIRED
+
+    # Optional paths (may not exist in some repos)
     - |
-      if ! git fetch origin "$MAIN_BRANCH" 2>/dev/null; then
-        echo "ERROR: $MAIN_BRANCH does not exist. Create it from production first."
-        exit 1
+      for p in $PUBLIC_OPTIONAL; do
+        git checkout "$CI_COMMIT_SHA" -- "$p" 2>/dev/null || true
+      done
+
+    # Sanitize gradle.properties (mods only)
+    - |
+      if [ -f gradle.properties ]; then
+        sed -i 's/^mod_version=.*/mod_version=0.0.0/' gradle.properties
+        sed -i 's/^mod_group_id=.*/mod_group_id=com\.skd\.placeholder/' gradle.properties
+        sed -i 's/^mod_curseforge_project_id=.*/mod_curseforge_project_id=/' gradle.properties
       fi
-    - git checkout "$MAIN_BRANCH"
 
-    # Clean and copy only public files from production
-    - git rm -rf --ignore-unmatch --quiet . 2>/dev/null || true
-
-    # Required files (must exist in all mods)
-    - git checkout "$CI_COMMIT_SHA" -- src/ build.gradle settings.gradle gradle.properties gradlew gradlew.bat .gitignore README.md CHANGELOG.md
-
-    # Optional files (may not exist in some mods)
-    - git checkout "$CI_COMMIT_SHA" -- libs/ 2>/dev/null || true
-
-    # Sanitize secrets in gradle.properties
-    - sed -i 's/^mod_version=.*/mod_version=0.0.0/' gradle.properties
-    - sed -i 's/^mod_group_id=.*/mod_group_id=com\.skd\.placeholder/' gradle.properties
-    - sed -i 's/^mod_curseforge_project_id=.*/mod_curseforge_project_id=/' gradle.properties
-
-    # Commit and force push to the main branch
     - git add -A
+    - 'git commit --quiet -m "chore: public snapshot"'
+
+    # Skip the push only when remote main is already a parentless snapshot with the same tree
+    # (an old main with private history behind an identical tip must still be replaced)
     - |
-      if ! git diff --cached --quiet; then
-        git commit -m "chore: sync public code from ${CI_COMMIT_SHORT_SHA}"
-        git push --force "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:"$MAIN_BRANCH"
-      else
+      if git fetch --quiet origin "$MAIN_BRANCH" 2>/dev/null && \
+         ! git rev-parse --quiet --verify "FETCH_HEAD^" >/dev/null && \
+         [ "$(git rev-parse FETCH_HEAD^{tree})" = "$(git rev-parse HEAD^{tree})" ]; then
         echo "No changes to publish"
+      else
+        git push --force "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:"refs/heads/$MAIN_BRANCH"
       fi

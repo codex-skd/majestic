@@ -1,6 +1,6 @@
 # Flujo de trabajo — Majestic (NeoForge)
 
-> **Versión del workflow**: 1.17.0 (codex-docs)
+> **Versión del workflow**: 1.18.0 (codex-docs)
 > Este archivo pertenece al proyecto **Majestic** (mod principal del ecosistema). Cambios aquí solo afectan a este proyecto.
 > **Trabaja directamente con este archivo**: es el workflow operativo del mod, autocontenido. No leas `codex-docs/WORKFLOW_AGENT.md` ni `WORKFLOW_GENERIC.md` de forma rutinaria.
 > On-demand (solo si la tarea lo necesita): `codex-docs/reference/CURSEFORGE.md` (formato HTML al publicar), `codex-docs/reference/GRAPHIFY.md` (backend LLM de Graphify), `codex-docs/reference/REPO_SETUP.md` (setup único de repo).
@@ -116,14 +116,9 @@ v0.1.0-alpha"
 Cerrar los mensajes de commit con:
 `Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>`
 
-## Tags (GitLab)
+## Sin tags
 
-Beta `1.21.1-neoforge-beta.X` · alpha `1.21.1-neoforge-alpha.X` · release `1.21.1-neoforge-X.Y.Z`.
-
-```bash
-git tag -a 1.21.1-neoforge-alpha.1 -m "v0.1.0-alpha: <resumen>"
-git push origin 1.21.1-neoforge-alpha.1
-```
+**No se crean tags git** (ni en GitLab ni en ningún remoto): apuntan a commits de `production` y el mirror los publicaría con el contenido privado. El commit exacto de cada JAR es su `chore: bump version to <version>`.
 
 ## Flujo por tarea
 
@@ -150,8 +145,6 @@ git push
 ./gradlew.bat clean runData build
 # release notes: docs/curseforge/versions/0.1.0-alpha.md + CHANGELOG.md
 git commit -m "chore: bump version to 0.1.0-alpha"
-git tag -a 1.21.1-neoforge-alpha.1 -m "v0.1.0-alpha: <resumen>"
-git push origin 1.21.1-neoforge-alpha.1
 # Subir JAR solo si el usuario confirma:
 # powershell -File ../../../codex-docs/scripts/curseforge-upload.ps1
 ```
@@ -160,7 +153,7 @@ CurseForge: proyecto **público, descarga libre**, `mod_license = All Rights Res
 `astral_core` / `expedition_core` / `almanac_core` / `geckolib` como **required dependencies** y
 `vellumli` también como **required** (desde beta.12) y `jei` como **optional**.
 
-**3. Release estable** — `mod_version=1.0.0` + commit + tag `1.21.1-neoforge-1.0.0`.
+**3. Release estable** — `mod_version=1.0.0` + commit `chore: bump version to X.Y.Z` (sin tag).
 Los 4 mods del ecosistema (`astral_core`, `expedition_core`, `almanac_core`, `majestic`) suben a
 `1.0.0` **a la vez** (ver roadmap `DESIGN_ECOSYSTEM.md §8 Fase 4`).
 
