@@ -1,6 +1,6 @@
 # Majestic — Guía de texturas (ítems y bloques pendientes)
 
-> Especificación completa de las 11 texturas que faltan (9 ítems + 2 bloques) para que el contenido
+> Especificación de las texturas del mod: tanda 1 (9 ítems + 2 bloques, hecha en beta.9) y tanda 2 (§4, hito Jefe I) para que el contenido
 > actual deje de verse como el "bloque de textura ausente" morado/negro en el juego. Pensada para
 > pasarla tal cual a quien vaya a dibujarlas (tú, un artista, o como referencia para generar con IA
 > y retocar a mano).
@@ -134,7 +134,32 @@ correspondiente arriba):
 
 ---
 
-## 4. Cuando termines
+## 4. Tanda 2 — hito Jefe I (pendiente del taller)
+
+Las 11 texturas de arriba ya están hechas (beta.9). Esta tanda añade las del hito del Jefe I. Mismo
+formato técnico (§0) y misma paleta.
+
+### `ether_lens.png` (ítem, `textures/item/`)
+**Lente de éter** — botín garantizado de `warden_of_the_gate` y **llave de la dimensión** (Acto III).
+Tiene que leerse como objeto importante, un escalón por encima del Fragmento estelar.
+- Una lente/monóculo circular de cristal en un aro de metal envejecido, con una pequeña asa o
+  cadena corta a un lado (como una lupa antigua o un astrolabio de bolsillo).
+- Aro: dorado apagado (`#d4af6a`) con sombra más oscura; 1px de contorno oscuro.
+- Cristal: **azul-violeta etéreo** — introduce un tono nuevo para la escuela Éter (sugerido
+  `#9a8cd8` → `#c8c0f0`), con 2-3 píxeles casi blancos de reflejo en diagonal y un punto de brillo
+  en el centro. Debe distinguirse claramente del azul pálido "astral" de los sigilos.
+- Un único ítem, sin variante animada (`.mcmeta`) en esta tanda.
+
+### Modelo de entidad: `astral_construct`
+Modelo GeckoLib completo (geo + animaciones + textura 64×64) — especificación aparte en
+[`ASTRAL_CONSTRUCT_MODEL_GUIDE.md`](ASTRAL_CONSTRUCT_MODEL_GUIDE.md).
+
+### Lo que NO hace falta
+- Huevos de spawn (`warden_of_the_gate_spawn_egg`, `astral_construct_spawn_egg`): usan la plantilla
+  vanilla tintada, sin textura propia.
+- Partículas del pulso de luz de la fase 2: se usan partículas vanilla (`END_ROD`, `FLASH`).
+
+## 5. Cuando termines
 
 Copia cada PNG directamente a su ruta (`textures/item/` o `textures/block/`) — no hace falta que
 me pases nada ni que yo las cablee, los modelos ya están generados por datagen apuntando a esos
