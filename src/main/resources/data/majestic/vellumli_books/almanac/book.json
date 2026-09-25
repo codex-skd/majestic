@@ -1,0 +1,9 @@
+{
+  "name": "book.majestic.almanac.name",
+  "landing_text": "book.majestic.almanac.landing_text",
+  "subtitle": "Majestic",
+  "version": "1",
+  "i18n": true,
+  "use_resource_pack": true,
+  "creative_tab": "majestic:magic"
+}

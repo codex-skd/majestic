@@ -1,0 +1,13 @@
+{
+  "name": "Grabar hechizo",
+  "category": "majestic:rituals",
+  "icon": "majestic:astral_altar",
+  "sort_num": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Ritual que se realiza en el Altar astral para grabar un hechizo en tu Foco estelar. Necesita una página en blanco, un sigilo de hechizo en la mano secundaria y el foco en la mano principal. Cuesta 20 de esencia."
+    }
+  ],
+  "advancement": "majestic:guide/engrave_spell"
+}

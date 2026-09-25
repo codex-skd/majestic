@@ -1,0 +1,13 @@
+{
+  "name": "Oleada estelar",
+  "category": "majestic:spells",
+  "icon": "majestic:starlight_focus",
+  "sort_num": 4,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Una poderosa oleada de energía estelar dirigida al lanzador. Cuesta 10 de esencia, pero tiene un tiempo de recarga muy largo."
+    }
+  ],
+  "advancement": "majestic:guide/starlight_surge"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "II. The Observatory",
+  "category": "majestic:journey",
+  "icon": "majestic:shrine_page",
+  "sort_num": 2,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Second entry.$()$(br2)Beyond the shrines stands the Observatory, where we once read the stars. It is rarer and larger: seek a ruin of tuff columns open to the sky, in the same lands as the shrines, but much farther apart."
+    },
+    {
+      "type": "vellumli:image",
+      "images": ["majestic:textures/gui/book/observatory_entrance.png"],
+      "title": "The Observatory Gate",
+      "border": true,
+      "text": "Two tuff towers and the Order's star above the door."
+    },
+    {
+      "type": "text",
+      "text": "Be careful. At the heart of the Observatory, in the arena beneath its broken dome, something still stands guard. It did not fall with the Order.$(br2)Go prepared: armour, food, and companions if you have them. If you must flee, it will not follow you beyond its walls."
+    }
+  ],
+  "advancement": "majestic:journey/chapter_2"
+}

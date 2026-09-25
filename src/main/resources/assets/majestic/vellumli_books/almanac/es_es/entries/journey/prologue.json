@@ -1,0 +1,17 @@
+{
+  "name": "Prólogo",
+  "category": "majestic:journey",
+  "icon": "majestic:starlight_focus",
+  "sort_num": 0,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Cuando el sol se hunde y despiertan las estrellas,$(br)los que antaño montaban guardia vuelven a caminar.$(br)Encapuchados, con el farol apagado, vagan en la noche$(br)aferrados aún a las palabras que no supieron proteger.$(br2)Arrebata a los caídos la primera página$(br)y el camino hacia la luz se abrirá.$()"
+    },
+    {
+      "type": "text",
+      "text": "Lleva este Almanaque contigo. Una página recuperada, al leerla, pasa a formar parte de él y revela el siguiente paso del viaje."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Revelación estelar",
+  "category": "majestic:spells",
+  "icon": "majestic:starlight_focus",
+  "sort_num": 3,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Revela lo oculto en un área con el poder de la luz estelar. Hechizo de área que cuesta 20 de esencia."
+    }
+  ],
+  "advancement": "majestic:guide/starlight_reveal"
+}

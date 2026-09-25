@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "majestic:item/altar_blueprint_t2"
+  }
+}

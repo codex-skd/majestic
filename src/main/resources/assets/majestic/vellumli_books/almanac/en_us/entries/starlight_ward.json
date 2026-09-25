@@ -1,0 +1,13 @@
+{
+  "name": "Starlight Ward",
+  "category": "majestic:spells",
+  "icon": "majestic:starlight_focus",
+  "sort_num": 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Conjures a protective ward of starlight around the caster. Costs 25 essence and has a long cooldown."
+    }
+  ],
+  "advancement": "majestic:guide/starlight_ward"
+}

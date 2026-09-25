@@ -1,0 +1,37 @@
+{
+  "parent": "majestic:journey/observatory",
+  "criteria": {
+    "killed_warden": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "majestic:warden_of_the_gate"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.majestic.warden_of_the_gate.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "majestic:ether_lens"
+    },
+    "title": {
+      "translate": "advancements.majestic.warden_of_the_gate.title"
+    }
+  },
+  "requirements": [
+    [
+      "killed_warden"
+    ]
+  ]
+}

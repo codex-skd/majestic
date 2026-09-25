@@ -1,0 +1,11 @@
+{
+  "structures": [
+    { "structure": "majestic:fallen_shrine", "weight": 1 }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 20260923,
+    "spacing": 24,
+    "separation": 10
+  }
+}

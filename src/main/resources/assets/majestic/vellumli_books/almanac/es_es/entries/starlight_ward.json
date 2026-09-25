@@ -1,0 +1,13 @@
+{
+  "name": "Égida estelar",
+  "category": "majestic:spells",
+  "icon": "majestic:starlight_focus",
+  "sort_num": 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Invoca a tu alrededor una égida protectora de luz estelar. Cuesta 25 de esencia y tiene un tiempo de recarga largo."
+    }
+  ],
+  "advancement": "majestic:guide/starlight_ward"
+}

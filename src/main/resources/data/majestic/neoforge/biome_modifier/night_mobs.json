@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#minecraft:is_overworld",
+  "spawners": [
+    { "type": "majestic:fallen_watcher", "weight": 40, "minCount": 1, "maxCount": 3 },
+    { "type": "majestic:stargazer_cultist", "weight": 25, "minCount": 1, "maxCount": 2 },
+    { "type": "majestic:meteor_crawler", "weight": 30, "minCount": 1, "maxCount": 2 },
+    { "type": "majestic:umbral_moth", "weight": 15, "minCount": 1, "maxCount": 2 }
+  ]
+}

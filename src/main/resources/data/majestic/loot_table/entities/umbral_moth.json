@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "random_sequence": "majestic:entities/umbral_moth",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:phantom_membrane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "type": "minecraft:uniform", "min": 0, "max": 1 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "majestic:astral_dust",
+          "conditions": [
+            { "condition": "minecraft:random_chance", "chance": 0.1 }
+          ]
+        }
+      ]
+    }
+  ]
+}
