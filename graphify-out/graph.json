@@ -238,7 +238,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "defaultedentitygeomodel",
-      "community": 12,
+      "community": 74,
       "norm_label": "defaultedentitygeomodel"
     },
     {
@@ -298,7 +298,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_astralconstructrenderer",
-      "community": 74,
+      "community": 12,
       "norm_label": "astralconstructrenderer.java"
     },
     {
@@ -308,7 +308,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_astralconstructrenderer_astralconstructrenderer",
-      "community": 74,
+      "community": 12,
       "norm_label": "astralconstructrenderer"
     },
     {
@@ -318,7 +318,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "geoentityrenderer",
-      "community": 74,
+      "community": 12,
       "norm_label": "geoentityrenderer"
     },
     {
@@ -328,7 +328,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_astralconstructrenderer_astralconstructrenderer_astralconstructrenderer",
-      "community": 74,
+      "community": 12,
       "norm_label": ".astralconstructrenderer()"
     },
     {
@@ -338,7 +338,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_astralconstructrenderer_java_context",
-      "community": 74,
+      "community": 12,
       "norm_label": "context"
     },
     {
@@ -378,7 +378,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentitygeomodel",
-      "community": 12,
+      "community": 74,
       "norm_label": "majesticentitygeomodel.java"
     },
     {
@@ -388,7 +388,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentitygeomodel_majesticentitygeomodel",
-      "community": 12,
+      "community": 74,
       "norm_label": "majesticentitygeomodel"
     },
     {
@@ -398,7 +398,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentitygeomodel_java_resourcelocation",
-      "community": 12,
+      "community": 74,
       "norm_label": "resourcelocation"
     },
     {
@@ -408,7 +408,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentitygeomodel_majesticentitygeomodel_majesticentitygeomodel",
-      "community": 12,
+      "community": 74,
       "norm_label": ".majesticentitygeomodel()"
     },
     {
@@ -418,7 +418,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentitygeomodel_majesticentitygeomodel_getmodelresource",
-      "community": 12,
+      "community": 74,
       "norm_label": ".getmodelresource()"
     },
     {
@@ -428,7 +428,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentitygeomodel_java_override",
-      "community": 12,
+      "community": 74,
       "norm_label": "override"
     },
     {
@@ -438,7 +438,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentitygeomodel_majesticentitygeomodel_getanimationresource",
-      "community": 12,
+      "community": 74,
       "norm_label": ".getanimationresource()"
     },
     {
@@ -448,7 +448,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentityrenderers",
-      "community": 88,
+      "community": 1,
       "norm_label": "majesticentityrenderers.java"
     },
     {
@@ -458,7 +458,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentityrenderers_majesticentityrenderers",
-      "community": 88,
+      "community": 1,
       "norm_label": "majesticentityrenderers"
     },
     {
@@ -468,7 +468,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentityrenderers_java_eventbussubscriber",
-      "community": 88,
+      "community": 1,
       "norm_label": "eventbussubscriber"
     },
     {
@@ -478,7 +478,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentityrenderers_majesticentityrenderers_onregisterrenderers",
-      "community": 88,
+      "community": 1,
       "norm_label": ".onregisterrenderers()"
     },
     {
@@ -488,7 +488,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "registerrenderers",
-      "community": 88,
+      "community": 1,
       "norm_label": "registerrenderers"
     },
     {
@@ -498,7 +498,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentityrenderers_java_subscribeevent",
-      "community": 88,
+      "community": 1,
       "norm_label": "subscribeevent"
     },
     {
@@ -508,7 +508,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticentityrenderers_majesticentityrenderers_majesticentityrenderers",
-      "community": 88,
+      "community": 1,
       "norm_label": ".majesticentityrenderers()"
     },
     {
@@ -518,7 +518,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticgeorenderer",
-      "community": 74,
+      "community": 12,
       "norm_label": "majesticgeorenderer.java"
     },
     {
@@ -528,7 +528,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticgeorenderer_majesticgeorenderer",
-      "community": 74,
+      "community": 12,
       "norm_label": "majesticgeorenderer"
     },
     {
@@ -538,7 +538,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticgeorenderer_majesticgeorenderer_majesticgeorenderer",
-      "community": 74,
+      "community": 12,
       "norm_label": ".majesticgeorenderer()"
     },
     {
@@ -548,7 +548,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticgeorenderer_java_context",
-      "community": 74,
+      "community": 12,
       "norm_label": "context"
     },
     {
@@ -558,7 +558,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "geomodel",
-      "community": 74,
+      "community": 12,
       "norm_label": "geomodel"
     },
     {
@@ -568,7 +568,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticgeorenderer_majesticgeorenderer_render",
-      "community": 74,
+      "community": 12,
       "norm_label": ".render()"
     },
     {
@@ -578,7 +578,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "posestack",
-      "community": 74,
+      "community": 12,
       "norm_label": "posestack"
     },
     {
@@ -588,7 +588,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "multibuffersource",
-      "community": 74,
+      "community": 12,
       "norm_label": "multibuffersource"
     },
     {
@@ -598,7 +598,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_majesticgeorenderer_java_override",
-      "community": 74,
+      "community": 12,
       "norm_label": "override"
     },
     {
@@ -698,7 +698,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_wardenofthegatemodel",
-      "community": 12,
+      "community": 74,
       "norm_label": "wardenofthegatemodel.java"
     },
     {
@@ -708,7 +708,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_wardenofthegatemodel_wardenofthegatemodel",
-      "community": 12,
+      "community": 74,
       "norm_label": "wardenofthegatemodel"
     },
     {
@@ -718,7 +718,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_wardenofthegatemodel_java_resourcelocation",
-      "community": 12,
+      "community": 74,
       "norm_label": "resourcelocation"
     },
     {
@@ -728,7 +728,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_wardenofthegatemodel_wardenofthegatemodel_wardenofthegatemodel",
-      "community": 12,
+      "community": 74,
       "norm_label": ".wardenofthegatemodel()"
     },
     {
@@ -738,7 +738,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_wardenofthegatemodel_wardenofthegatemodel_getmodelresource",
-      "community": 12,
+      "community": 74,
       "norm_label": ".getmodelresource()"
     },
     {
@@ -748,7 +748,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_wardenofthegatemodel_java_override",
-      "community": 12,
+      "community": 74,
       "norm_label": "override"
     },
     {
@@ -758,7 +758,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_entity_wardenofthegatemodel_wardenofthegatemodel_getanimationresource",
-      "community": 12,
+      "community": 74,
       "norm_label": ".getanimationresource()"
     },
     {
@@ -818,7 +818,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_hud_essencehudoverlay",
-      "community": 1,
+      "community": 4,
       "norm_label": "essencehudoverlay.java"
     },
     {
@@ -828,7 +828,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_essencehudoverlay",
-      "community": 1,
+      "community": 4,
       "norm_label": "essencehudoverlay"
     },
     {
@@ -838,7 +838,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_java_eventbussubscriber",
-      "community": 1,
+      "community": 4,
       "norm_label": "eventbussubscriber"
     },
     {
@@ -848,7 +848,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_java_resourcelocation",
-      "community": 1,
+      "community": 4,
       "norm_label": "resourcelocation"
     },
     {
@@ -858,7 +858,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_essencehudoverlay_onregisterguilayers",
-      "community": 1,
+      "community": 4,
       "norm_label": ".onregisterguilayers()"
     },
     {
@@ -868,7 +868,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "registerguilayersevent",
-      "community": 1,
+      "community": 4,
       "norm_label": "registerguilayersevent"
     },
     {
@@ -878,7 +878,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_java_subscribeevent",
-      "community": 1,
+      "community": 4,
       "norm_label": "subscribeevent"
     },
     {
@@ -888,7 +888,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_client_hud_essencehudoverlay_essencehudoverlay_essencehudoverlay",
-      "community": 1,
+      "community": 4,
       "norm_label": ".essencehudoverlay()"
     },
     {
@@ -1008,7 +1008,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_majesticcreativetabs",
-      "community": 1,
+      "community": 4,
       "norm_label": "majesticcreativetabs.java"
     },
     {
@@ -1018,7 +1018,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_majesticcreativetabs_majesticcreativetabs",
-      "community": 1,
+      "community": 4,
       "norm_label": "majesticcreativetabs"
     },
     {
@@ -1028,7 +1028,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_majesticcreativetabs_java_deferredregister",
-      "community": 1,
+      "community": 4,
       "norm_label": "deferredregister"
     },
     {
@@ -1038,7 +1038,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "creativemodetab",
-      "community": 1,
+      "community": 4,
       "norm_label": "creativemodetab"
     },
     {
@@ -1048,7 +1048,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_majesticcreativetabs_java_deferredholder",
-      "community": 1,
+      "community": 4,
       "norm_label": "deferredholder"
     },
     {
@@ -1058,7 +1058,7 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_majesticcreativetabs_majesticcreativetabs_majesticcreativetabs",
-      "community": 1,
+      "community": 4,
       "norm_label": ".majesticcreativetabs()"
     },
     {
@@ -1068,7 +1068,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_majesticcreativetabs_majesticcreativetabs_register",
-      "community": 1,
+      "community": 4,
       "norm_label": ".register()"
     },
     {
@@ -1078,7 +1078,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_majesticcreativetabs_java_ieventbus",
-      "community": 1,
+      "community": 4,
       "norm_label": "ieventbus"
     },
     {
@@ -1088,7 +1088,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_majesticcreativetabs_majesticcreativetabs_onbuildcontents",
-      "community": 1,
+      "community": 4,
       "norm_label": ".onbuildcontents()"
     },
     {
@@ -1098,7 +1098,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "buildcreativemodetabcontentsevent",
-      "community": 1,
+      "community": 4,
       "norm_label": "buildcreativemodetabcontentsevent"
     },
     {
@@ -1558,7 +1558,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_component_majesticdatacomponents",
-      "community": 3,
+      "community": 1,
       "norm_label": "majesticdatacomponents.java"
     },
     {
@@ -1568,7 +1568,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_majesticdatacomponents",
-      "community": 3,
+      "community": 1,
       "norm_label": "majesticdatacomponents"
     },
     {
@@ -1578,7 +1578,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_java_deferredregister",
-      "community": 3,
+      "community": 1,
       "norm_label": "deferredregister"
     },
     {
@@ -1588,7 +1588,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "datacomponenttype",
-      "community": 3,
+      "community": 1,
       "norm_label": "datacomponenttype"
     },
     {
@@ -1598,7 +1598,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_java_deferredholder",
-      "community": 3,
+      "community": 1,
       "norm_label": "deferredholder"
     },
     {
@@ -1608,7 +1608,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_java_resourcelocation",
-      "community": 3,
+      "community": 1,
       "norm_label": "resourcelocation"
     },
     {
@@ -1618,7 +1618,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_majesticdatacomponents_majesticdatacomponents",
-      "community": 3,
+      "community": 1,
       "norm_label": ".majesticdatacomponents()"
     },
     {
@@ -1628,7 +1628,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_majesticdatacomponents_register",
-      "community": 3,
+      "community": 1,
       "norm_label": ".register()"
     },
     {
@@ -1638,7 +1638,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_component_majesticdatacomponents_java_ieventbus",
-      "community": 3,
+      "community": 1,
       "norm_label": "ieventbus"
     },
     {
@@ -1678,7 +1678,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "geoentity",
-      "community": 9,
+      "community": 77,
       "norm_label": "geoentity"
     },
     {
@@ -1738,7 +1738,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_astralconstruct_astralconstruct_createattributes",
-      "community": 78,
+      "community": 59,
       "norm_label": ".createattributes()"
     },
     {
@@ -1748,7 +1748,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_astralconstruct_java_builder",
-      "community": 78,
+      "community": 59,
       "norm_label": "builder"
     },
     {
@@ -2028,7 +2028,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_majesticentities",
-      "community": 78,
+      "community": 59,
       "norm_label": "majesticentities.java"
     },
     {
@@ -2038,7 +2038,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_majesticentities_majesticentities",
-      "community": 78,
+      "community": 59,
       "norm_label": "majesticentities"
     },
     {
@@ -2048,7 +2048,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_majesticentities_java_deferredregister",
-      "community": 78,
+      "community": 59,
       "norm_label": "deferredregister"
     },
     {
@@ -2058,7 +2058,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_majesticentities_java_entitytype",
-      "community": 78,
+      "community": 59,
       "norm_label": "entitytype"
     },
     {
@@ -2068,7 +2068,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_majesticentities_java_deferredholder",
-      "community": 78,
+      "community": 59,
       "norm_label": "deferredholder"
     },
     {
@@ -2078,7 +2078,7 @@
       "source_location": "L79",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_majesticentities_majesticentities_majesticentities",
-      "community": 78,
+      "community": 59,
       "norm_label": ".majesticentities()"
     },
     {
@@ -2088,7 +2088,7 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_majesticentities_majesticentities_register",
-      "community": 78,
+      "community": 59,
       "norm_label": ".register()"
     },
     {
@@ -2098,7 +2098,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_majesticentities_java_ieventbus",
-      "community": 78,
+      "community": 59,
       "norm_label": "ieventbus"
     },
     {
@@ -2108,7 +2108,7 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_majesticentities_majesticentities_onentityattributecreation",
-      "community": 78,
+      "community": 59,
       "norm_label": ".onentityattributecreation()"
     },
     {
@@ -2118,7 +2118,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "entityattributecreationevent",
-      "community": 78,
+      "community": 59,
       "norm_label": "entityattributecreationevent"
     },
     {
@@ -2128,7 +2128,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_majesticentities_majesticentities_onregisterspawnplacements",
-      "community": 78,
+      "community": 59,
       "norm_label": ".onregisterspawnplacements()"
     },
     {
@@ -2138,7 +2138,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "registerspawnplacementsevent",
-      "community": 78,
+      "community": 59,
       "norm_label": "registerspawnplacementsevent"
     },
     {
@@ -3518,7 +3518,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_delayedmeleeattack",
-      "community": 79,
+      "community": 77,
       "norm_label": "delayedmeleeattack.java"
     },
     {
@@ -3528,7 +3528,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_delayedmeleeattack_delayedmeleeattack",
-      "community": 79,
+      "community": 77,
       "norm_label": "delayedmeleeattack"
     },
     {
@@ -3538,7 +3538,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_delayedmeleeattack_java_livingentity",
-      "community": 79,
+      "community": 77,
       "norm_label": "livingentity"
     },
     {
@@ -3548,7 +3548,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_delayedmeleeattack_delayedmeleeattack_schedule",
-      "community": 79,
+      "community": 77,
       "norm_label": ".schedule()"
     },
     {
@@ -3558,7 +3558,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_delayedmeleeattack_delayedmeleeattack_ispending",
-      "community": 79,
+      "community": 77,
       "norm_label": ".ispending()"
     },
     {
@@ -3568,7 +3568,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_delayedmeleeattack_delayedmeleeattack_cancel",
-      "community": 79,
+      "community": 77,
       "norm_label": ".cancel()"
     },
     {
@@ -3578,7 +3578,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_delayedmeleeattack_delayedmeleeattack_tick",
-      "community": 79,
+      "community": 77,
       "norm_label": ".tick()"
     },
     {
@@ -3588,7 +3588,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_delayedmeleeattack_java_nullable",
-      "community": 79,
+      "community": 77,
       "norm_label": "nullable"
     },
     {
@@ -3678,7 +3678,7 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_fallenwatcher_fallenwatcher_createattributes",
-      "community": 78,
+      "community": 59,
       "norm_label": ".createattributes()"
     },
     {
@@ -3688,7 +3688,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_fallenwatcher_java_builder",
-      "community": 78,
+      "community": 59,
       "norm_label": "builder"
     },
     {
@@ -3738,7 +3738,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_fallenwatcher_fallenwatcher_tick",
-      "community": 79,
+      "community": 77,
       "norm_label": ".tick()"
     },
     {
@@ -4018,7 +4018,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_meteorcrawler_meteorcrawler_createattributes",
-      "community": 78,
+      "community": 59,
       "norm_label": ".createattributes()"
     },
     {
@@ -4028,7 +4028,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_meteorcrawler_java_builder",
-      "community": 78,
+      "community": 59,
       "norm_label": "builder"
     },
     {
@@ -4068,7 +4068,7 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_meteorcrawler_meteorcrawler_tick",
-      "community": 79,
+      "community": 77,
       "norm_label": ".tick()"
     },
     {
@@ -4338,7 +4338,7 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_stargazercultist_stargazercultist_createattributes",
-      "community": 78,
+      "community": 59,
       "norm_label": ".createattributes()"
     },
     {
@@ -4348,7 +4348,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_stargazercultist_java_builder",
-      "community": 78,
+      "community": 59,
       "norm_label": "builder"
     },
     {
@@ -4808,7 +4808,7 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_umbralmoth_umbralmoth_createattributes",
-      "community": 78,
+      "community": 59,
       "norm_label": ".createattributes()"
     },
     {
@@ -4818,7 +4818,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_entity_night_umbralmoth_java_builder",
-      "community": 78,
+      "community": 59,
       "norm_label": "builder"
     },
     {
@@ -5188,7 +5188,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_event_majesticevents",
-      "community": 86,
+      "community": 1,
       "norm_label": "majesticevents.java"
     },
     {
@@ -5198,7 +5198,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_event_majesticevents_majesticevents",
-      "community": 86,
+      "community": 1,
       "norm_label": "majesticevents"
     },
     {
@@ -5208,7 +5208,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_event_majesticevents_java_resourcelocation",
-      "community": 86,
+      "community": 1,
       "norm_label": "resourcelocation"
     },
     {
@@ -5218,7 +5218,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_event_majesticevents_majesticevents_onnodeunlocked",
-      "community": 86,
+      "community": 1,
       "norm_label": ".onnodeunlocked()"
     },
     {
@@ -5228,7 +5228,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "nodeunlockedevent",
-      "community": 86,
+      "community": 1,
       "norm_label": "nodeunlockedevent"
     },
     {
@@ -5238,7 +5238,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_event_majesticevents_majesticevents_onplayerloggedin",
-      "community": 86,
+      "community": 1,
       "norm_label": ".onplayerloggedin()"
     },
     {
@@ -5248,7 +5248,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "playerloggedinevent",
-      "community": 86,
+      "community": 1,
       "norm_label": "playerloggedinevent"
     },
     {
@@ -5258,7 +5258,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_event_majesticevents_majesticevents_majesticevents",
-      "community": 86,
+      "community": 1,
       "norm_label": ".majesticevents()"
     },
     {
@@ -5558,7 +5558,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_item_majesticitems",
-      "community": 1,
+      "community": 4,
       "norm_label": "majesticitems.java"
     },
     {
@@ -5568,7 +5568,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_item_majesticitems_majesticitems",
-      "community": 1,
+      "community": 4,
       "norm_label": "majesticitems"
     },
     {
@@ -5588,7 +5588,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "deferreditem",
-      "community": 1,
+      "community": 4,
       "norm_label": "deferreditem"
     },
     {
@@ -5598,7 +5598,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_item_majesticitems_java_item",
-      "community": 1,
+      "community": 4,
       "norm_label": "item"
     },
     {
@@ -5608,7 +5608,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "blockitem",
-      "community": 1,
+      "community": 4,
       "norm_label": "blockitem"
     },
     {
@@ -5618,7 +5618,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "deferredspawneggitem",
-      "community": 1,
+      "community": 4,
       "norm_label": "deferredspawneggitem"
     },
     {
@@ -5628,7 +5628,7 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_item_majesticitems_majesticitems_majesticitems",
-      "community": 1,
+      "community": 4,
       "norm_label": ".majesticitems()"
     },
     {
@@ -5638,7 +5638,7 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_item_majesticitems_majesticitems_register",
-      "community": 1,
+      "community": 4,
       "norm_label": ".register()"
     },
     {
@@ -5648,7 +5648,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_majestic_content_item_majesticitems_java_ieventbus",
-      "community": 1,
+      "community": 4,
       "norm_label": "ieventbus"
     },
     {
@@ -7022,22 +7022,42 @@
       "norm_label": "changelog"
     },
     {
-      "label": "[0.0.0-beta.16]",
+      "label": "[0.0.0-beta.17]",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "changelog_0_0_0_beta_16",
+      "id": "changelog_0_0_0_beta_17",
       "community": 20,
-      "norm_label": "[0.0.0-beta.16]"
+      "norm_label": "[0.0.0-beta.17]"
+    },
+    {
+      "label": "Changed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "changelog_changed",
+      "community": 20,
+      "norm_label": "changed"
     },
     {
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L7",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "changelog_added",
+      "community": 20,
+      "norm_label": "added"
+    },
+    {
+      "label": "Added",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "changelog_added_21",
       "community": 20,
       "norm_label": "added"
     },
@@ -7045,31 +7065,11 @@
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L12",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "changelog_fixed",
       "community": 20,
       "norm_label": "fixed"
-    },
-    {
-      "label": "Added",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "changelog_added_19",
-      "community": 20,
-      "norm_label": "added"
-    },
-    {
-      "label": "Changed",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L24",
-      "_origin": "ast",
-      "id": "changelog_changed",
-      "community": 20,
-      "norm_label": "changed"
     },
     {
       "label": "Added",
@@ -7085,9 +7085,9 @@
       "label": "Changed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L49",
+      "source_location": "L38",
       "_origin": "ast",
-      "id": "changelog_changed_49",
+      "id": "changelog_changed_38",
       "community": 20,
       "norm_label": "changed"
     },
@@ -7095,9 +7095,29 @@
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L61",
+      "source_location": "L47",
       "_origin": "ast",
-      "id": "changelog_added_61",
+      "id": "changelog_added_47",
+      "community": 20,
+      "norm_label": "added"
+    },
+    {
+      "label": "Changed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "changelog_changed_63",
+      "community": 20,
+      "norm_label": "changed"
+    },
+    {
+      "label": "Added",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "changelog_added_75",
       "community": 20,
       "norm_label": "added"
     },
@@ -7105,9 +7125,9 @@
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L70",
+      "source_location": "L84",
       "_origin": "ast",
-      "id": "changelog_fixed_70",
+      "id": "changelog_fixed_84",
       "community": 20,
       "norm_label": "fixed"
     },
@@ -7115,9 +7135,9 @@
       "label": "Changed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L78",
+      "source_location": "L92",
       "_origin": "ast",
-      "id": "changelog_changed_78",
+      "id": "changelog_changed_92",
       "community": 20,
       "norm_label": "changed"
     },
@@ -7125,9 +7145,9 @@
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L84",
+      "source_location": "L98",
       "_origin": "ast",
-      "id": "changelog_added_84",
+      "id": "changelog_added_98",
       "community": 20,
       "norm_label": "added"
     },
@@ -7135,21 +7155,11 @@
       "label": "Changed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L88",
+      "source_location": "L102",
       "_origin": "ast",
-      "id": "changelog_changed_88",
+      "id": "changelog_changed_102",
       "community": 20,
       "norm_label": "changed"
-    },
-    {
-      "label": "Added",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L94",
-      "_origin": "ast",
-      "id": "changelog_added_94",
-      "community": 20,
-      "norm_label": "added"
     },
     {
       "label": "Added",
@@ -7162,12 +7172,22 @@
       "norm_label": "added"
     },
     {
+      "label": "Added",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "changelog_added_122",
+      "community": 20,
+      "norm_label": "added"
+    },
+    {
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L114",
+      "source_location": "L128",
       "_origin": "ast",
-      "id": "changelog_fixed_114",
+      "id": "changelog_fixed_128",
       "community": 20,
       "norm_label": "fixed"
     },
@@ -7175,7 +7195,7 @@
       "label": "[0.0.0-beta.8]",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L122",
+      "source_location": "L136",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_8",
       "community": 20,
@@ -7185,9 +7205,9 @@
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L124",
+      "source_location": "L138",
       "_origin": "ast",
-      "id": "changelog_fixed_124",
+      "id": "changelog_fixed_138",
       "community": 20,
       "norm_label": "fixed"
     },
@@ -7195,7 +7215,7 @@
       "label": "Notes",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L134",
+      "source_location": "L148",
       "_origin": "ast",
       "id": "changelog_notes",
       "community": 20,
@@ -7205,7 +7225,7 @@
       "label": "[0.0.0-beta.7]",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L140",
+      "source_location": "L154",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_7",
       "community": 20,
@@ -7215,9 +7235,9 @@
       "label": "Notes",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L142",
+      "source_location": "L156",
       "_origin": "ast",
-      "id": "changelog_notes_142",
+      "id": "changelog_notes_156",
       "community": 20,
       "norm_label": "notes"
     },
@@ -7225,7 +7245,7 @@
       "label": "[0.0.0-beta.6]",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L148",
+      "source_location": "L162",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_6",
       "community": 20,
@@ -7235,9 +7255,9 @@
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L150",
+      "source_location": "L164",
       "_origin": "ast",
-      "id": "changelog_added_150",
+      "id": "changelog_added_164",
       "community": 20,
       "norm_label": "added"
     },
@@ -7245,9 +7265,9 @@
       "label": "Notes",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L158",
+      "source_location": "L172",
       "_origin": "ast",
-      "id": "changelog_notes_158",
+      "id": "changelog_notes_172",
       "community": 20,
       "norm_label": "notes"
     },
@@ -7255,7 +7275,7 @@
       "label": "[0.0.0-beta.5]",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L165",
+      "source_location": "L179",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_5",
       "community": 20,
@@ -7265,9 +7285,9 @@
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L167",
+      "source_location": "L181",
       "_origin": "ast",
-      "id": "changelog_fixed_167",
+      "id": "changelog_fixed_181",
       "community": 20,
       "norm_label": "fixed"
     },
@@ -7275,7 +7295,7 @@
       "label": "Docs",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L175",
+      "source_location": "L189",
       "_origin": "ast",
       "id": "changelog_docs",
       "community": 20,
@@ -7285,7 +7305,7 @@
       "label": "[0.0.0-beta.4]",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L178",
+      "source_location": "L192",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_4",
       "community": 20,
@@ -7295,9 +7315,9 @@
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L180",
+      "source_location": "L194",
       "_origin": "ast",
-      "id": "changelog_added_180",
+      "id": "changelog_added_194",
       "community": 20,
       "norm_label": "added"
     },
@@ -7305,9 +7325,9 @@
       "label": "Notes",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L186",
+      "source_location": "L200",
       "_origin": "ast",
-      "id": "changelog_notes_186",
+      "id": "changelog_notes_200",
       "community": 20,
       "norm_label": "notes"
     },
@@ -7315,7 +7335,7 @@
       "label": "[0.0.0-beta.3]",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L194",
+      "source_location": "L208",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_3",
       "community": 20,
@@ -7325,9 +7345,9 @@
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L196",
+      "source_location": "L210",
       "_origin": "ast",
-      "id": "changelog_added_196",
+      "id": "changelog_added_210",
       "community": 20,
       "norm_label": "added"
     },
@@ -7335,9 +7355,9 @@
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L210",
+      "source_location": "L224",
       "_origin": "ast",
-      "id": "changelog_fixed_210",
+      "id": "changelog_fixed_224",
       "community": 20,
       "norm_label": "fixed"
     },
@@ -7345,9 +7365,9 @@
       "label": "Notes",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L218",
+      "source_location": "L232",
       "_origin": "ast",
-      "id": "changelog_notes_218",
+      "id": "changelog_notes_232",
       "community": 20,
       "norm_label": "notes"
     },
@@ -7355,7 +7375,7 @@
       "label": "[0.0.0-beta.2]",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L227",
+      "source_location": "L241",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_2",
       "community": 20,
@@ -7365,9 +7385,9 @@
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L229",
+      "source_location": "L243",
       "_origin": "ast",
-      "id": "changelog_added_229",
+      "id": "changelog_added_243",
       "community": 20,
       "norm_label": "added"
     },
@@ -7375,9 +7395,9 @@
       "label": "Notes",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L240",
+      "source_location": "L254",
       "_origin": "ast",
-      "id": "changelog_notes_240",
+      "id": "changelog_notes_254",
       "community": 20,
       "norm_label": "notes"
     },
@@ -7385,7 +7405,7 @@
       "label": "[0.0.0-beta.1]",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L247",
+      "source_location": "L261",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_1",
       "community": 20,
@@ -7395,9 +7415,9 @@
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L251",
+      "source_location": "L265",
       "_origin": "ast",
-      "id": "changelog_added_251",
+      "id": "changelog_added_265",
       "community": 20,
       "norm_label": "added"
     },
@@ -7405,9 +7425,9 @@
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L269",
+      "source_location": "L283",
       "_origin": "ast",
-      "id": "changelog_fixed_269",
+      "id": "changelog_fixed_283",
       "community": 20,
       "norm_label": "fixed"
     },
@@ -7415,9 +7435,9 @@
       "label": "Notes",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L283",
+      "source_location": "L297",
       "_origin": "ast",
-      "id": "changelog_notes_283",
+      "id": "changelog_notes_297",
       "community": 20,
       "norm_label": "notes"
     },
@@ -9680,6 +9700,16 @@
       "id": "docs_curseforge_versions_0_0_0_beta_14",
       "community": 83,
       "norm_label": "0.0.0-beta.14.md"
+    },
+    {
+      "label": "0.0.0-beta.16.md",
+      "file_type": "document",
+      "source_file": "docs/curseforge/versions/0.0.0-beta.16.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_curseforge_versions_0_0_0_beta_16",
+      "community": 86,
+      "norm_label": "0.0.0-beta.16.md"
     },
     {
       "label": "0.0.0-beta.2.md",
@@ -25096,7 +25126,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L247",
+      "source_location": "L261",
       "weight": 1.0,
       "source": "changelog_changelog",
       "target": "changelog_0_0_0_beta_1",
@@ -25109,14 +25139,14 @@
       "source_location": "L5",
       "weight": 1.0,
       "source": "changelog_changelog",
-      "target": "changelog_0_0_0_beta_16",
+      "target": "changelog_0_0_0_beta_17",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L227",
+      "source_location": "L241",
       "weight": 1.0,
       "source": "changelog_changelog",
       "target": "changelog_0_0_0_beta_2",
@@ -25126,7 +25156,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L194",
+      "source_location": "L208",
       "weight": 1.0,
       "source": "changelog_changelog",
       "target": "changelog_0_0_0_beta_3",
@@ -25136,7 +25166,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L178",
+      "source_location": "L192",
       "weight": 1.0,
       "source": "changelog_changelog",
       "target": "changelog_0_0_0_beta_4",
@@ -25146,7 +25176,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L165",
+      "source_location": "L179",
       "weight": 1.0,
       "source": "changelog_changelog",
       "target": "changelog_0_0_0_beta_5",
@@ -25156,7 +25186,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L148",
+      "source_location": "L162",
       "weight": 1.0,
       "source": "changelog_changelog",
       "target": "changelog_0_0_0_beta_6",
@@ -25166,7 +25196,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L140",
+      "source_location": "L154",
       "weight": 1.0,
       "source": "changelog_changelog",
       "target": "changelog_0_0_0_beta_7",
@@ -25176,7 +25206,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L122",
+      "source_location": "L136",
       "weight": 1.0,
       "source": "changelog_changelog",
       "target": "changelog_0_0_0_beta_8",
@@ -25186,9 +25216,9 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L7",
+      "source_location": "L15",
       "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
+      "source": "changelog_0_0_0_beta_17",
       "target": "changelog_added",
       "confidence_score": 1.0
     },
@@ -25198,7 +25228,7 @@
       "source_file": "CHANGELOG.md",
       "source_location": "L108",
       "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
+      "source": "changelog_0_0_0_beta_17",
       "target": "changelog_added_108",
       "confidence_score": 1.0
     },
@@ -25206,10 +25236,20 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L19",
+      "source_location": "L122",
       "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
-      "target": "changelog_added_19",
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_added_122",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_added_21",
       "confidence_score": 1.0
     },
     {
@@ -25218,7 +25258,7 @@
       "source_file": "CHANGELOG.md",
       "source_location": "L33",
       "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
+      "source": "changelog_0_0_0_beta_17",
       "target": "changelog_added_33",
       "confidence_score": 1.0
     },
@@ -25226,10 +25266,100 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L61",
+      "source_location": "L47",
       "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
-      "target": "changelog_added_61",
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_added_47",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_added_75",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_added_98",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_changed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_changed_102",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_changed_38",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_changed_63",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_changed_92",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_fixed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_fixed_128",
       "confidence_score": 1.0
     },
     {
@@ -25238,105 +25368,25 @@
       "source_file": "CHANGELOG.md",
       "source_location": "L84",
       "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
-      "target": "changelog_added_84",
+      "source": "changelog_0_0_0_beta_17",
+      "target": "changelog_fixed_84",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L94",
-      "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
-      "target": "changelog_added_94",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
-      "target": "changelog_changed",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L49",
-      "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
-      "target": "changelog_changed_49",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L78",
-      "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
-      "target": "changelog_changed_78",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L88",
-      "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
-      "target": "changelog_changed_88",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
-      "target": "changelog_fixed",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L114",
-      "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
-      "target": "changelog_fixed_114",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L70",
-      "weight": 1.0,
-      "source": "changelog_0_0_0_beta_16",
-      "target": "changelog_fixed_70",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L124",
+      "source_location": "L138",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_8",
-      "target": "changelog_fixed_124",
+      "target": "changelog_fixed_138",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L134",
+      "source_location": "L148",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_8",
       "target": "changelog_notes",
@@ -25346,37 +25396,37 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L142",
+      "source_location": "L156",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_7",
-      "target": "changelog_notes_142",
+      "target": "changelog_notes_156",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L150",
+      "source_location": "L164",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_6",
-      "target": "changelog_added_150",
+      "target": "changelog_added_164",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L158",
+      "source_location": "L172",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_6",
-      "target": "changelog_notes_158",
+      "target": "changelog_notes_172",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L175",
+      "source_location": "L189",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_5",
       "target": "changelog_docs",
@@ -25386,40 +25436,30 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L167",
+      "source_location": "L181",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_5",
-      "target": "changelog_fixed_167",
+      "target": "changelog_fixed_181",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L180",
+      "source_location": "L194",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_4",
-      "target": "changelog_added_180",
+      "target": "changelog_added_194",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L186",
+      "source_location": "L200",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_4",
-      "target": "changelog_notes_186",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L196",
-      "weight": 1.0,
-      "source": "changelog_0_0_0_beta_3",
-      "target": "changelog_added_196",
+      "target": "changelog_notes_200",
       "confidence_score": 1.0
     },
     {
@@ -25429,57 +25469,57 @@
       "source_location": "L210",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_3",
-      "target": "changelog_fixed_210",
+      "target": "changelog_added_210",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L218",
+      "source_location": "L224",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_3",
-      "target": "changelog_notes_218",
+      "target": "changelog_fixed_224",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L229",
+      "source_location": "L232",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_3",
+      "target": "changelog_notes_232",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L243",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_2",
-      "target": "changelog_added_229",
+      "target": "changelog_added_243",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L240",
+      "source_location": "L254",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_2",
-      "target": "changelog_notes_240",
+      "target": "changelog_notes_254",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L251",
+      "source_location": "L265",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_1",
-      "target": "changelog_added_251",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L269",
-      "weight": 1.0,
-      "source": "changelog_0_0_0_beta_1",
-      "target": "changelog_fixed_269",
+      "target": "changelog_added_265",
       "confidence_score": 1.0
     },
     {
@@ -25489,7 +25529,17 @@
       "source_location": "L283",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_1",
-      "target": "changelog_notes_283",
+      "target": "changelog_fixed_283",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L297",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_1",
+      "target": "changelog_notes_297",
       "confidence_score": 1.0
     },
     {
@@ -27844,5 +27894,5 @@
       ]
     }
   ],
-  "built_at_commit": "300c02aaecf327c7de9a95298c44c54f174b288d"
+  "built_at_commit": "a6d64a0b709f73c3cbe4accbec0047a755e2f20e"
 }

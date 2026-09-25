@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1790341718.0747368,
-    "ast_hash": "bf3f7533f0a94b2517115224147c6600",
+    "mtime": 1790343941.585619,
+    "ast_hash": "22d1fdbe21b05e89cdb485ba9b800c55",
     "semantic_hash": ""
   },
   "README.md": {
@@ -280,8 +280,8 @@
     "semantic_hash": ""
   },
   "docs/DESIGN_MAJESTIC_1-21-1.md": {
-    "mtime": 1790341718.0861719,
-    "ast_hash": "e51df0d071ce2d721250096382494024",
+    "mtime": 1790343941.586619,
+    "ast_hash": "547da08dfa8a871933fefc4ffb191b90",
     "semantic_hash": ""
   },
   "docs/INTEGRATIONS.md": {
@@ -320,8 +320,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_MAJESTIC_1-21-1.md": {
-    "mtime": 1790341718.0861719,
-    "ast_hash": "4c50d6f3bb52af407374f7d777f8c722",
+    "mtime": 1790343941.586619,
+    "ast_hash": "e9df2be7ea879fab6fa9277d650a0ca6",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -330,8 +330,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1790341718.0954697,
-    "ast_hash": "c179d84086268fcf313ea50043c9091f",
+    "mtime": 1790343941.586619,
+    "ast_hash": "db8e23fb4829bdb01a3c980cd4efb349",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -580,13 +580,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/animations/warden_of_the_gate.animation.json": {
-    "mtime": 1790285132.990487,
-    "ast_hash": "b21ea5c6195ab224773c2d384326f962",
+    "mtime": 1790342354.8219528,
+    "ast_hash": "6bd30b16add0fd59d8a8aa2845c31061",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/geo/warden_of_the_gate.geo.json": {
-    "mtime": 1790242506.3444345,
-    "ast_hash": "8db59d27bbf26cc8e79def507d086bab",
+    "mtime": 1790342354.8219528,
+    "ast_hash": "62e76da220472ca89cd4bf57999789ce",
     "semantic_hash": ""
   },
   "src/main/resources/data/majestic/advancement/guide/warden_of_the_gate.json": {
@@ -610,8 +610,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/textures/entity/warden_of_the_gate.png": {
-    "mtime": 1790242506.348461,
-    "ast_hash": "5bc515fb5fbe18d76b372f8c6edc168f",
+    "mtime": 1790342354.8352323,
+    "ast_hash": "c5635c7dfda8f1ca80044f689903e458",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/animations/astral_construct.animation.json": {
@@ -870,13 +870,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/journey/chapter_1.json": {
-    "mtime": 1790340875.4489608,
-    "ast_hash": "5db7442994469282073d13b351c9234b",
+    "mtime": 1790343823.8608546,
+    "ast_hash": "c01dacce8724801591c784c11720777b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/journey/chapter_2.json": {
-    "mtime": 1790340875.8665018,
-    "ast_hash": "a68d730c33b74dfa57c04f57c6fdb884",
+    "mtime": 1790343826.8890448,
+    "ast_hash": "4f10095e7b61f00f46960e6ab79fd7dc",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/journey/prologue.json": {
@@ -890,13 +890,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/journey/chapter_1.json": {
-    "mtime": 1790340875.8675046,
-    "ast_hash": "77867bb29394643d1def848b56b3ffa7",
+    "mtime": 1790343825.8641295,
+    "ast_hash": "fe2a2322c560a1cda7f708526c438763",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/journey/chapter_2.json": {
-    "mtime": 1790340875.8665018,
-    "ast_hash": "77af6862933d82aa10b8defe1e0c232f",
+    "mtime": 1790343828.4275904,
+    "ast_hash": "62e7bc29b187847224cc2acaa9cec13f",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/journey/prologue.json": {
@@ -1052,6 +1052,21 @@
   "docs/JOURNEY_I_TALLER_GUIDE_PART2.md": {
     "mtime": 1790340635.5287087,
     "ast_hash": "a41b573c5022b840dc24788c15eafcff",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.16.md": {
+    "mtime": 1790343605.5387614,
+    "ast_hash": "5421d361539cb88bfbb0791c7f62a341",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/gui/book/fallen_shrine.png": {
+    "mtime": 1790342455.6279228,
+    "ast_hash": "55f3ecd8af9f9f7ddffdb5edec88be27",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/majestic/textures/gui/book/observatory_entrance.png": {
+    "mtime": 1790342456.110942,
+    "ast_hash": "8680365471df9f4f11fa4024451bb5ee",
     "semantic_hash": ""
   }
 }
