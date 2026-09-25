@@ -258,6 +258,12 @@ public final class DataGenerators {
             add("entity.majestic.meteor_crawler", "Meteor Crawler");
             add("entity.majestic.umbral_moth", "Umbral Moth");
             add("entity.majestic.starlight_bolt", "Starlight Bolt");
+            add("advancements.majestic.journey.root.title", "The Arcane Journey");
+            add("advancements.majestic.journey.root.description", "Begin your journey toward the light");
+            add("advancements.majestic.journey.fallen_shrine.title", "Ruins of the Order");
+            add("advancements.majestic.journey.fallen_shrine.description", "Find a Fallen Shrine");
+            add("advancements.majestic.journey.observatory.title", "Where Stars Were Read");
+            add("advancements.majestic.journey.observatory.description", "Reach the Observatory");
             add("advancements.majestic.warden_of_the_gate.title", "Beyond the Gate");
             add("advancements.majestic.warden_of_the_gate.description", "Defeat the Warden of the Gate in the Observatory");
             add("itemGroup.majestic.magic", "Majestic: Magic");

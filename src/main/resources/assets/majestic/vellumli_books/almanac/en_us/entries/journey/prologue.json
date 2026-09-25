@@ -3,6 +3,7 @@
   "category": "majestic:journey",
   "icon": "majestic:starlight_focus",
   "sort_num": 0,
+  "read_by_default": true,
   "pages": [
     {
       "type": "text",

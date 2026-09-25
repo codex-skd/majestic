@@ -1,5 +1,5 @@
 {
-  "parent": "majestic:guide/engrave_spell",
+  "parent": "majestic:journey/observatory",
   "criteria": {
     "killed_warden": {
       "conditions": {

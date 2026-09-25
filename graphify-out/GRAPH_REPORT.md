@@ -1,16 +1,16 @@
 # Graph Report - 1.21.1  (2026-09-25)
 
 ## Corpus Check
-- 186 files · ~55,634 words
+- 190 files · ~56,936 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 979 nodes · 1655 edges · 86 communities (60 shown, 26 thin omitted)
+- 990 nodes · 1668 edges · 90 communities (61 shown, 29 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fd537cd5`
+- Built from commit: `300c02aa`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -84,6 +84,10 @@
 - Majestic — GeckoLib model guide: Astral Construct (Boss I minion)
 - Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)
 - .applyScaling
+- MajesticEvents
+- Majestic — Journey I, part 2: taller work orders (playtest feedback 2026-09-25)
+- MajesticEntityRenderers.java
+- CompoundTag
 
 ## God Nodes (most connected - your core abstractions)
 1. `WardenOfTheGate` - 98 edges
@@ -93,11 +97,13 @@
 5. `StargazerCultist` - 24 edges
 6. `UmbralMoth` - 23 edges
 7. `MajesticEntities` - 15 edges
-8. `EngraveSpellRitual` - 13 edges
-9. `[0.0.0-beta.15]` - 13 edges
+8. `[0.0.0-beta.16]` - 15 edges
+9. `EngraveSpellRitual` - 13 edges
 10. `Flujo de trabajo — Majestic (NeoForge)` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `AstralConstructRenderer` --references--> `AstralConstruct`  [EXTRACTED]
+  src/main/java/com/skd/majestic/client/entity/AstralConstructRenderer.java → src/main/java/com/skd/majestic/content/entity/AstralConstruct.java
 - `FallenWatcherModel` --inherits--> `MajesticEntityGeoModel`  [EXTRACTED]
   src/main/java/com/skd/majestic/client/entity/FallenWatcherModel.java → src/main/java/com/skd/majestic/client/entity/MajesticEntityGeoModel.java
 - `MeteorCrawlerModel` --inherits--> `MajesticEntityGeoModel`  [EXTRACTED]
@@ -106,8 +112,6 @@
   src/main/java/com/skd/majestic/client/entity/StargazerCultistModel.java → src/main/java/com/skd/majestic/client/entity/MajesticEntityGeoModel.java
 - `UmbralMothModel` --inherits--> `MajesticEntityGeoModel`  [EXTRACTED]
   src/main/java/com/skd/majestic/client/entity/UmbralMothModel.java → src/main/java/com/skd/majestic/client/entity/MajesticEntityGeoModel.java
-- `WardenOfTheGateModel` --references--> `WardenOfTheGate`  [EXTRACTED]
-  src/main/java/com/skd/majestic/client/entity/WardenOfTheGateModel.java → src/main/java/com/skd/majestic/content/entity/boss/WardenOfTheGate.java
 
 ## Import Cycles
 - None detected.
@@ -119,7 +123,7 @@
 - **** —  [EXTRACTED 1.00]
 - **Mod Dependency** — astral_core, almanac_core, expedition_core, geckolib [EXTRACTED 1.00]
 
-## Communities (86 total, 26 thin omitted)
+## Communities (90 total, 29 thin omitted)
 
 ### Community 0 - "Data Management"
 Cohesion: 0.09
@@ -127,19 +131,19 @@ Nodes (24): BlockStateProvider, CachedOutput, DataProvider, ExistingFileHelper, 
 
 ### Community 1 - "Majestic Spells"
 Cohesion: 0.06
-Nodes (30): CommandContext, CommandDispatcher, CommandSourceStack, DataComponentType, Logger, Mod, ModContainer, NodeUnlockedEvent (+22 more)
+Nodes (33): BlockItem, BuildCreativeModeTabContentsEvent, CommandContext, CommandDispatcher, CommandSourceStack, CreativeModeTab, DeferredItem, DeferredSpawnEggItem (+25 more)
 
 ### Community 2 - "Astral Altar"
-Cohesion: 0.22
-Nodes (14): BaseEntityBlock, BlockEntity, BlockEntityTicker, BlockHitResult, InteractionResult, MapCodec, AstralAltarBlock, BlockEntityType (+6 more)
+Cohesion: 0.20
+Nodes (15): BaseEntityBlock, BlockEntity, BlockEntityTicker, BlockHitResult, InteractionResult, MapCodec, RenderShape, AstralAltarBlock (+7 more)
 
 ### Community 3 - "Engrave Ritual"
-Cohesion: 0.22
-Nodes (11): Ritual, RitualContext, RitualResult, EngraveSpellRitual, Block, ItemStack, Multiblock, Override (+3 more)
+Cohesion: 0.14
+Nodes (17): DataComponentType, Ritual, RitualContext, RitualResult, DeferredHolder, DeferredRegister, IEventBus, ResourceLocation (+9 more)
 
 ### Community 4 - "Item Registration"
-Cohesion: 0.06
-Nodes (38): BlockItem, BuildCreativeModeTabContentsEvent, Component, CreativeModeTab, DeferredItem, DeferredSpawnEggItem, Item, RegisterGuiLayersEvent (+30 more)
+Cohesion: 0.13
+Nodes (21): Component, Item, FocusItem, InteractionHand, InteractionResultHolder, ItemStack, Level, Override (+13 more)
 
 ### Community 5 - "Starlight Spells"
 Cohesion: 0.07
@@ -151,7 +155,7 @@ Nodes (17): AltarBlockEntity, Blocks, DeferredBlock, AstralAltarBlockEntity, Blo
 
 ### Community 9 - "Item Interaction"
 Cohesion: 0.11
-Nodes (19): Phantom, RandomSource, UmbralMothModel, AnimatableInstanceCache, AnimationState, BlockPos, ControllerRegistrar, DamageSource (+11 more)
+Nodes (20): GeoEntity, Phantom, RandomSource, UmbralMothModel, AnimatableInstanceCache, AnimationState, BlockPos, ControllerRegistrar (+12 more)
 
 ### Community 10 - "Starlight Surge"
 Cohesion: 0.13
@@ -162,8 +166,8 @@ Cohesion: 0.12
 Nodes (15): BossBarController, BossEncounter, BossLootTable, EntityDataAccessor, GeoBossEntity, AnimationState, DifficultyInstance, EntityType (+7 more)
 
 ### Community 12 - "Astral Altar Entity"
-Cohesion: 0.06
-Nodes (27): GeoEntityRenderer, GeoModel, MultiBufferSource, PoseStack, AstralConstructModel, Override, ResourceLocation, AstralConstructRenderer (+19 more)
+Cohesion: 0.07
+Nodes (25): DefaultedEntityGeoModel, AstralConstructModel, Override, ResourceLocation, Override, ResourceLocation, MajesticEntityGeoModel, Override (+17 more)
 
 ### Community 13 - "Data Components"
 Cohesion: 0.09
@@ -173,17 +177,13 @@ Nodes (22): 1. Visión, 2. Módulos, 3. Grafo de dependencias, 4. Regla de auton
 Cohesion: 0.13
 Nodes (13): BoundingBox, Factory, Post, ResourceKey, SavedData, CompoundTag, Override, Provider (+5 more)
 
-### Community 17 - "Event Handling"
-Cohesion: 0.17
-Nodes (3): ArenaLock, Entity, ServerLevel
-
 ### Community 18 - "Build Scripts"
 Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ### Community 20 - "Changelog"
 Cohesion: 0.05
-Nodes (39): [0.0.0-beta.1], [0.0.0-beta.15], [0.0.0-beta.2], [0.0.0-beta.3], [0.0.0-beta.4], [0.0.0-beta.5], [0.0.0-beta.6], [0.0.0-beta.7] (+31 more)
+Nodes (41): [0.0.0-beta.1], [0.0.0-beta.16], [0.0.0-beta.2], [0.0.0-beta.3], [0.0.0-beta.4], [0.0.0-beta.5], [0.0.0-beta.6], [0.0.0-beta.7] (+33 more)
 
 ### Community 22 - "1. Ítems (9)"
 Cohesion: 0.08
@@ -222,8 +222,8 @@ Cohesion: 0.40
 Nodes (4): CLAUDE.md — majestic (1.21.1), Prioridad de instrucciones, Recordatorios específicos, Workflow del mod
 
 ### Community 59 - "Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)"
-Cohesion: 0.06
-Nodes (27): EntityAttributeCreationEvent, Monster, RangedAttackMob, RegisterSpawnPlacementsEvent, StargazerCultistModel, Builder, DeferredHolder, DeferredRegister (+19 more)
+Cohesion: 0.13
+Nodes (15): Monster, RangedAttackMob, StargazerCultistModel, AnimatableInstanceCache, AnimationState, ControllerRegistrar, DamageSource, EntityType (+7 more)
 
 ### Community 60 - "Majestic"
 Cohesion: 0.33
@@ -250,36 +250,32 @@ Cohesion: 0.50
 Nodes (4): Documentos, Estado, Majestic — Índice de documentación de diseño, Módulos y repos
 
 ### Community 68 - "Majestic — GeckoLib model guide: Astral Construct (Boss I minion)"
-Cohesion: 0.17
-Nodes (5): RemovalReason, ControllerRegistrar, DamageSource, Override, SoundEvent
+Cohesion: 0.16
+Nodes (6): RemovalReason, Builder, ControllerRegistrar, DamageSource, Override, SoundEvent
 
 ### Community 71 - "WardenAttackGoal"
 Cohesion: 0.29
 Nodes (4): Goal, LivingEntity, Override, WardenAttackGoal
 
-### Community 72 - ".tickCharge"
-Cohesion: 0.23
-Nodes (3): AnimatableInstanceCache, Builder, WardenOfTheGate
-
 ### Community 74 - "WardenOfTheGateModel"
-Cohesion: 0.23
-Nodes (7): DefaultedEntityGeoModel, Override, ResourceLocation, MajesticEntityGeoModel, Override, ResourceLocation, WardenOfTheGateModel
+Cohesion: 0.20
+Nodes (9): GeoEntityRenderer, GeoModel, MultiBufferSource, PoseStack, AstralConstructRenderer, Context, Context, Override (+1 more)
 
 ### Community 75 - "CompoundTag"
-Cohesion: 0.22
-Nodes (4): BlockPos, BlockState, LivingEntity, Nullable
+Cohesion: 0.29
+Nodes (3): BlockPos, BlockState, Nullable
 
 ### Community 77 - "FallenWatcher"
 Cohesion: 0.11
 Nodes (17): FallenWatcherModel, FallenWatcher, AnimatableInstanceCache, AnimationState, BlockPos, BlockState, ControllerRegistrar, DamageSource (+9 more)
 
 ### Community 78 - "StarlightBoltProjectile.java"
-Cohesion: 0.11
-Nodes (18): AbstractHurtingProjectile, EntityHitResult, HitResult, ParticleOptions, DamageSource, EntityType, Level, LivingEntity (+10 more)
+Cohesion: 0.06
+Nodes (30): AbstractHurtingProjectile, EntityAttributeCreationEvent, EntityHitResult, HitResult, ParticleOptions, RegisterSpawnPlacementsEvent, Builder, DeferredHolder (+22 more)
 
 ### Community 79 - "MeteorCrawler"
-Cohesion: 0.09
-Nodes (20): GeoEntity, Spider, MeteorCrawlerModel, DelayedMeleeAttack, LivingEntity, Nullable, AnimatableInstanceCache, AnimationState (+12 more)
+Cohesion: 0.10
+Nodes (19): Spider, MeteorCrawlerModel, DelayedMeleeAttack, LivingEntity, Nullable, AnimatableInstanceCache, AnimationState, BlockPos (+11 more)
 
 ### Community 80 - "1. Four night mobs (GeckoLib models)"
 Cohesion: 0.15
@@ -293,25 +289,37 @@ Nodes (8): 0. Concept, 1. Output files (3), 2. Bone hierarchy (exact names), 3. 
 Cohesion: 0.25
 Nodes (8): 0. Concepto, 1. Herramientas, 2. Ficheros a exportar (3, rutas exactas), 3. Jerarquía de huesos (bones), 4. Animaciones (6 — nombres exactos), 5. Qué hace Claude con esto (no hace falta que te preocupes por ello), 6. Cuando termines, Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)
 
+### Community 86 - "MajesticEvents"
+Cohesion: 0.32
+Nodes (4): NodeUnlockedEvent, PlayerLoggedInEvent, ResourceLocation, MajesticEvents
+
+### Community 87 - "Majestic — Journey I, part 2: taller work orders (playtest feedback 2026-09-25)"
+Cohesion: 0.29
+Nodes (6): Done means, Majestic — Journey I, part 2: taller work orders (playtest feedback 2026-09-25), Task A — Warden of the Gate: hold the staff properly (model + animation touch-up), Task B — Fallen Shrine: a richer structure (`structures/shrine`), Task C — Observatory: richer entrance and pieces (`structures/observatory`), Task D — Guide-book images (after B and C)
+
+### Community 88 - "MajesticEntityRenderers.java"
+Cohesion: 0.38
+Nodes (4): RegisterRenderers, EventBusSubscriber, SubscribeEvent, MajesticEntityRenderers
+
 ## Knowledge Gaps
-- **199 isolated node(s):** `Workflow del mod`, `Recordatorios específicos`, `Prioridad de instrucciones`, `Added`, `Changed` (+194 more)
+- **206 isolated node(s):** `Workflow del mod`, `Recordatorios específicos`, `Prioridad de instrucciones`, `Added`, `Fixed` (+201 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **26 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **29 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `WardenOfTheGate` connect `.tickCharge` to `WardenOfTheGateRenderer`, `Majestic — GeckoLib model guide: Astral Construct (Boss I minion)`, `WardenAttackGoal`, `.sweepImpact`, `WardenOfTheGateModel`, `Starlight Ward`, `CompoundTag`, `Event Handling`, `.applyScaling`, `Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)`, `WardenOfTheGateModel`?**
-  _High betweenness centrality (0.128) - this node is a cross-community bridge._
-- **Why does `AstralConstruct` connect `Astral Altar Entity` to `Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)`, `MeteorCrawler`?**
-  _High betweenness centrality (0.054) - this node is a cross-community bridge._
-- **Why does `FallenWatcher` connect `FallenWatcher` to `Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)`, `MeteorCrawler`?**
-  _High betweenness centrality (0.037) - this node is a cross-community bridge._
+- **Why does `WardenOfTheGate` connect `WardenOfTheGateModel` to `WardenOfTheGateRenderer`, `Majestic — GeckoLib model guide: Astral Construct (Boss I minion)`, `WardenAttackGoal`, `.tickCharge`, `.sweepImpact`, `Starlight Ward`, `Astral Altar Entity`, `CompoundTag`, `StarlightBoltProjectile.java`, `Event Handling`, `.applyScaling`, `CompoundTag`, `Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)`?**
+  _High betweenness centrality (0.125) - this node is a cross-community bridge._
+- **Why does `AstralConstruct` connect `Astral Altar Entity` to `Item Interaction`, `WardenOfTheGateModel`, `Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)`, `StarlightBoltProjectile.java`?**
+  _High betweenness centrality (0.053) - this node is a cross-community bridge._
+- **Why does `FallenWatcher` connect `FallenWatcher` to `Item Interaction`, `Majestic — Guía de modelo GeckoLib: Jefe I (Warden of the Gate)`, `StarlightBoltProjectile.java`, `MeteorCrawler`?**
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **What connects `Workflow del mod`, `Recordatorios específicos`, `Prioridad de instrucciones` to the rest of the system?**
-  _199 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _206 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Data Management` be split into smaller, more focused modules?**
   _Cohesion score 0.08985200845665962 - nodes in this community are weakly interconnected._
 - **Should `Majestic Spells` be split into smaller, more focused modules?**
-  _Cohesion score 0.0636734693877551 - nodes in this community are weakly interconnected._
-- **Should `Item Registration` be split into smaller, more focused modules?**
-  _Cohesion score 0.06168831168831169 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06458635703918723 - nodes in this community are weakly interconnected._
+- **Should `Engrave Ritual` be split into smaller, more focused modules?**
+  _Cohesion score 0.13675213675213677 - nodes in this community are weakly interconnected._

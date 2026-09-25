@@ -1,0 +1,39 @@
+{
+  "parent": "majestic:journey/fallen_shrine",
+  "criteria": {
+    "in_observatory": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "majestic:observatory"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.majestic.journey.observatory.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "majestic:altar_blueprint_t2"
+    },
+    "title": {
+      "translate": "advancements.majestic.journey.observatory.title"
+    }
+  },
+  "requirements": [
+    [
+      "in_observatory"
+    ]
+  ]
+}

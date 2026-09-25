@@ -1,4 +1,10 @@
 {
+  "advancements.majestic.journey.fallen_shrine.description": "Encuentra un Santuario caído",
+  "advancements.majestic.journey.fallen_shrine.title": "Ruinas de la Orden",
+  "advancements.majestic.journey.observatory.description": "Llega al Observatorio",
+  "advancements.majestic.journey.observatory.title": "Donde se leían las estrellas",
+  "advancements.majestic.journey.root.description": "Comienza tu viaje hacia la luz",
+  "advancements.majestic.journey.root.title": "El viaje arcano",
   "advancements.majestic.warden_of_the_gate.description": "Derrota al Guardián de la Puerta en el Observatorio",
   "advancements.majestic.warden_of_the_gate.title": "Más allá de la Puerta",
   "block.majestic.astral_altar": "Altar astral",

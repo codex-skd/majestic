@@ -1,4 +1,10 @@
 {
+  "advancements.majestic.journey.fallen_shrine.description": "Find a Fallen Shrine",
+  "advancements.majestic.journey.fallen_shrine.title": "Ruins of the Order",
+  "advancements.majestic.journey.observatory.description": "Reach the Observatory",
+  "advancements.majestic.journey.observatory.title": "Where Stars Were Read",
+  "advancements.majestic.journey.root.description": "Begin your journey toward the light",
+  "advancements.majestic.journey.root.title": "The Arcane Journey",
   "advancements.majestic.warden_of_the_gate.description": "Defeat the Warden of the Gate in the Observatory",
   "advancements.majestic.warden_of_the_gate.title": "Beyond the Gate",
   "block.majestic.astral_altar": "Astral Altar",

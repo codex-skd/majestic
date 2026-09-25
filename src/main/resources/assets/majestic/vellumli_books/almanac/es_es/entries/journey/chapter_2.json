@@ -3,6 +3,7 @@
   "category": "majestic:journey",
   "icon": "majestic:shrine_page",
   "sort_num": 2,
+  "read_by_default": true,
   "pages": [
     {
       "type": "text",

@@ -2,7 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.0-beta.15]
+## [0.0.0-beta.16]
+
+### Added
+- Árbol de logros **"El viaje arcano"** visible en la pantalla de logros: se abre al entrar al mundo por primera
+  vez; "Ruinas de la Orden" al entrar en un Santuario caído; "Donde se leían las estrellas" al llegar al
+  Observatorio; el logro del Guardián de la Puerta cuelga ahora de este árbol (antes quedaba oculto).
+
+### Fixed
+- El **Altar astral** era invisible al colocarlo (`BaseEntityBlock` se dibuja invisible por defecto en 1.21.1).
+- Los capítulos del Viaje se desordenaban (Vellumli pone primero las entradas no leídas): ahora se ordenan
+  siempre por número (`read_by_default`).
+
+
 
 ### Added
 - Modelos, animaciones y texturas del taller (`taller_minecraft` `e1d5454`) para los 4 mobs nocturnos: ya no son

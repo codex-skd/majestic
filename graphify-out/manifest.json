@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/content/block/AstralAltarBlock.java": {
-    "mtime": 1790108707.4752438,
-    "ast_hash": "fbcd1f8e2a0cd0abe47f0dfcea495cdc",
-    "semantic_hash": "fbcd1f8e2a0cd0abe47f0dfcea495cdc"
+    "mtime": 1790340818.9210029,
+    "ast_hash": "31118401351efe4512b78ca5bb8fb1a8",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/content/block/AstralAltarBlockEntity.java": {
     "mtime": 1790108563.4394796,
@@ -65,8 +65,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/datagen/DataGenerators.java": {
-    "mtime": 1790290082.747307,
-    "ast_hash": "2486111a0093a7a5d1c3c88f3e279650",
+    "mtime": 1790340882.221741,
+    "ast_hash": "152c273e2a9cee8fb54e3315db792f74",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/majestic/magic/ritual/EngraveSpellRitual.java": {
@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1790290218.8595395,
-    "ast_hash": "2fd1d825a637a323b0846a9c3d720f7d",
+    "mtime": 1790341718.0747368,
+    "ast_hash": "bf3f7533f0a94b2517115224147c6600",
     "semantic_hash": ""
   },
   "README.md": {
@@ -280,8 +280,8 @@
     "semantic_hash": ""
   },
   "docs/DESIGN_MAJESTIC_1-21-1.md": {
-    "mtime": 1790290218.8601785,
-    "ast_hash": "2f8be3eb47900e009356934bf9f8bcf0",
+    "mtime": 1790341718.0861719,
+    "ast_hash": "e51df0d071ce2d721250096382494024",
     "semantic_hash": ""
   },
   "docs/INTEGRATIONS.md": {
@@ -320,8 +320,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_MAJESTIC_1-21-1.md": {
-    "mtime": 1790290218.8614483,
-    "ast_hash": "8c021a2e82ff2900b34e8537fb5ebe1e",
+    "mtime": 1790341718.0861719,
+    "ast_hash": "4c50d6f3bb52af407374f7d777f8c722",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -330,8 +330,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1790290218.8614483,
-    "ast_hash": "d383c1c4dba85a55d458c336e83fa0f2",
+    "mtime": 1790341718.0954697,
+    "ast_hash": "c179d84086268fcf313ea50043c9091f",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -380,8 +380,8 @@
     "semantic_hash": ""
   },
   "src/generated/resources/assets/majestic/lang/en_us.json": {
-    "mtime": 1790288648.2277594,
-    "ast_hash": "47c6abc09987096e6ddd4770b024ccc7",
+    "mtime": 1790340921.731337,
+    "ast_hash": "4364b1fc901e5c3b6b9e381520536016",
     "semantic_hash": ""
   },
   "src/generated/resources/assets/majestic/models/block/astral_altar.json": {
@@ -590,8 +590,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/data/majestic/advancement/guide/warden_of_the_gate.json": {
-    "mtime": 1790248383.8900974,
-    "ast_hash": "7fc708d3d836e5fc85f1cdc8ee1b00fa",
+    "mtime": 1790340866.9206376,
+    "ast_hash": "5c5b4a9a9e8dd96626e2a7e6963305e6",
     "semantic_hash": ""
   },
   "src/main/resources/data/majestic/loot_table/boss/warden_of_the_gate.json": {
@@ -655,8 +655,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/lang/es_es.json": {
-    "mtime": 1790288889.063382,
-    "ast_hash": "3eae29a4c44ca80f8fdbdcc9ac4226c2",
+    "mtime": 1790340888.0121877,
+    "ast_hash": "b9b727098ed50cda658dd3d23fefc86d",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/categories/research.json": {
@@ -870,18 +870,18 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/journey/chapter_1.json": {
-    "mtime": 1790287632.733052,
-    "ast_hash": "8cb026bcbc981163ef1066747b1b933b",
+    "mtime": 1790340875.4489608,
+    "ast_hash": "5db7442994469282073d13b351c9234b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/journey/chapter_2.json": {
-    "mtime": 1790287632.7340088,
-    "ast_hash": "7c68c6c23bbc8a591b3eecc0cdf34111",
+    "mtime": 1790340875.8665018,
+    "ast_hash": "a68d730c33b74dfa57c04f57c6fdb884",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/en_us/entries/journey/prologue.json": {
-    "mtime": 1790287632.7321,
-    "ast_hash": "f25960183a4eea752a46283c75473fab",
+    "mtime": 1790340875.4412823,
+    "ast_hash": "cbfe7d78e8913aad2593b4566253d3c9",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/categories/journey.json": {
@@ -890,18 +890,18 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/journey/chapter_1.json": {
-    "mtime": 1790287632.7359333,
-    "ast_hash": "2218157897521edbc1b3ab19b16d6c37",
+    "mtime": 1790340875.8675046,
+    "ast_hash": "77867bb29394643d1def848b56b3ffa7",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/journey/chapter_2.json": {
-    "mtime": 1790287632.7368255,
-    "ast_hash": "510c751ac9af4e9712a8bb15d07d1bf3",
+    "mtime": 1790340875.8665018,
+    "ast_hash": "77af6862933d82aa10b8defe1e0c232f",
     "semantic_hash": ""
   },
   "src/main/resources/assets/majestic/vellumli_books/almanac/es_es/entries/journey/prologue.json": {
-    "mtime": 1790287632.7359333,
-    "ast_hash": "459350479efc6bc7160ed6427d23cf59",
+    "mtime": 1790340875.8665018,
+    "ast_hash": "3be29f4dee9b7082d45bfe91875edac9",
     "semantic_hash": ""
   },
   "src/main/resources/data/majestic/advancement/journey/chapter_1.json": {
@@ -1032,6 +1032,26 @@
   "src/main/resources/assets/majestic/textures/item/shrine_page.png": {
     "mtime": 1790289900.1156826,
     "ast_hash": "5ca9e20b18e3afe794f1848427bae3d0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/advancement/journey/fallen_shrine.json": {
+    "mtime": 1790340863.357443,
+    "ast_hash": "f6251183d8d3fdae32569bc89a20669e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/advancement/journey/observatory.json": {
+    "mtime": 1790340863.357443,
+    "ast_hash": "86b2a45f7e10bcb3e10d34bb90a4e9bf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/majestic/advancement/journey/root.json": {
+    "mtime": 1790340862.880171,
+    "ast_hash": "61d8432450022107f0401af58f0771ae",
+    "semantic_hash": ""
+  },
+  "docs/JOURNEY_I_TALLER_GUIDE_PART2.md": {
+    "mtime": 1790340635.5287087,
+    "ast_hash": "a41b573c5022b840dc24788c15eafcff",
     "semantic_hash": ""
   }
 }
