@@ -2,7 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.0-beta.16]
+## [0.0.0-beta.17]
+
+### Changed
+- **Guardián de la Puerta**: nuevo modelo con el báculo agarrado con el puño (vertical, cristal arriba) y
+  animaciones más marcadas (barrido, golpe, estocada, caminar y correr). Mismos nombres y tiempos de impacto.
+- **Santuario caído** rediseñado: capilla en ruinas de 15×12×15 con arcos rotos, nicho del altar con la estrella
+  de la Orden y un único cofre.
+- **Observatorio** más elaborado: entrada monumental de 13×18×11 (dos torres de toba, estrella sobre la puerta,
+  instrumento roto en lo alto) y más detalle en pasillos, estudio y arena. Mismas piezas, conectores y botín.
+
+### Added
+- **Imágenes en el Almanaque**: el Capítulo I muestra un Santuario caído y el Capítulo II la puerta del
+  Observatorio, para saber qué buscar.
+
+
 
 ### Added
 - Árbol de logros **"El viaje arcano"** visible en la pantalla de logros: se abre al entrar al mundo por primera

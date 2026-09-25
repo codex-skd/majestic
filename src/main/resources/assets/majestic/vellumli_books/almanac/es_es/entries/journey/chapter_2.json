@@ -10,6 +10,13 @@
       "text": "$(o)Segunda entrada.$()$(br2)Más allá de los santuarios se alza el Observatorio, donde un día leímos las estrellas. Es más raro y más grande: busca una ruina de columnas de toba abierta al cielo, en las mismas tierras que los santuarios, pero mucho más lejos unos de otros."
     },
     {
+      "type": "vellumli:image",
+      "images": ["majestic:textures/gui/book/observatory_entrance.png"],
+      "title": "La puerta del Observatorio",
+      "border": true,
+      "text": "Dos torres de toba y la estrella de la Orden sobre la puerta."
+    },
+    {
       "type": "text",
       "text": "Ten mucho cuidado. En el corazón del Observatorio, en la arena bajo su cúpula rota, algo sigue montando guardia. No cayó con la Orden.$(br2)Ve preparado: armadura, comida y compañeros si los tienes. Si has de huir, no te seguirá más allá de sus muros."
     }
