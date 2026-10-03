@@ -1,0 +1,6 @@
+{
+  "name": "Bestiary",
+  "description": "Creatures you have faced, recorded as you defeat them.",
+  "icon": "minecraft:skeleton_skull",
+  "sortnum": 4
+}

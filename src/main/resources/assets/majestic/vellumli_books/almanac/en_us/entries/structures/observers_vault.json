@@ -1,0 +1,14 @@
+{
+  "name": "The Watchers' Vault",
+  "category": "majestic:structures",
+  "sortnum": 3,
+  "secret": true,
+  "advancement": "majestic:journey/in_observers_vault",
+  "icon": "majestic:arcane_brick",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Cut into living rock, far from any path a curious person could follow. What the Order had not yet spent was kept here."
+    }
+  ]
+}

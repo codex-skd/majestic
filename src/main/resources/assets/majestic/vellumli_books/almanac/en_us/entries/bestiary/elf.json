@@ -1,0 +1,21 @@
+{
+  "name": "Elf",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:elf_spawn_egg",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_elf.png"
+      ],
+      "title": "Elf",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "A tall and graceful sentinel bound to the old shrines. Elves are patient marksmen and deadly in close quarters, guarding the Order's relics from looters and beasts alike. They never leave their charge unguarded."
+    }
+  ],
+  "advancement": "majestic:bestiary/elf"
+}

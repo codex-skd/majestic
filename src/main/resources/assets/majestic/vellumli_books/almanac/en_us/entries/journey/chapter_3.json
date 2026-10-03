@@ -1,0 +1,28 @@
+{
+  "name": "III. The Sleeping Portal",
+  "category": "majestic:act_1",
+  "icon": "majestic:warden_page",
+  "sortnum": 3,
+  "secret": true,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)There was no paper left to write it on, so the Order carved it into stone and set a Warden on top.$(br2)The Warden could not read. It was never built to.$(br)We told it to keep watch over a door it had never seen open,$(br)and it obeyed until someone came to open it."
+    },
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/arcane_portal.png"
+      ],
+      "title": "The Sleeping Portal",
+      "border": true,
+      "text": "No roof, no name, and half built."
+    },
+    {
+      "type": "text",
+      "text": "$(o)To the north, where the ground rises, there is something larger than the Observatory.$(br)It has no roof and no name yet.$(br)Those who raised it called it the Portal,$(br)and it is the only work of ours that was never finished.$(br2)$(o)If you are truly reading this, you already know where to begin.$(br)We will not remind you twice.$()"
+    }
+  ],
+  "advancement": "majestic:journey/chapter_3"
+}

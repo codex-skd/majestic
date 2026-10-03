@@ -1,0 +1,13 @@
+{
+  "name": "Constructo astral",
+  "category": "majestic:bestiary",
+  "icon": "majestic:astral_construct_spawn_egg",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Un descomunal servidor de luz estelar que acude a la llamada del Guardián. Los constructos se forman de materia astral pura y estallan en fragmentos de luz al ser destruidos. Donde se alza el Guardián, sus constructos nunca andan lejos."
+    }
+  ],
+  "advancement": "majestic:bestiary/astral_construct"
+}

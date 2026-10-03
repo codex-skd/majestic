@@ -1,0 +1,28 @@
+{
+  "name": "III. El Portal dormido",
+  "category": "majestic:act_1",
+  "icon": "majestic:warden_page",
+  "sortnum": 3,
+  "secret": true,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)No había papel donde guardarlo, así que la Orden lo esculpió en la piedra y puso un Guardián encima.$(br2)El Guardián no leía. No podía.$(br)Le ordenamos custodiar una puerta que nunca vio abrir,$(br)y obedeció hasta que alguien vino a abrirla."
+    },
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/arcane_portal.png"
+      ],
+      "title": "El Portal dormido",
+      "border": true,
+      "text": "Sin techo, sin nombre, y a medio construir."
+    },
+    {
+      "type": "text",
+      "text": "$(o)Al norte, donde el terreno se alza, hay algo más grande que el Observatorio.$(br)No tiene techo y todavía no tiene nombre.$(br)Los que lo levantamos lo llamábamos el Portal,$(br)y es la única obra nuestra que nunca llegó a acabarse.$(br2)$(o)Si de verdad sigues leyendo esto, ya sabes por dónde empezar.$(br)No te lo vamos a recordar dos veces.$()"
+    }
+  ],
+  "advancement": "majestic:journey/chapter_3"
+}

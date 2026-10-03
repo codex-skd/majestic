@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "majestic:block/rune_block"
+    }
+  }
+}

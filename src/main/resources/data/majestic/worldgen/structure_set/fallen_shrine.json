@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "majestic:fallen_shrine",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "expedition_core:isolated_spread",
+    "salt": 20260923,
+    "spacing": 24,
+    "separation": 10,
+    "isolation_chunks": 5
+  }
+}

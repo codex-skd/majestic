@@ -1,0 +1,6 @@
+{
+  "name": "Spells",
+  "description": "Starlight spells that can be inscribed onto your focus.",
+  "icon": "majestic:starlight_focus",
+  "sortnum": 1
+}

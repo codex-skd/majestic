@@ -1,0 +1,14 @@
+{
+  "name": "El Almacén de los Observadores",
+  "category": "majestic:structures",
+  "sortnum": 3,
+  "secret": true,
+  "advancement": "majestic:journey/in_observers_vault",
+  "icon": "majestic:arcane_brick",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Excavado en roca viva, lejos de cualquier camino que alguien curioso pudiera seguir. Aquí guardaban lo que la Orden aún no se había gastado."
+    }
+  ]
+}

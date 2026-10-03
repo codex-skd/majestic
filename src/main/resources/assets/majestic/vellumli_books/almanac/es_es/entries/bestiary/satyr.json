@@ -1,0 +1,21 @@
+{
+  "name": "Sátiro",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:satyr_spawn_egg",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_satyr.png"
+      ],
+      "title": "Sátiro",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "Un embaucador cornudo que ronda los bosques tras la oscuridad, tocando notas inquietantes con su flauta de caña. Su magia se aferra a tus extremidades y ralentiza cada paso que das, dejándote a merced de lo que aceche cerca. Acorta la distancia deprisa y acaba con él."
+    }
+  ],
+  "advancement": "majestic:bestiary/satyr"
+}

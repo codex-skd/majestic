@@ -1,0 +1,15 @@
+{
+  "name": "III. The Sleeping Portal (Locked)",
+  "category": "majestic:act_1",
+  "icon": "majestic:lantern_page",
+  "sortnum": 3,
+  "secret": true,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)The last entry the Order was able to write.$()$(br2)The Portal cannot be opened. Not by choice, but for want of material:$(br)the seal on the great Gate is finished, but the stone that must hold it$(br)is not where we set it.$(br2)The Warden kept watch over the gap, not over the gate.$(br)That is why nothing would hold.$(br2)$(o)Whoever reads this: the Order's stone is stored underground.$(br)Find it. And read the appendix first.$()"
+    }
+  ],
+  "advancement": "majestic:journey/chapter_3_locked"
+}

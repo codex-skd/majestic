@@ -1,0 +1,40 @@
+{
+  "criteria": {
+    "kill": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "majestic_bestiary:arcane_mage"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.majestic.bestiary.arcane_mage.description"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "majestic_bestiary:arcane_mage_spawn_egg"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.majestic.bestiary.arcane_mage.title"
+    }
+  },
+  "parent": "majestic:bestiary/root",
+  "requirements": [
+    [
+      "kill"
+    ]
+  ]
+}

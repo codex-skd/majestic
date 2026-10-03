@@ -1,0 +1,18 @@
+{
+  "name": "Prologue",
+  "category": "majestic:act_1",
+  "sortnum": -1,
+  "secret": false,
+  "read_by_default": true,
+  "icon": "majestic:beginning_page",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)When the sun sinks and the stars wake,$(br)those who once kept watch begin to walk again.$(br2)Hooded, their lanterns dark, the undead wander the night,$(br)still clutching the words they could not protect.$()"
+    },
+    {
+      "type": "text",
+      "text": "$(o)Slay an undead that walks after dark and take the first page.$(br)Read it, and it joins this Almanac,$(br)and the road to the light opens.$()$(br2)$(o)A recovered page, once read, becomes part of this Almanac and reveals the next step of the journey. At the end of every chapter lie the Order's words - and behind every word, a place.$()"
+    }
+  ]
+}

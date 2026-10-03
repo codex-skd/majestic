@@ -1,0 +1,12 @@
+{
+  "structures": [
+    { "structure": "majestic:observers_vault", "weight": 1 }
+  ],
+  "placement": {
+    "type": "expedition_core:isolated_spread",
+    "salt": 20261002,
+    "spacing": 64,
+    "separation": 20,
+    "isolation_chunks": 4
+  }
+}

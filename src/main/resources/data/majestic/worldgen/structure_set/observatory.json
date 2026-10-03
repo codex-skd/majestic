@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "majestic:observatory",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "expedition_core:isolated_spread",
+    "salt": 20260924,
+    "spacing": 48,
+    "separation": 16,
+    "isolation_chunks": 6
+  }
+}

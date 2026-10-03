@@ -1,0 +1,13 @@
+{
+  "name": "Guardián de la Puerta",
+  "category": "majestic:bestiary",
+  "icon": "majestic:warden_of_the_gate_spawn_egg",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "text",
+      "text": "El guardián inmortal del Observatorio, invocado solo colocando un fragmento estelar en el altar del centro de la arena. Es un jefe en todos los sentidos: acorazado, implacable y letal de cerca. No lo enfrentes sin el mejor equipo que tengas."
+    }
+  ],
+  "advancement": "majestic:bestiary/warden_of_the_gate"
+}
