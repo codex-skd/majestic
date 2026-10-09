@@ -1,0 +1,14 @@
+{
+  "name": "  - I. Down to Work",
+  "category": "majestic:act_1",
+  "icon": "majestic_core:carved_keystone",
+  "sortnum": 7,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_phase2_1",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The Construction Altar stands beside the Portal's libraries, with the Almanac on its left lectern.$(br2)The work can begin."
+    }
+  ]
+}

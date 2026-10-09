@@ -1,0 +1,18 @@
+{
+  "name": "Order's Stone",
+  "category": "majestic:order_items",
+  "sortnum": 3,
+  "secret": true,
+  "advancement": "majestic:order_items/arcane_brick",
+  "icon": "majestic_core:arcane_brick",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Twelve. Not one more, not one fewer. We kept them in the deepest part of the Vault, where no one outside the Order could count them. The Receptacle will do the rest for you.$()"
+    },
+    {
+      "type": "text",
+      "text": "Source: only the deep chests of the Watchers' Vault. Put twelve into the Receptacle, on the Portal platform: it will set them into the Portal's two slots by itself."
+    }
+  ]
+}

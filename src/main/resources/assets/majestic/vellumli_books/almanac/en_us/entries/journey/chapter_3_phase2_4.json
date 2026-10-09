@@ -1,0 +1,18 @@
+{
+  "name": "book.majestic.almanac.chapter_3_phase2_4",
+  "category": "majestic:act_1",
+  "icon": "majestic_core:carved_keystone",
+  "sortnum": 10,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_phase2_4",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)And what is above has its opposite.$(br2)In another dungeon of the lowest layer, also around depth -45, the demon knights wait."
+    },
+    {
+      "type": "text",
+      "text": "The infernal stone will come from there.$(br2)With the two stones, two inner arches will rise inside the Portal's arch. The Receptacle will return as the Receptacle of the Depths: its window will say how many of each stone it needs."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "book.majestic.almanac.chapter_3_phase2",
+  "category": "majestic:act_1",
+  "sortnum": 6,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_phase2",
+  "icon": "majestic_core:carved_keystone",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Do not come to the island confident.$(br)Three creatures that never knew the Order keep it: the Demon Knight, the Celestial Swordsman and the Sky Stalker.$(br2)They are not sentinels: they are what was left when the rehearsal was abandoned."
+    },
+    {
+      "type": "text",
+      "text": "Search the island. Somewhere, kept inside an Arcane Safe, is the Construction Altar.$(br2)Bring it back to the Portal, beside its libraries."
+    },
+    {
+      "type": "text",
+      "advancement": "majestic:journey/got_construction_altar",
+      "text": "You now have the Construction Altar. Carry it to the Portal, beside its libraries: the altar's outline waits there, marked with runes. Place it on the outline and set the Almanac on its left lectern."
+    }
+  ]
+}

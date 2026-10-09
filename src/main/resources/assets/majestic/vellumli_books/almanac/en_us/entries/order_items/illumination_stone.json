@@ -1,0 +1,18 @@
+{
+  "name": "Illumination Stone",
+  "category": "majestic:order_items",
+  "sortnum": 1,
+  "secret": true,
+  "advancement": "majestic:order_items/illumination_stone",
+  "icon": "majestic:illumination_stone",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)When you walk into the Portal's courtyard, the Lantern-Bearer will hand you one. Do not lose it: it is the only light the Vault recognizes.$()"
+    },
+    {
+      "type": "text",
+      "text": "Source: the Lantern-Bearer, when you walk into the Portal's courtyard; it can also be found in the Observatory arena chest. Place it on the Vault Altar, in the Watchers' Vault (underground, near Y 0): it will float, light the Vault, and unseal its chests."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "structures": [
+    { "structure": "majestic:sky_island", "weight": 1 }
+  ],
+  "placement": {
+    "type": "expedition_core:isolated_spread",
+    "salt": 20261004,
+    "spacing": 48,
+    "separation": 20,
+    "isolation_chunks": 0
+  }
+}

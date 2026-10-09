@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "majestic:arcane_portal",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "expedition_core:isolated_spread",
+    "salt": 20261001,
+    "spacing": 96,
+    "separation": 32,
+    "isolation_chunks": 8
+  }
+}

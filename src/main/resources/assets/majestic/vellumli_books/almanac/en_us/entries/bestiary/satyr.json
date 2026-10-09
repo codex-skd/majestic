@@ -1,0 +1,21 @@
+{
+  "name": "Satyr",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:satyr_spawn_egg",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_satyr.png"
+      ],
+      "title": "Satyr",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "A horned trickster that haunts the wilds after dark, piping eerie notes on its reed flute. Its magic clings to your limbs and slows every step you take, leaving you easy prey for whatever else lurks nearby. Close the gap quickly and end it."
+    }
+  ],
+  "advancement": "majestic:bestiary/satyr"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Mago arcano",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:arcane_mage_spawn_egg",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_arcane_mage.png"
+      ],
+      "title": "Mago arcano",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "Un hechicero encapuchado que mora en las salas del Observatorio, envuelto en una luz estelar inestable. Lanza descargas arcanas desde lejos y parpadea lejos en cuanto lo acorralas, así que tendrás que acosarlo una y otra vez. Golpea fuerte y sin pausa."
+    }
+  ],
+  "advancement": "majestic:bestiary/arcane_mage"
+}

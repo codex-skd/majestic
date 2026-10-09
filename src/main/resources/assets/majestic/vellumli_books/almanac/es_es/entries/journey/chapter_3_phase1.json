@@ -1,0 +1,22 @@
+{
+  "name": "  - II. Fase 1 Completada",
+  "category": "majestic:act_1",
+  "sortnum": 5,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_phase1",
+  "icon": "majestic_core:carved_keystone",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Las quince runas están en su sitio. El Receptáculo se ha consumido y ha dejado esta hoja en su sitio.$()"
+    },
+    {
+      "type": "text",
+      "text": "La primera fase ha terminado: el Portal ya no es un andamio. Pero aún no puede abrirse."
+    },
+    {
+      "type": "text",
+      "text": "Lo que falta está sobre las nubes. La Orden levantó allí una isla, lejos del Portal, que cae al vacío por todas partes: no hay camino ni escalera. Búscala en el cielo."
+    }
+  ]
+}

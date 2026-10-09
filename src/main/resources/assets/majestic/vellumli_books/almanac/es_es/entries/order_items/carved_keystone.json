@@ -1,0 +1,18 @@
+{
+  "name": "Dovela tallada",
+  "category": "majestic:order_items",
+  "sortnum": 4,
+  "secret": true,
+  "advancement": "majestic:order_items/carved_keystone",
+  "icon": "majestic_core:carved_keystone",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)La pieza que cierra lo que las doce piedras abren. Tres dovelas, junto a las doce piedras, y la primera fase quedará sellada. El Receptáculo sabe su lugar.$()"
+    },
+    {
+      "type": "text",
+      "text": "Fuente: los cofres profundos del Almacén de los Observadores. Introduce tres en el Receptáculo, junto con las doce piedras de la Orden, para completar la Fase Uno."
+    }
+  ]
+}

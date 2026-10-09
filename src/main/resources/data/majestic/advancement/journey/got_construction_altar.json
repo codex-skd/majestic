@@ -1,0 +1,36 @@
+{
+  "parent": "majestic:journey/chapter_3_phase2",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "majestic_core:construction_altar"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.majestic.journey.got_construction_altar.description"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "majestic_core:construction_altar"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "title": {
+      "translate": "advancements.majestic.journey.got_construction_altar.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ]
+}

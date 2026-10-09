@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "majestic_bestiary:undead",
+    "majestic_bestiary:goblin",
+    "majestic_bestiary:wolf",
+    "majestic_bestiary:satyr",
+    "majestic_bestiary:gnome",
+    "majestic_bestiary:elf",
+    "majestic_bestiary:arcane_mage",
+    "majestic_bestiary:draconid",
+    "majestic:warden_of_the_gate",
+    "majestic:astral_construct"
+  ]
+}

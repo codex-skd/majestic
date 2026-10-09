@@ -1,0 +1,15 @@
+{
+  "name": "III.  El Portal dormido (Bloqueado)",
+  "category": "majestic:act_1",
+  "icon": "majestic:lantern_page",
+  "sortnum": 2,
+  "secret": true,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)La última entrada que la Orden pudo escribir.$()$(br2)El Portal no se puede abrir. No por decisión, sino por falta de material:$(br)el sello de la gran Puerta está completo, pero la piedra que debe sostenerlo$(br)nunca llegó a ponerse: está donde la guardamos.$(br2)La piedra que ya está puesta no se deja mover: la Orden la asentó para siempre.$(br2)$(o)Quien lea esto: la piedra del Orden se guarda bajo tierra.$(br)Búscala. Y lee primero el apéndice.$()"
+    }
+  ],
+  "advancement": "majestic:journey/chapter_3_locked"
+}

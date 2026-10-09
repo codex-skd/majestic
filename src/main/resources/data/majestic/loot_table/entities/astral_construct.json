@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:entity",
+  "random_sequence": "majestic:entities/astral_construct",
+  "pools": []
+}

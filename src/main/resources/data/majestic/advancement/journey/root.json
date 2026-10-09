@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/polished_tuff.png",
+    "description": {
+      "translate": "advancements.majestic.journey.root.description"
+    },
+    "frame": "task",
+    "icon": {
+      "components": {
+        "vellumli:book": "majestic:almanac"
+      },
+      "id": "vellumli:guide_book"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.majestic.journey.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ]
+}

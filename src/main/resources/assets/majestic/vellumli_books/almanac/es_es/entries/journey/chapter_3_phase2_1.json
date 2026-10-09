@@ -1,0 +1,14 @@
+{
+  "name": "  - I. Manos a la obra",
+  "category": "majestic:act_1",
+  "icon": "majestic_core:carved_keystone",
+  "sortnum": 7,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_phase2_1",
+  "pages": [
+    {
+      "type": "text",
+      "text": "El Altar de la construcción se alza junto a las librerías del Portal, con el Almanaque en su atril izquierdo.$(br2)El trabajo puede empezar."
+    }
+  ]
+}

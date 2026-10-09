@@ -1,0 +1,26 @@
+{
+  "parent": "majestic:journey/root",
+  "criteria": {
+    "portal_whole": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.majestic.journey.portal_phase_one.description"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "majestic_core:carved_keystone"
+    },
+    "title": {
+      "translate": "advancements.majestic.journey.portal_phase_one.title"
+    }
+  },
+  "requirements": [
+    [
+      "portal_whole"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "_comment": "Where the Lantern-Bearer waits: offsets relative to the unrotated piece origin, each one air with air above and a solid floor below, on the dais in front of a pier.",
+  "structure": "majestic:arcane_portal",
+  "lantern_bearer_spots": [
+    [
+      27,
+      2,
+      25
+    ],
+    [
+      12,
+      2,
+      25
+    ]
+  ]
+}

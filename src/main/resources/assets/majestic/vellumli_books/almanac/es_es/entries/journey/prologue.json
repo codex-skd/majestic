@@ -1,0 +1,18 @@
+{
+  "name": "Prólogo",
+  "category": "majestic:act_1",
+  "sortnum": -1,
+  "secret": false,
+  "read_by_default": true,
+  "icon": "majestic:beginning_page",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Cuando el sol se hunde y despiertan las estrellas,$(br)los que antaño montaban guardia vuelven a caminar.$(br2)Encapuchados, con el farol apagado, los no muertos vagan en la noche$(br)aferrados a las palabras que no supieron proteger.$()"
+    },
+    {
+      "type": "text",
+      "text": "$(o)Arrebata a un no muerto que vaga de noche la primera página,$(br)y léela: pasará a formar parte de este Almanaque$(br)y el camino hacia la luz se abrirá.$()$(br2)$(o)Una página recuperada, al leerla, pasa a formar parte de este Almanaque y revela el siguiente paso del viaje. Al final de cada capítulo te esperan las palabras de la Orden, y detrás de cada palabra, un lugar.$()"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Fragmento estelar",
+  "category": "majestic:order_items",
+  "sortnum": 2,
+  "secret": true,
+  "advancement": "majestic:order_items/star_fragment",
+  "icon": "majestic:star_fragment",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Un trozo de lo que caía del cielo antes de que la Orden lo encerrara. Los Santuarios Caídos aún guardan algunos. No los uses a la ligera: despiertan a quien vigila la Puerta.$()"
+    },
+    {
+      "type": "text",
+      "text": "Fuente: los cofres de los Santuarios Caídos. Úsalo sobre el Altar Astral, en la arena del Observatorio: invocará al Guardián de la Puerta."
+    }
+  ]
+}

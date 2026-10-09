@@ -1,0 +1,18 @@
+{
+  "name": "book.majestic.almanac.chapter_3_phase2_4",
+  "category": "majestic:act_1",
+  "icon": "majestic_core:carved_keystone",
+  "sortnum": 10,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_phase2_4",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Y lo que hay arriba tiene su contrario.$(br2)En otra mazmorra de la capa más baja, también hacia la profundidad -45, aguardan los caballeros demonio."
+    },
+    {
+      "type": "text",
+      "text": "De allí saldrá la piedra infernal.$(br2)Con las dos piedras se alzarán dos arcos interiores dentro del arco del Portal. El Receptáculo volverá como el Receptáculo de las profundidades: su ventana dirá cuántas de cada piedra necesita."
+    }
+  ]
+}

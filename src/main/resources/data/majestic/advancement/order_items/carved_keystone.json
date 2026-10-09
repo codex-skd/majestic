@@ -1,0 +1,36 @@
+{
+  "parent": "majestic:journey/root",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "majestic_core:carved_keystone"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "majestic_core:carved_keystone",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.majestic.order_items.carved_keystone.title"
+    },
+    "description": {
+      "translate": "advancements.majestic.order_items.carved_keystone.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ]
+}

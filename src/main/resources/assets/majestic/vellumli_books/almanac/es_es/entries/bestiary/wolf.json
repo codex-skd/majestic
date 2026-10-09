@@ -1,0 +1,21 @@
+{
+  "name": "Lobo terrible",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:wolf_spawn_egg",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_wolf.png"
+      ],
+      "title": "Lobo terrible",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "Un cazador gris y esbelto, más grande y feroz que cualquier lobo común. Los lobos terribles cazan en manada y derriban a su presa en conjunto, sin alejarse mucho unos de otros. Separa a la manada o acabarás rodeado."
+    }
+  ],
+  "advancement": "majestic:bestiary/wolf"
+}

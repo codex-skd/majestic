@@ -1,0 +1,36 @@
+{
+  "parent": "majestic:journey/root",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "majestic:illumination_stone"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "majestic:illumination_stone",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.majestic.order_items.illumination_stone.title"
+    },
+    "description": {
+      "translate": "advancements.majestic.order_items.illumination_stone.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ]
+}

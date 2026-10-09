@@ -1,0 +1,18 @@
+{
+  "name": "book.majestic.almanac.chapter_3_phase2_3",
+  "category": "majestic:act_1",
+  "icon": "majestic_core:carved_keystone",
+  "sortnum": 9,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_phase2_3",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)The Bible has spoken.$(br)There are places beneath the world where the stone remembers.$(br2)In the lowest layer, around depth -45, a dungeon of celestial swordsmen waits."
+    },
+    {
+      "type": "text",
+      "text": "The celestial stone is kept there, the stone that holds what the Order meant to close upwards.$(br2)No one has come back with it."
+    }
+  ]
+}

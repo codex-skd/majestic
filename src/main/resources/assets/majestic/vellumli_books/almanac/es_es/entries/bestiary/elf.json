@@ -1,0 +1,21 @@
+{
+  "name": "Elfo",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:elf_spawn_egg",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_elf.png"
+      ],
+      "title": "Elfo",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "Un centinela alto y elegante, ligado a los antiguos santuarios. Los elfos son tiradores pacientes y letales en el cuerpo a cuerpo, y protegen las reliquias de la Orden de saqueadores y bestias por igual. Nunca dejan su cargo sin vigilancia."
+    }
+  ],
+  "advancement": "majestic:bestiary/elf"
+}

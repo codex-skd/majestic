@@ -1,0 +1,14 @@
+{
+  "name": "The Observatory",
+  "category": "majestic:structures",
+  "sortnum": 1,
+  "secret": true,
+  "advancement": "majestic:journey/observatory",
+  "icon": "majestic:warden_page",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The Order's watching place. Its arena is where the Warden of the Gate was bound, and it stays sealed until it falls."
+    }
+  ]
+}

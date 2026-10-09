@@ -1,0 +1,18 @@
+{
+  "name": "  - I. Begin the Rebuilding",
+  "category": "majestic:act_1",
+  "icon": "majestic:portal_phase_page",
+  "sortnum": 4,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_rebuild",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)The stone exists. We did not dream it: we cut it and we stored it.$(br2)Now it is in your hands, and the Portal is still waiting."
+    },
+    {
+      "type": "text",
+      "text": "Go back to the Portal. On its platform stands the Receptacle.$(br2)Right-click it to open its window: it will tell you how many blocks it needs and of which kind.$(br2)Place twelve Order's Stones and three Carved Keystones inside, and close the window once all fifteen are in. The Receptacle sets them itself, one by one."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "book.majestic.almanac.chapter_3_phase2_2",
+  "category": "majestic:act_1",
+  "icon": "majestic_core:carved_keystone",
+  "sortnum": 8,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_phase2_2",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)The lectern has awakened.$(br)A voice that belongs to no one murmurs between the spines of the libraries.$(br2)The Almanac is not alone: the Order never wrote with a single hand."
+    },
+    {
+      "type": "text",
+      "text": "$(o)\"Two are the lecterns, one you already fill.$(br)The other waits for the keeper of creatures,$(br)the book that opens not with light but with fear.\"$(br2)Perhaps the other side of the altar knows what it lacks."
+    }
+  ]
+}

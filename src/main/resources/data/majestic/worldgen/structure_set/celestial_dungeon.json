@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "majestic:celestial_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "expedition_core:isolated_spread",
+    "salt": 20261011,
+    "spacing": 44,
+    "separation": 14,
+    "isolation_chunks": 4
+  }
+}

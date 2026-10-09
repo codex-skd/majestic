@@ -1,0 +1,18 @@
+{
+  "name": "Altar de la construcción",
+  "category": "majestic:order_items",
+  "sortnum": 5,
+  "secret": true,
+  "advancement": "majestic:order_items/construction_altar",
+  "icon": "majestic_core:construction_altar",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Lo tallamos para que nos leyera nuestras propias palabras. Dos mitades, una sola tabla de lectura: quien deje el Almanaque encima lo verá abierto donde todas las manos puedan leerlo.$()"
+    },
+    {
+      "type": "text",
+      "text": "Fuente: la Caja arcana de la isla del cielo. Colócalo junto a las librerías del Portal y pon el Almanaque en su atril izquierdo; el derecho espera otro libro. Clic derecho sobre un libro para leerlo, o en el centro para abrir la ventana."
+    }
+  ]
+}

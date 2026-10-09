@@ -1,0 +1,28 @@
+{
+  "name": "- I. Phase 1: The Search",
+  "category": "majestic:act_1",
+  "icon": "majestic:lantern_page",
+  "sortnum": 3,
+  "secret": true,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)A loose leaf, written in a hand that trembles.$(br2)The Portal is not finished.$(br)It never was.$(br2)When the sky went out we did not go back to it.$(br)We left the work half done and sealed what little was left,$(br)the way you close a door you no longer know how to open."
+    },
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/observers_vault.png"
+      ],
+      "title": "The Watchers' Vault",
+      "border": true,
+      "text": "Cut into living rock, where the Order kept what was not yet spent."
+    },
+    {
+      "type": "text",
+      "text": "The stones are missing. Not the shape, which is already there, but the matter:$(br2)the Order's stone is neither cut nor bought.$(br)It was stored underground, in a warehouse cut into living rock,$(br)far from the surface and from any path a curious person could follow.$(br2)The Illumination Stone comes with this leaf. Set it on the Vault's altar:$(br)that is what wakes it.$(br2)$(o)Look for it. Go down.$(br)And do not go alone: nobody goes down there alone.$()"
+    }
+  ],
+  "advancement": "majestic:journey/chapter_2_1"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Dire Wolf",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:wolf_spawn_egg",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_wolf.png"
+      ],
+      "title": "Dire Wolf",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "A lean grey hunter larger and meaner than any common wolf. Dire wolves hunt in packs and run their prey down together, never straying far from one another. Break the pack apart, or you will be surrounded."
+    }
+  ],
+  "advancement": "majestic:bestiary/wolf"
+}
