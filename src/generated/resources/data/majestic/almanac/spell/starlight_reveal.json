@@ -1,0 +1,12 @@
+{
+  "cast_type": "area",
+  "cooldown": 100,
+  "cost": 20.0,
+  "effects": [],
+  "school": "majestic:starlight",
+  "tier": 1,
+  "unlock": {
+    "type": "none",
+    "value": "majestic:none"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "majestic:journey/root",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "majestic_core:arcane_brick"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "majestic_core:arcane_brick",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.majestic.order_items.arcane_brick.title"
+    },
+    "description": {
+      "translate": "advancements.majestic.order_items.arcane_brick.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ]
+}

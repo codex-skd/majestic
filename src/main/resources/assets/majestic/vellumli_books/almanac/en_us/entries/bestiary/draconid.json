@@ -1,0 +1,21 @@
+{
+  "name": "Draconid",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:draconid_spawn_egg",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_draconid.png"
+      ],
+      "title": "Draconid",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "A scaled brute of draconic blood that stalks the Observatory at night. Fire cannot harm it, and its claws set you ablaze with a single rake. Wear it down from a distance if you can."
+    }
+  ],
+  "advancement": "majestic:bestiary/draconid"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "- I. Fase 1: La búsqueda",
+  "category": "majestic:act_1",
+  "icon": "majestic:lantern_page",
+  "sortnum": 3,
+  "secret": true,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Hoja suelta, escrita con una letra que tiembla.$(br2)El Portal no está terminado.$(br)Nunca lo estuvo.$(br2)Cuando el cielo se apagó no volvimos a él.$(br)Dejamos la obra a medias y sellamos lo poco que quedaba,$(br)como quien cierra una puerta que ya no sabe abrir."
+    },
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/observers_vault.png"
+      ],
+      "title": "El Almacén de los Observadores",
+      "border": true,
+      "text": "Excavado en roca viva, donde la Orden guardaba lo que aún no había gastado."
+    },
+    {
+      "type": "text",
+      "text": "Faltan los sillares. No la forma, que ya está, sino la materia:$(br2)la piedra del Orden no se talla ni se compra.$(br)Se guardó bajo tierra, en un almacén excavado en la roca viva,$(br)lejos de la superficie y de cualquier ruta que un curioso pudiera seguir.$(br2)Con esta hoja va la Piedra de la Iluminación. Ponla en el altar del Almacén:$(br)es lo que lo despierta.$(br2)$(o)Búscalo. Baja.$(br)Y no vayas solo: allí abajo no se va solo.$()"
+    }
+  ],
+  "advancement": "majestic:journey/chapter_2_1"
+}

@@ -1,0 +1,323 @@
+{
+  "_comment": "15 rune/key cells on the front face of the arcane portal arch (Z=27): the crown keystone, the two foot keystones and twelve runes. Offsets are relative to the unrotated piece origin; majestic rotates them with the piece.",
+  "structure": "majestic:arcane_portal",
+  "max_payload": 15,
+  "gaps": [
+    {
+      "id": "key_crown",
+      "offset": [
+        20,
+        22,
+        27
+      ],
+      "block": "majestic_core:carved_keystone"
+    },
+    {
+      "id": "key_foot",
+      "offset": [
+        29,
+        8,
+        27
+      ],
+      "block": "majestic_core:carved_keystone"
+    },
+    {
+      "id": "key_foot_left",
+      "offset": [
+        11,
+        8,
+        27
+      ],
+      "block": "majestic_core:carved_keystone"
+    },
+    {
+      "id": "rune_01",
+      "offset": [
+        29,
+        12,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "rune_02",
+      "offset": [
+        28,
+        14,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "rune_03",
+      "offset": [
+        27,
+        16,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "rune_04",
+      "offset": [
+        25,
+        17,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "rune_05",
+      "offset": [
+        23,
+        18,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "rune_06",
+      "offset": [
+        21,
+        19,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "rune_07",
+      "offset": [
+        19,
+        19,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "rune_08",
+      "offset": [
+        17,
+        18,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "rune_09",
+      "offset": [
+        15,
+        17,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "rune_10",
+      "offset": [
+        13,
+        16,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "rune_11",
+      "offset": [
+        12,
+        14,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "rune_12",
+      "offset": [
+        11,
+        12,
+        27
+      ],
+      "block": "majestic_core:arcane_brick"
+    },
+    {
+      "id": "arch_left_a0",
+      "offset": [
+        15,
+        2,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_left_a1",
+      "offset": [
+        15,
+        3,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_left_a2",
+      "offset": [
+        15,
+        4,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_left_a3",
+      "offset": [
+        15,
+        5,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_left_a4",
+      "offset": [
+        15,
+        6,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_left_a5",
+      "offset": [
+        16,
+        7,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_left_a6",
+      "offset": [
+        17,
+        8,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_left_a7",
+      "offset": [
+        18,
+        9,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_left_a8",
+      "offset": [
+        19,
+        10,
+        31
+      ],
+      "block": "majestic_core:infernal_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_right_a0",
+      "offset": [
+        25,
+        2,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_right_a1",
+      "offset": [
+        25,
+        3,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_right_a2",
+      "offset": [
+        25,
+        4,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_right_a3",
+      "offset": [
+        25,
+        5,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_right_a4",
+      "offset": [
+        25,
+        6,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_right_a5",
+      "offset": [
+        24,
+        7,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_right_a6",
+      "offset": [
+        23,
+        8,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_right_a7",
+      "offset": [
+        22,
+        9,
+        31
+      ],
+      "block": "majestic_core:celestial_stone",
+      "stage": "depths"
+    },
+    {
+      "id": "arch_right_a8",
+      "offset": [
+        21,
+        10,
+        31
+      ],
+      "block": "majestic_core:infernal_stone",
+      "stage": "depths"
+    }
+  ],
+  "_comment_depths": "Gaps with stage 'depths' are the two inner arches, raised by the Receptacle of the Depths with celestial and infernal stone. Per side: 5 celestial up the inner edge of the gate (x 15 / 25, y 2..6), 3 celestial curving inwards, 1 infernal at the peak. Single layer at z=31, the middle of the arch's depth. max_payload counts the outer stage only."
+}

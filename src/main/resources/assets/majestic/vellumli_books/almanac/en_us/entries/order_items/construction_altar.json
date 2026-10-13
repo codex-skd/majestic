@@ -1,0 +1,18 @@
+{
+  "name": "Construction Altar",
+  "category": "majestic:order_items",
+  "sortnum": 5,
+  "secret": true,
+  "advancement": "majestic:order_items/construction_altar",
+  "icon": "majestic_core:construction_altar",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)We carved it to read our own words back to us. Two halves, one reading plate: whoever sets the Almanac down will find the pages open where every pair of hands can see them.$()"
+    },
+    {
+      "type": "text",
+      "text": "Found in the Arcane Safe on the sky island. Set it beside the Portal's libraries and put the Almanac on its left lectern; the right one waits for another book. Right-click a book to read it, or the middle to open the window."
+    }
+  ]
+}

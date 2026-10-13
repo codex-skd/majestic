@@ -1,0 +1,36 @@
+{
+  "parent": "majestic:journey/root",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "majestic:star_fragment"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "majestic:star_fragment",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.majestic.order_items.star_fragment.title"
+    },
+    "description": {
+      "translate": "advancements.majestic.order_items.star_fragment.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ]
+}

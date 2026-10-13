@@ -1,0 +1,26 @@
+{
+  "parent": "majestic:journey/root",
+  "criteria": {
+    "read": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.majestic.journey.prologue.description"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "majestic:beginning_page"
+    },
+    "title": {
+      "translate": "advancements.majestic.journey.prologue.title"
+    }
+  },
+  "requirements": [
+    [
+      "read"
+    ]
+  ]
+}

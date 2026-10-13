@@ -1,0 +1,21 @@
+{
+  "name": "Dracónido",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:draconid_spawn_egg",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_draconid.png"
+      ],
+      "title": "Dracónido",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "Un bruto escamoso de sangre dracónica que acecha el Observatorio de noche. El fuego no le hace daño y sus garras te prenden fuego con un solo zarpazo. Desgástalo desde la distancia si puedes."
+    }
+  ],
+  "advancement": "majestic:bestiary/draconid"
+}

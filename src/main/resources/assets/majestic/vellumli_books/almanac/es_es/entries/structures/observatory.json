@@ -1,0 +1,14 @@
+{
+  "name": "El Observatorio",
+  "category": "majestic:structures",
+  "sortnum": 1,
+  "secret": true,
+  "advancement": "majestic:journey/observatory",
+  "icon": "majestic:warden_page",
+  "pages": [
+    {
+      "type": "text",
+      "text": "El lugar donde vigilaba la Orden. Su arena es donde fue atado el Guardián de la Puerta, y permanece sellado hasta que cae."
+    }
+  ]
+}

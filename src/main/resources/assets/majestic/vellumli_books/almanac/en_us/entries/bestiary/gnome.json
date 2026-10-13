@@ -1,0 +1,21 @@
+{
+  "name": "Gnome",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:gnome_spawn_egg",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_gnome.png"
+      ],
+      "title": "Gnome",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "A small, cunning guardian that keeps to the ruined shrines of the Order. It defends its halls with vicious little weapons and knows every corner of the crumbling stone. Few gnomes ever wander far from their shrine."
+    }
+  ],
+  "advancement": "majestic:bestiary/gnome"
+}

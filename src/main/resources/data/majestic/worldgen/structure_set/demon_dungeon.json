@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "majestic:demon_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "expedition_core:isolated_spread",
+    "salt": 20261012,
+    "spacing": 44,
+    "separation": 14,
+    "isolation_chunks": 4
+  }
+}

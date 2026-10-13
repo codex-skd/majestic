@@ -1,0 +1,21 @@
+{
+  "name": "Gnomo",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:gnome_spawn_egg",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_gnome.png"
+      ],
+      "title": "Gnomo",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "Un pequeño y astuto guardián que habita los santuarios en ruinas de la Orden. Defiende sus salas con armas pequeñas y feroces y conoce cada rincón de la piedra desmoronada. Pocos gnomos se alejan de su santuario."
+    }
+  ],
+  "advancement": "majestic:bestiary/gnome"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Los Santuarios caídos",
+  "category": "majestic:structures",
+  "sortnum": 0,
+  "secret": true,
+  "advancement": "majestic:journey/fallen_shrine",
+  "icon": "majestic:shrine_page",
+  "pages": [
+    {
+      "type": "text",
+      "text": "La Orden dejó sus santuarios repartidos por el mundo, y selló cada uno. Un cofre abierto es un santuario desellado: nada de lo que hay dentro se puede romper hasta entonces."
+    }
+  ]
+}

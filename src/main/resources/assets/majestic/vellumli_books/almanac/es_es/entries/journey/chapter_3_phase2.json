@@ -1,0 +1,23 @@
+{
+  "name": "book.majestic.almanac.chapter_3_phase2",
+  "category": "majestic:act_1",
+  "sortnum": 6,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_phase2",
+  "icon": "majestic_core:carved_keystone",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)No vayas a la isla confiado.$(br)La guardan tres criaturas que no conocen a la Orden: el Caballero Demonio, el Espadachín Celestial y el Engendro del Cielo.$(br2)No son centinelas: son lo que quedó cuando el ensayo se abandonó."
+    },
+    {
+      "type": "text",
+      "text": "Recorre la isla. En algún lugar, guardado dentro de una Caja arcana, está el Altar de la construcción.$(br2)Llévalo de vuelta al Portal, junto a sus librerías."
+    },
+    {
+      "type": "text",
+      "advancement": "majestic:journey/got_construction_altar",
+      "text": "Ya tienes el Altar de la construcción. Llévalo junto a las librerías del Portal: allí espera la silueta del altar, marcada con runas. Colócalo allí y pon el Almanaque encima."
+    }
+  ]
+}

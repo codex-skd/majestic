@@ -1,0 +1,14 @@
+{
+  "name": "The Fallen Shrines",
+  "category": "majestic:structures",
+  "sortnum": 0,
+  "secret": true,
+  "advancement": "majestic:journey/fallen_shrine",
+  "icon": "majestic:shrine_page",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The Order left its shrines scattered across the world, and sealed each one. A chest opened is a shrine unsealed: nothing inside can be broken until then."
+    }
+  ]
+}

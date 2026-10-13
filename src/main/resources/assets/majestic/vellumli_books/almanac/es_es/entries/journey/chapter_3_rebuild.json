@@ -1,0 +1,18 @@
+{
+  "name": "  - I. Comenzar la reconstrucción",
+  "category": "majestic:act_1",
+  "icon": "majestic:portal_phase_page",
+  "sortnum": 4,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_rebuild",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)La piedra existe. No la soñamos: la tallamos y la guardamos.$(br2)Ahora está en tus manos, y el Portal sigue esperando."
+    },
+    {
+      "type": "text",
+      "text": "Vuelve al Portal. En su plataforma está el Receptáculo.$(br2)Haz clic derecho sobre él para abrir su ventana: te dirá cuántos bloques necesita y de cuáles.$(br2)Coloca dentro doce Piedras de la Orden y tres Dovelas talladas, y cierra la ventana cuando estén las quince. El Receptáculo las asienta solo, una a una."
+    }
+  ]
+}

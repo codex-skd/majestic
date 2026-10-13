@@ -1,0 +1,28 @@
+{
+  "parent": "majestic:journey/root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.majestic.journey.chapter_3.description"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "majestic:warden_page"
+    },
+    "show_toast": true,
+    "announce_to_chat": false,
+    "title": {
+      "translate": "advancements.majestic.journey.chapter_3.title"
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Piedra de la Iluminación",
+  "category": "majestic:order_items",
+  "sortnum": 1,
+  "secret": true,
+  "advancement": "majestic:order_items/illumination_stone",
+  "icon": "majestic:illumination_stone",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)Cuando entres en el patio del Portal, el Portador de la Linterna te entregará una. No la pierdas: es la única luz que reconoce el Almacén.$()"
+    },
+    {
+      "type": "text",
+      "text": "Fuente: el Portador de la Linterna, al entrar en el patio del Portal; también puede hallarse en el cofre de la arena del Observatorio. Colócala sobre el Altar del Almacén, en el Almacén de los Observadores (bajo tierra, cerca de Y 0): flotará, iluminará el Almacén y desellará sus cofres."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "parent": "majestic:journey/root",
+  "criteria": {
+    "met_the_lantern_bearer": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.majestic.journey.met_the_lantern_bearer.description"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "majestic:lantern_page"
+    },
+    "title": {
+      "translate": "advancements.majestic.journey.met_the_lantern_bearer.title"
+    }
+  }
+}

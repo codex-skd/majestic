@@ -1,0 +1,21 @@
+{
+  "name": "Goblin",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:goblin_spawn_egg",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_goblin.png"
+      ],
+      "title": "Goblin",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "Small, swift and cruel, goblins pour out of the dark in rowdy packs and swarm anything that moves. They favour numbers over strength, biting and jabbing from every side at once. A single goblin is a nuisance; a pack is a death sentence."
+    }
+  ],
+  "advancement": "majestic:bestiary/goblin"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "El Portal Arcano",
+  "category": "majestic:structures",
+  "sortnum": 2,
+  "secret": true,
+  "advancement": "majestic:journey/in_arcane_portal",
+  "icon": "majestic_core:carved_keystone",
+  "pages": [
+    {
+      "type": "text",
+      "text": "La obra que dejaron a medias. En su fachada esperan quince huecos —doce runas y tres dovelas talladas— y la piedra para cerrarlos no está aquí."
+    }
+  ]
+}

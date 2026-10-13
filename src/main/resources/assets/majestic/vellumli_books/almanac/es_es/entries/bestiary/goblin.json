@@ -1,0 +1,21 @@
+{
+  "name": "Goblin",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:goblin_spawn_egg",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_goblin.png"
+      ],
+      "title": "Goblin",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "Pequeños, rápidos y crueles, los goblins salen de la oscuridad en bandas ruidosas y asaltan todo lo que se mueve. Prefieren el número a la fuerza, mordiendo y pinchando desde todos los lados a la vez. Un goblin solitario es una molestia; una banda es una sentencia de muerte."
+    }
+  ],
+  "advancement": "majestic:bestiary/goblin"
+}

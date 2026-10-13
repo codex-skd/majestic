@@ -1,0 +1,22 @@
+{
+  "name": "  - II. Phase 1 Complete",
+  "category": "majestic:act_1",
+  "sortnum": 5,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_phase1",
+  "icon": "majestic_core:carved_keystone",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)All fifteen runes are in place. The Receptacle has consumed itself and left this page in its place.$()"
+    },
+    {
+      "type": "text",
+      "text": "The first phase is over: the Portal is no longer scaffolding. But it still cannot be opened."
+    },
+    {
+      "type": "text",
+      "text": "What is missing lies above the clouds. The Order raised an island there, far from the Portal, that drops into the void on every side: there is no path and no ladder. Look for it in the sky."
+    }
+  ]
+}

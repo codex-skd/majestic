@@ -1,0 +1,21 @@
+{
+  "name": "Undead",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:undead_spawn_egg",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_undead.png"
+      ],
+      "title": "Undead",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "A shambling corpse of a long-dead acolyte, still wearing the tattered garb of the Order. It roams the overworld after nightfall, alone or in small groups, striking with slow and heavy blows. Daylight burns it away, and the first one you slay carries a Page of the Beginning for newcomers to the Order's journal."
+    }
+  ],
+  "advancement": "majestic:bestiary/undead"
+}

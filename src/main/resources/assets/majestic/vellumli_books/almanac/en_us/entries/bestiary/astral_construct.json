@@ -1,0 +1,13 @@
+{
+  "name": "Astral Construct",
+  "category": "majestic:bestiary",
+  "icon": "majestic:astral_construct_spawn_egg",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "A hulking servitor of starlight that answers the Warden's call. Constructs are drawn from raw astral matter and shatter into fragments of light when destroyed. Where the Warden stands, its constructs are never far."
+    }
+  ],
+  "advancement": "majestic:bestiary/astral_construct"
+}

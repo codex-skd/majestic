@@ -1,0 +1,18 @@
+{
+  "name": "Carved Keystone",
+  "category": "majestic:order_items",
+  "sortnum": 4,
+  "secret": true,
+  "advancement": "majestic:order_items/carved_keystone",
+  "icon": "majestic_core:carved_keystone",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)The piece that closes what the twelve stones open. Three keystones, together with the twelve stones, and the first phase will be sealed. The Receptacle knows their place.$()"
+    },
+    {
+      "type": "text",
+      "text": "Source: the deep chests of the Watchers' Vault. Put three into the Receptacle, together with the twelve Order's Stones, to complete Phase One."
+    }
+  ]
+}

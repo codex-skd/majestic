@@ -1,0 +1,21 @@
+{
+  "name": "No muerto",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:undead_spawn_egg",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_undead.png"
+      ],
+      "title": "No muerto",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "Un cadáver que se arrastra, un acólito muerto hace mucho que aún viste los harapos de la Orden. Vaga por el mundo de superficie al caer la noche, solo o en pequeños grupos, y golpea con fuerza y lentitud. La luz del día lo consume, y el primero que mates lleva una Hoja del comienzo para quienes se inician en el diario de la Orden."
+    }
+  ],
+  "advancement": "majestic:bestiary/undead"
+}

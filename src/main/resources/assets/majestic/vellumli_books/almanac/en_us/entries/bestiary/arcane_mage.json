@@ -1,0 +1,21 @@
+{
+  "name": "Arcane Mage",
+  "category": "majestic:bestiary",
+  "icon": "majestic_bestiary:arcane_mage_spawn_egg",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "vellumli:image",
+      "images": [
+        "majestic:textures/gui/book/bestiary_arcane_mage.png"
+      ],
+      "title": "Arcane Mage",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "A robed spellcaster dwelling in the Observatory's halls, wreathed in unstable starlight. It hurls arcane bolts from a distance and blinks away the moment you corner it, so you must close it down again and again. Strike hard and without pause."
+    }
+  ],
+  "advancement": "majestic:bestiary/arcane_mage"
+}

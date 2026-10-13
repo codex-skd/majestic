@@ -1,0 +1,13 @@
+{
+  "name": "Warden of the Gate",
+  "category": "majestic:bestiary",
+  "icon": "majestic:warden_of_the_gate_spawn_egg",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "text",
+      "text": "The Observatory's immortal guardian, summoned only by placing a star fragment on the altar at the heart of the arena. It is a boss in every sense: armoured, relentless and lethal at close range. Do not face it without the finest gear you own."
+    }
+  ],
+  "advancement": "majestic:bestiary/warden_of_the_gate"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "book.majestic.almanac.chapter_3_phase2_3",
+  "category": "majestic:act_1",
+  "icon": "majestic_core:carved_keystone",
+  "sortnum": 9,
+  "secret": true,
+  "advancement": "majestic:journey/chapter_3_phase2_3",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(o)La Biblia ha hablado.$(br)Hay lugares bajo el mundo donde la piedra recuerda.$(br2)En la capa más baja, hacia la profundidad -45, espera una mazmorra de espadachines celestiales."
+    },
+    {
+      "type": "text",
+      "text": "Allí se guarda la piedra celestial, la que sostiene lo que la Orden quiso cerrar hacia arriba.$(br2)Nadie ha vuelto con ella."
+    }
+  ]
+}
